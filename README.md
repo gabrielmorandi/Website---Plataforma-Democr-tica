@@ -1,1 +1,1 @@
-# Website---Plataforma-Democr-tica
+# Website - Plataforma Democrática
