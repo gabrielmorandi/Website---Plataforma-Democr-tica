@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Fabin';
+  src: url('/fonts/FABIN__.TTF') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-Medium.otf') format('otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-SemiBold.otf') format('otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-Bold.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-ExtraBold.otf') format('otf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stara';
+  src: url('/fonts/Stara-Black.otf') format('otf');
+  font-weight: 900;
+  font-style: normal;
+}
