@@ -1,10 +1,10 @@
-import { BedSingle } from "lucide-react"
+import Header from "./components/Header"
 
 export default function Home() {
   return (
-    <main className="">
-      <p>Hello</p>
-      <BedSingle />
-    </main>
+    <>
+      <Header />
+      <main className=""></main>
+    </>
   )
 }
