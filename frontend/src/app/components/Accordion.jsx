@@ -7,7 +7,7 @@ export default function Accordion({ items }) {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <div className="divide-y divide-purple max-w-[700px]">
+    <div className="divide-y divide-purple max-w-[1160px]">
       {items.map((item, index) => (
         <div key={index}>
           <button
@@ -28,12 +28,12 @@ export default function Accordion({ items }) {
           <div
             className={`overflow-hidden transition-all duration-300 ${
               index === openIndex
-                ? "max-h-[1000px] md:max-h-[350px]"
+                ? "max-h-[1650px] md:max-h-[475px]"
                 : "max-h-0"
             }`}
           >
             <p
-              className={`py-2 pl-8 text-zinc-900 duration-300 ease-in transition-opacity ${
+              className={`pb-2 pl-8 text-lg leading-tight duration-300 ease-in transition-opacity ${
                 index === openIndex ? "opacity-100" : "opacity-0"
               }`}
             >

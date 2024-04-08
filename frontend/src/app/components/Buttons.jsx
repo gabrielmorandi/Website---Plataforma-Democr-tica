@@ -1,7 +1,7 @@
-import { HeartHandshake, Instagram, ArrowUpRight } from "lucide-react"
+import { Instagram, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 
-export function ButtonPrimary({ text, href }) {
+export function ButtonPrimary({ text, href, insta }) {
   return (
     <Link
       href={href}
@@ -10,7 +10,11 @@ export function ButtonPrimary({ text, href }) {
       <p className="font-bold leading-6 transition-colors text-yellow">
         {text}
       </p>
-      <ArrowUpRight color="#FFD500" className="min-w-6" />
+      {insta ? (
+        <Instagram color="#FFD500" className="min-w-6" />
+      ) : (
+        <ArrowUpRight color="#FFD500" className="min-w-6" />
+      )}
     </Link>
   )
 }

@@ -17,11 +17,23 @@ export default function Footer() {
           </h2>
         </div>
         <div className="flex flex-col gap-2 pb-4 md:pb-0">
-          <MenuLink text={"Princípios Universidade"} isYellow={true} />
-          <MenuLink text={"Temas Trabalhados"} isYellow={true} />
-          <MenuLink text={"Diretrizes dos Compromissos"} isYellow={true} />
-          <MenuLink text={"Conheça nossos Compromissos"} isYellow={true} />
-          <MenuLink text={"As Escutas"} isYellow={true} />
+          <MenuLink
+            text={"Princípios Universidade"}
+            isYellow={true}
+            href={"/"}
+          />
+          <MenuLink text={"Temas Trabalhados"} isYellow={true} href={"/"} />
+          <MenuLink
+            text={"Diretrizes dos Compromissos"}
+            isYellow={true}
+            href={"/"}
+          />
+          <MenuLink
+            text={"Conheça nossos Compromissos"}
+            isYellow={true}
+            href={"/"}
+          />
+          <MenuLink text={"As Escutas"} isYellow={true} href={"/"} />
         </div>
       </div>
     </footer>
