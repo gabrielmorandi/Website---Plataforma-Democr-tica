@@ -33,7 +33,7 @@ export const principios = [
   },
   {
     title:
-      "P6- Universidade com gestão transparente, inclusiva e participativa",
+      "P6 - Universidade com gestão transparente, inclusiva e participativa",
     description:
       "A construção de uma Unifesspa com gestão transparente, inclusiva e participativa requer a promoção de uma cultura democrática por meio da qual as decisões sejam tomadas levando em conta a opinião e o envolvimento da comunidade acadêmica. Sendo isso imprescindível que todas as informações sobre a gestão sejam disponibilizadas de forma clara e acessível para todos os membros da comunidade acadêmica e para a sociedade em geral; as decisões devem ser tomadas considerando a participação ativa e colaborativa da comunidade acadêmica; haja a promoção de políticas e ações que garantam a inclusão e a diversidade, com equidade de oportunidades; seja propiciado o diálogo com os membros da comunidade acadêmica na busca da construção de consensos e a resolução de conflitos; exista  prestação de contas as atividades e recursos, de forma transparente e acessível.",
     icon: "cap",

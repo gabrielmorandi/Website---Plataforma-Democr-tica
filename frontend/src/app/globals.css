@@ -49,6 +49,10 @@
   color:#09090b;
 }
 
+body {
+  background-color: #f4f4f5;
+}
+
 .custom-shape-divider-bottom-1712081362 {
   position: absolute;
   bottom: 0;
@@ -79,4 +83,29 @@
       width: 400%;
       height: 200px;
   }
+}
+
+/* carrosel */
+.swiper {
+  width: 91.5%;
+  max-width: 1160px;
+  overflow: visible !important;
+  align-items: stretch;
+}
+
+.carousel-disable {
+  opacity: 0.1;
+  cursor: default !important;
+}
+
+.slide-actions button {
+  display: flex;
+  padding: 0.75rem;
+  border: 1px solid #5A007A;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  overflow: visible;
 }

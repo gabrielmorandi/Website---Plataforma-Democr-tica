@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { ButtonPrimary } from "./Buttons"
 import LinkBlend from "./LinkBlend"
+import MenuLink from "./MenuLink"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,9 +26,13 @@ export default function Header() {
 
   return (
     <header className="relative grid w-full min-h-screen pb-28 place-items-start">
-      <div className="grid w-full bg-yellow place-items-center">
-        <nav className="flex items-center justify-between w-11/12 max-w-[1160px] py-3">
+      <nav className="grid w-full bg-yellow place-items-center">
+        <div className="flex items-center justify-between w-11/12 max-w-[1160px] py-3">
           <Image src="/logo.png" width={90} height={70} alt="Logo" />
+          <div className="flex gap-4 max-lg:hidden">
+            <ButtonPrimary text="Instagram" href={"/"} />
+            <LinkBlend text="Visualizar Propostas" href={"/"} />
+          </div>
           <div className="lg:hidden">
             <Menu color="#5A007A" onClick={open} size={32} />
             <div
@@ -36,12 +41,17 @@ export default function Header() {
             >
               <div className="flex flex-col gap-4 px-4 py-8">
                 <X color="#5A007A" onClick={close} size={32} />
-                <ButtonPrimary text="Instagram" href={"/"} func={close} />
-                <LinkBlend
-                  text="Visualizar Propostas"
-                  href={"/"}
-                  func={close}
-                />
+                <div className="flex">
+                  <ButtonPrimary text="Instagram" href={"/"} />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <LinkBlend text="Visualizar Propostas" href={"/"} />
+                  <MenuLink text={"Princípios Universidade"} />
+                  <MenuLink text={"Temas Trabalhados"} />
+                  <MenuLink text={"Diretrizes dos Compromissos"} />
+                  <MenuLink text={"Conheça nossos Compromissos"} />
+                  <MenuLink text={"As Escutas"} />
+                </div>
               </div>
             </div>
             <div
@@ -49,8 +59,17 @@ export default function Header() {
               data-state={isOpen ? "open" : "closed"}
             />
           </div>
-        </nav>
-      </div>
+        </div>
+        <div className="grid w-full gap-2 place-items-center bg-purple max-lg:hidden">
+          <div className="flex justify-between w-11/12 max-w-[1160px]">
+            <MenuLink text={"Princípios Universidade"} isWhite={true} />
+            <MenuLink text={"Temas Trabalhados"} isWhite={true} />
+            <MenuLink text={"Diretrizes dos Compromissos"} isWhite={true} />
+            <MenuLink text={"Conheça nossos Compromissos"} isWhite={true} />
+            <MenuLink text={"As Escutas"} isWhite={true} />
+          </div>
+        </div>
+      </nav>
       <div className="grid w-full place-items-center">
         <div className="flex flex-col w-11/12 max-w-[1160px] gap-2">
           <h1 className="flex flex-col text-4xl font-extrabold text-purple max-w-[390px] sm:max-w-[700px] sm:text-6xl leading-none">
@@ -69,8 +88,8 @@ export default function Header() {
         src="/cara.png"
         width={150}
         height={400}
-        alt="Logo"
-        className="absolute bottom-0 right-0 -z-40"
+        alt="Pessoa"
+        className="absolute bottom-0 right-0 sm:w-[300px] lg:w-[450px] -z-40"
       />
       <div className="pointer-events-none custom-shape-divider-bottom-1712081362 -z-50">
         <div className="absolute z-10 grid w-full bottom-6 place-items-center">
