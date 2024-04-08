@@ -6,8 +6,9 @@ import { ButtonPrimary } from "./Buttons"
 import MenuLink from "./MenuLink"
 import LinkBlend from "./LinkBlend"
 import Image from "next/image"
+import Link from "next/link"
 
-export default function Nav() {
+export default function Nav({ inCompromissos }) {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -28,14 +29,19 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 grid w-full shadow bg-yellow place-items-center">
       <div className="flex items-center justify-between w-11/12 max-w-[1160px] py-3">
-        <Image src="/logo.png" width={90} height={70} alt="Logo" />
+        <Link href={"/"} className="flex">
+          <Image src="/logo.png" width={90} height={70} alt="Logo" />
+        </Link>
         <div className="flex gap-4 max-lg:hidden">
           <ButtonPrimary
             text="Instagram"
             href={"https://www.instagram.com/plataforma_democratica/"}
             insta={true}
           />
-          <LinkBlend text="Visualizar Propostas" href={"/"} />
+          <LinkBlend
+            text={inCompromissos ? "Como Funciona" : "Visualizar Propostas"}
+            href={inCompromissos ? "/" : "/nossos-compromissos"}
+          />
         </div>
         <div className="lg:hidden">
           <Menu color="#5A007A" onClick={open} size={32} />
@@ -53,7 +59,12 @@ export default function Nav() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <LinkBlend text="Visualizar Propostas" href={"/"} />
+                <LinkBlend
+                  text={
+                    inCompromissos ? "Como Funciona" : "Visualizar Propostas"
+                  }
+                  href={inCompromissos ? "/" : "/nossos-compromissos"}
+                />
                 <MenuLink
                   text={"Princípios Universidade"}
                   href={"#principios"}

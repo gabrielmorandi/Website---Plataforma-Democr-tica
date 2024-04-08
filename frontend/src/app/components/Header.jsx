@@ -18,7 +18,10 @@ export default function Header() {
             <h3 className="mb-2 text-xl font-medium leading-tight md:text-2xl max-w-72 md:max-w-[550px]">
               Movimento de diálogo para a construção da Unifesspa que queremos.
             </h3>
-            <LinkBlend text="Visualizar Propostas" href={"/"} />
+            <LinkBlend
+              text="Visualizar Propostas"
+              href={"/nossos-compromissos"}
+            />
           </div>
         </div>
         <Image

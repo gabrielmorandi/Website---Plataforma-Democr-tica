@@ -9,7 +9,7 @@ import MenuLink from "./components/MenuLink"
 import Chart from "./components/Chart"
 import Footer from "./components/Footer"
 
-export default function Dev() {
+export default function Page() {
   return (
     <>
       <Header />
@@ -107,10 +107,12 @@ export default function Dev() {
                 discutido para elaboração de um plano de ação baseado nos
                 princípios da universidade como espaço/tempo de aprendizagem.
               </h3>
-              <div className="flex flex-col w-full p-4 bg-white rounded-md shadow">
-                <h2 className="mb-6 text-4xl font-bold text-purple text-balance">
-                  Gráfico de Escutas X Princípios mais sugeridos
-                </h2>
+              <div className="flex flex-col w-full p-4 bg-white rounded-md shadow-sm">
+                <div className="flex py-2 mb-6">
+                  <h2 className="text-4xl font-bold text-purple text-balance">
+                    Gráfico de Escutas X Princípios mais sugeridos
+                  </h2>
+                </div>
                 <div className="flex md:p-8">
                   <Chart />
                 </div>

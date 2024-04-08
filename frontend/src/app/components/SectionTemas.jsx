@@ -41,7 +41,7 @@ export default function SectionTemas() {
               <BalloonChat
                 key={index}
                 iconName={tema.iconName}
-                text={tema.text}
+                text={tema.title}
               />
             ))}
           </div>

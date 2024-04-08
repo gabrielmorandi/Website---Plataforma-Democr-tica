@@ -1,78 +1,78 @@
 export const temas = [
   {
     iconName: "Wheelchair",
-    text: "Acessibilidade",
+    title: "Acessibilidade",
   },
   {
     iconName: "Briefcase",
-    text: "Administração",
+    title: "Administração",
   },
   {
     iconName: "University",
-    text: "Acesso à Universidade",
+    title: "Acesso à Universidade",
   },
   {
     iconName: "Users",
-    text: "Diversidade",
+    title: "Diversidade",
   },
   {
     iconName: "UserCheck",
-    text: "Gestão de Pessoas",
+    title: "Gestão de Pessoas",
   },
   {
     iconName: "Building",
-    text: "Infraestrutura",
+    title: "Infraestrutura",
   },
   {
     iconName: "Lightbulb",
-    text: "Inovação",
+    title: "Inovação",
   },
   {
     iconName: "HomeHeart",
-    text: "Permanência",
+    title: "Permanência",
   },
   {
     iconName: "Football",
-    text: "Lazer",
+    title: "Lazer",
   },
   {
     iconName: "Clipboard",
-    text: "Planejamento, Orçamento e Finanças",
+    title: "Planejamento, Orçamento e Finanças",
   },
   {
     iconName: "Flask",
-    text: "Laboratórios",
+    title: "Laboratórios",
   },
   {
     iconName: "Leaf",
-    text: "Meio Ambiente",
+    title: "Meio Ambiente",
   },
   {
     iconName: "Cloud",
-    text: "Tecnologias de Informação e Comunicação",
+    title: "Tecnologias de Informação e Comunicação",
   },
   {
     iconName: "Award",
-    text: "Esporte",
+    title: "Esporte",
   },
   {
     iconName: "BookOpen",
-    text: "Extensão",
+    title: "Extensão",
   },
   {
     iconName: "GraduationCap",
-    text: "Ensino de Pós-Graduação",
+    title: "Ensino de Pós-Graduação",
   },
   {
     iconName: "Palette",
-    text: "Cultura",
+    title: "Cultura",
   },
   {
     iconName: "Book",
-    text: "Ensino de Graduação",
+    title: "Ensino de Graduação",
   },
   {
     iconName: "Search",
-    text: "Pesquisa",
+    title: "Pesquisa",
   },
 ]
