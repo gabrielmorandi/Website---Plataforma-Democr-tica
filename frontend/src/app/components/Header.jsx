@@ -1,6 +1,11 @@
-import Image from "next/image"
-import LinkBlend from "./LinkBlend"
-import Nav from "./Nav"
+import Image from "next/image";
+import LinkBlend from "./LinkBlend";
+import Nav from "./Nav";
+import YellowBalloon from "./YellowBalloonAnimated";
+import PurpleBalloon from "./PurpleBalloonAnimated";
+import ArrowsYellow from "./ArrowsYellowAnimated";
+import Balloons from "./BalloonsAnimated";
+import CardCompromissoAnimated from "./cardCompromissoAnimated";
 
 export default function Header() {
   return (
@@ -9,6 +14,11 @@ export default function Header() {
       <header className="relative grid w-full min-h-screen pb-28 place-items-start lg:-mt-[127.7px] -mt-[87.7px]">
         <div className="grid w-full place-items-center mt-[160px] lg:mt-[250px]">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-2">
+            <YellowBalloon></YellowBalloon>
+            <PurpleBalloon></PurpleBalloon>
+            <ArrowsYellow></ArrowsYellow>
+            <Balloons></Balloons>
+            <CardCompromissoAnimated></CardCompromissoAnimated>
             <h1 className="flex flex-col text-4xl font-extrabold text-purple max-w-[390px] sm:max-w-[700px] sm:text-6xl leading-none">
               Plataforma Democrática{" "}
               <span className="p-1 text-yellow w-min bg-purple sm:p-2">
@@ -107,5 +117,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  )
+  );
 }
