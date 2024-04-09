@@ -6,7 +6,8 @@ import PurpleBalloon from "./PurpleBalloonAnimated";
 import ArrowsYellow from "./ArrowsYellowAnimated";
 import Balloons from "./BalloonsAnimated";
 import CardCompromissoAnimated from "./cardCompromissoAnimated";
-
+import MessagePropostas from "./MessageComponentAnimated";
+import CompartilharCompromisso from "./CompartilharCompromisso";
 export default function Header() {
   return (
     <>
@@ -19,6 +20,10 @@ export default function Header() {
             <ArrowsYellow></ArrowsYellow>
             <Balloons></Balloons>
             <CardCompromissoAnimated></CardCompromissoAnimated>
+            <MessagePropostas svgId={1}></MessagePropostas>
+            <MessagePropostas svgId={2}></MessagePropostas>
+            <MessagePropostas svgId={3}></MessagePropostas>
+            <CompartilharCompromisso></CompartilharCompromisso>
             <h1 className="flex flex-col text-4xl font-extrabold text-purple max-w-[390px] sm:max-w-[700px] sm:text-6xl leading-none">
               Plataforma Democrática{" "}
               <span className="p-1 text-yellow w-min bg-purple sm:p-2">

@@ -55,6 +55,11 @@
           "90%": { transform: "scale(1.1) translateY(-10px)" },
           "100%": { transform: "scale(1)" },
         },
+        messageAnimation: {
+          "0%": { transform: "translateY(0px)" },
+          "75%": { transform: "translateY(6px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
         balloonBack: {
           "0%": { fill: "#5A007A", transform: "scale(1)" },
           "50%": { fill: "#FFD500", transform: "scale(1.1)" },
@@ -75,7 +80,10 @@
           "balloonPurple 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         arrowDown:
           "arrowDown 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
-        cardUp: "cardUp 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+        cardUp: 
+        "cardUp 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+        messageAnimation:
+          " messageAnimation 3s ease-in infinite",
         cardBalloonOne:
           "cardBalloonOne 3s cubic-bezier(0.175, 0.885, 0.32, 0.900) infinite",
         cardBalloonTwo:
