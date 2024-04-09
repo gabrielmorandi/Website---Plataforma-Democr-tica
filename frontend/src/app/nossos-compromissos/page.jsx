@@ -8,6 +8,7 @@ import Card from "../components/Card"
 import { principios } from "@/../data/principios"
 import { temas } from "@/../data/temas"
 import { diretrizes } from "@/../data/diretrizes"
+import { compromissos } from "@/../data/compromissos"
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
@@ -67,18 +68,12 @@ export default function Page() {
           </div>
           <div className="flex">
             <h3 className="text-xl font-semibold border-b-2 border-purple">
-              16 Compromissos encontrados no total
+              {compromissos.length} Compromissos encontrados no total
             </h3>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {[...Array(16)].map((index) => (
-              <Card
-                key={index}
-                title={"É nosso compromisso"}
-                description={
-                  "Buscar estabelecer cartões de compras para uso direto dos coordenadores de projetos de ensino, pesquisa ou extensão."
-                }
-              />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {compromissos.map((c, index) => (
+              <Card key={index} compromisso={c.compromisso} />
             ))}
           </div>
         </div>

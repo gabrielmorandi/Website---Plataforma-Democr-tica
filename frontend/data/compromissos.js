@@ -1,4 +1,5 @@
-export const compromissos = [  {
+export const compromissos = [
+  {
     compromisso:
       "Adequar a infraestrutura existente para a permanência saudável nos espaços da Unifesspa",
     cod_compromisso: 1,
@@ -11909,4 +11910,4 @@ export const compromissos = [  {
       },
     ],
   },
-];
+]
