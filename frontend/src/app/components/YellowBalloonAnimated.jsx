@@ -1,8 +1,8 @@
 export default function YellowBalloon() {
   return (
     <svg
-      width="200"
-      height="200"
+      width="100"
+      height="100"
       viewBox="0 0 300 300"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -29,5 +29,5 @@ export default function YellowBalloon() {
         </g>
       </g>
     </svg>
-  );
+  )
 }

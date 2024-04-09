@@ -10,12 +10,12 @@
         balloonYellow: {
           "0%": { transform: "scale(1)", fill: "none", stroke: "#FFD500" },
           "50%": {
-            transform: "scale(1.5)",
+            transform: "scale(1.25)",
             fill: "#FFD500",
             stroke: "#FFD500",
           },
           "55%": {
-            transform: "scale(1.5)",
+            transform: "scale(1.25)",
             fill: "#FFD500",
             stroke: "#FFD500",
           },
@@ -23,8 +23,16 @@
         },
         balloonPurple: {
           "0%": { transform: "scale(1)", fill: "none", stroke: "#5A007A" },
-          "50%": { transform: "scale(2)", fill: "#5A007A", stroke: "#5A007A" },
-          "55%": { transform: "scale(2)", fill: "#5A007A", stroke: "#5A007A" },
+          "50%": {
+            transform: "scale(1.25)",
+            fill: "#5A007A",
+            stroke: "#5A007A",
+          },
+          "55%": {
+            transform: "scale(1.25)",
+            fill: "#5A007A",
+            stroke: "#5A007A",
+          },
           "100%": { transform: "scale(1)", fill: "none", stroke: "#5A007A" },
         },
         arrowDown: {
@@ -75,15 +83,13 @@
       },
       animation: {
         balloonYellow:
-          "balloonYellow 20s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+          "balloonYellow 10s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         balloonPurple:
           "balloonPurple 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         arrowDown:
           "arrowDown 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
-        cardUp: 
-        "cardUp 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
-        messageAnimation:
-          " messageAnimation 3s ease-in infinite",
+        cardUp: "cardUp 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+        messageAnimation: " messageAnimation 3s ease-in infinite",
         cardBalloonOne:
           "cardBalloonOne 3s cubic-bezier(0.175, 0.885, 0.32, 0.900) infinite",
         cardBalloonTwo:
@@ -112,4 +118,4 @@
     },
   },
   plugins: [],
-};
+}

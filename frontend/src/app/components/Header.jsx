@@ -12,31 +12,33 @@ export default function Header() {
   return (
     <>
       <Nav />
-      <header className="relative grid w-full min-h-screen pb-28 place-items-start lg:-mt-[127.7px] -mt-[87.7px]">
+      <header className="relative grid w-full min-h-screen pb-28 place-items-start lg:-mt-[127.7px] -mt-[87.7px] overflow-hidden">
         <div className="grid w-full place-items-center mt-[160px] lg:mt-[250px]">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-2">
-            <YellowBalloon></YellowBalloon>
-            <PurpleBalloon></PurpleBalloon>
-            <ArrowsYellow></ArrowsYellow>
-            <Balloons></Balloons>
-            <CardCompromissoAnimated></CardCompromissoAnimated>
-            <MessagePropostas svgId={1}></MessagePropostas>
-            <MessagePropostas svgId={2}></MessagePropostas>
-            <MessagePropostas svgId={3}></MessagePropostas>
-            <CompartilharCompromisso></CompartilharCompromisso>
-            <h1 className="flex flex-col text-4xl font-extrabold text-purple max-w-[390px] sm:max-w-[700px] sm:text-6xl leading-none">
-              Plataforma Democrática{" "}
-              <span className="p-1 text-yellow w-min bg-purple sm:p-2">
-                UNIFESSPA
-              </span>
-            </h1>
-            <h3 className="mb-2 text-xl font-medium leading-tight md:text-2xl max-w-72 md:max-w-[550px]">
-              Movimento de diálogo para a construção da Unifesspa que queremos.
-            </h3>
-            <LinkBlend
-              text="Visualizar Propostas"
-              href={"/nossos-compromissos"}
-            />
+            <div className="relative flex flex-col w-max">
+              <div className="absolute -top-16 -left-6 -z-10">
+                <YellowBalloon />
+              </div>
+              <div className="relative flex flex-col w-min">
+                <div className="absolute -right-24 sm:top-28 top-16 -z-10 sm:scale-125 ">
+                  <PurpleBalloon />
+                </div>
+                <h1 className="flex flex-col text-4xl w-min font-extrabold text-purple max-w-[390px] sm:text-6xl leading-none">
+                  Plataforma Democrática
+                  <span className="p-1 text-yellow w-min bg-purple sm:p-2">
+                    UNIFESSPA
+                  </span>
+                </h1>
+              </div>
+              <h3 className="mb-2 text-xl font-medium leading-tight md:text-2xl max-w-72 md:max-w-[550px]">
+                Movimento de diálogo para a construção da Unifesspa que
+                queremos.
+              </h3>
+              <LinkBlend
+                text="Visualizar Propostas"
+                href={"/nossos-compromissos"}
+              />
+            </div>
           </div>
         </div>
         <Image
@@ -49,50 +51,7 @@ export default function Header() {
         <div className="pointer-events-none custom-shape-divider-bottom-1712081362 -z-50">
           <div className="absolute z-10 grid w-full bottom-6 place-items-center">
             <div className="relative z-50 w-11/12 max-w-[1160px] h-full flex flex-col">
-              <svg
-                width="25"
-                height="33"
-                viewBox="0 0 25 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.7087 17.958L12.5003 31.083L2.29199 17.958H22.7087Z"
-                  stroke="#FFD500"
-                  strokeWidth="2.91667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M22.7087 1.91634L12.5003 15.0413L2.29199 1.91634H22.7087Z"
-                  stroke="#FFD500"
-                  strokeWidth="2.91667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <svg
-                width="25"
-                height="33"
-                viewBox="0 0 25 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.7087 17.958L12.5003 31.083L2.29199 17.958H22.7087Z"
-                  stroke="#FFD500"
-                  strokeWidth="2.91667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M22.7087 1.91634L12.5003 15.0413L2.29199 1.91634H22.7087Z"
-                  stroke="#FFD500"
-                  strokeWidth="2.91667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <ArrowsYellow />
             </div>
           </div>
           <svg
@@ -122,5 +81,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }
