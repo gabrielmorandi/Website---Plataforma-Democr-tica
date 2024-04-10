@@ -1,6 +1,12 @@
 import { CheckCircle, ArrowUpRight } from "lucide-react"
 
-const Card = ({ compromisso, open }) => {
+const Card = ({
+  compromisso,
+  open,
+  escuta,
+  setEscutaModal,
+  setCompromissoModal,
+}) => {
   return (
     <div className="flex flex-col bg-white min-h-[225px] gap-1 justify-between p-4 rounded border-[2px] border-purple">
       <div className="flex flex-col gap-1">
@@ -16,7 +22,11 @@ const Card = ({ compromisso, open }) => {
       </div>
       <button
         className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]"
-        onClick={open}
+        onClick={() => {
+          open()
+          setCompromissoModal(compromisso)
+          setEscutaModal(escuta)
+        }}
       >
         <p className="font-bold leading-6 transition-colors text-yellow">
           Ver Mais

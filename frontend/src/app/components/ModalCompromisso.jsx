@@ -15,12 +15,12 @@ const ModalCompromisso = ({
     >
       <button className="w-full h-full cursor-default" onClick={close} />
       <div
-        className="fixed -bottom-full transition-all grid w-full h-full bg-white place-items-start rounded-t-3xl max-h-[80%] sm:max-h-[62.5%] overflow-scroll data-[state=open]:bottom-0"
+        className="fixed -bottom-full transition-all grid w-full h-full bg-white place-items-start rounded-t-3xl max-h-[80%] sm:max-h-[62.5%] overflow-y-scroll bg-scroll data-[state=open]:bottom-0"
         data-state={isOpen ? "open" : "closed"}
       >
         <div className="relative grid w-full place-items-center">
-          <div className="w-11/12 max-w-[1160px] flex flex-col pb-2 gap-2">
-            <div className="sticky top-0 z-50 flex flex-col gap-2 py-2 bg-white">
+          <div className="sticky top-0 z-50 grid w-full gap-2 py-2 mb-2 bg-white shadow place-items-center">
+            <div className="flex flex-col w-11/12 max-w-[1160px]">
               <div
                 className="w-[175px] bg-purple self-center rounded-full h-3 cursor-pointer"
                 onClick={close}
@@ -37,6 +37,8 @@ const ModalCompromisso = ({
                 </h2>
               </div>
             </div>
+          </div>
+          <div className="w-11/12 max-w-[1160px] flex flex-col gap-2 pb-2">
             <div className="flex px-4 py-2 font-semibold border-[2px] rounded text-purple border-purple">
               {compromisso}
             </div>
@@ -45,28 +47,27 @@ const ModalCompromisso = ({
                 <Ear color="white" />
                 <h2 className="text-2xl leading-none text-white">Escutas</h2>
               </div>
-              <div className="flex flex-col px-2 py-2">
-                <div className="flex p-4 border-[2px] rounded border-purple max-w-[768px] text-purple text-lg leading-tight font-medium">
-                  Galera, tenho notado uma falta de acessibilidade nos espaços
-                  universitários, o que dificulta a participação de colegas com
-                  deficiência. Rampas inadequadas, ausência de recursos de
-                  tecnologia assistiva e falta de sensibilização sobre as
-                  necessidades específicas desses alunos são apenas algumas das
-                  questões que enfrentamos. Isso não está de acordo com nossa
-                  visão de uma universidade inclusiva, onde todos devem ter
-                  oportunidades iguais de aprendizado e participação. Precisamos
-                  garantir que todos os membros da nossa comunidade acadêmica se
-                  sintam bem-vindos e plenamente integrados, independentemente
-                  de suas limitações físicas.
-                </div>
+              <div className="flex flex-col gap-4 p-4">
+                {escutas.map((e, index) => (
+                  <div
+                    key={index}
+                    className="flex p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
+                  >
+                    {e.escuta}
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="sticky bottom-0 z-50 flex flex-col w-full gap-2 py-2 bg-white">
-              <button className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]">
-                <p className="font-bold leading-6 transition-colors text-yellow">
-                  Gostou desse Compromisso? Compartilhe!
-                </p>
-                <Share2 color="#FFD500" className="min-w-6" />
+          </div>
+          <div className="sticky bottom-0 z-50 grid w-full gap-2 py-2 bg-white shadow-[0_0_3px_rgba(0,0,0,.2)] place-items-center">
+            <div className="flex flex-col w-11/12 max-w-[1160px]">
+              <button className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#8817b2]">
+                <div className="flex items-center gap-2">
+                  <p className="font-bold leading-6 transition-colors sm:text-2xl text-yellow">
+                    Gostou desse Compromisso? COMPARTILHE!
+                  </p>
+                  <Share2 color="#FFD500" className="min-w-6" />
+                </div>
               </button>
             </div>
           </div>

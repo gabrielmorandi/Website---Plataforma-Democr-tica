@@ -29,6 +29,8 @@ export default function Page() {
   const [codDiretriz, setCodDiretriz] = useState(0)
   const [compromissosFiltrados, setCompromissosFiltrados] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
+  const [compromissoModal, setCompromissoModal] = useState("")
+  const [escutaModal, setEscutaModal] = useState([])
 
   useEffect(() => {
     const filtrados = compromissos.filter((compromisso) =>
@@ -131,16 +133,22 @@ export default function Page() {
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {compromissosFiltrados &&
                 compromissosFiltrados.map((c, index) => (
-                  <Card key={index} compromisso={c.compromisso} open={open} />
+                  <Card
+                    key={index}
+                    compromisso={c.compromisso}
+                    open={open}
+                    escuta={c.escutas}
+                    setCompromissoModal={setCompromissoModal}
+                    setEscutaModal={setEscutaModal}
+                  />
                 ))}
             </div>
           </div>
         </div>
       </main>
       <ModalCompromisso
-        compromisso={
-          "Definir uma estratégia para otimizar os contratos de vigilância patrimonial, locação de veículos, conservação predial, manutenção de veiculos,  manutenção de aparelhos de ar condicionado, de locação de mão de obra e de limpeza, reduzindo custos e aprimorando os serviços"
-        }
+        compromisso={compromissoModal}
+        escutas={escutaModal}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         close={close}
