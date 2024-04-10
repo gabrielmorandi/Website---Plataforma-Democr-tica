@@ -1,5 +1,6 @@
 "use client"
 
+import React, { useEffect, useState } from "react"
 import {
   BarChart,
   Bar,
@@ -9,9 +10,8 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts"
-import React from "react"
 
-const data = [
+const dataUm = [
   {
     name: "P1",
     fullName:
@@ -57,8 +57,16 @@ const CustomTooltip = ({ active, payload, label }) => {
   return null
 }
 
-const Chart = () => {
-  const maxUv = Math.max(...data.map((d) => d.uv))
+const Chart = ({ id }) => {
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    if (id == "Princípios") {
+      setData(dataUm)
+    }
+  }, [id])
+
+  const maxUv = data ? Math.max(...data.map((d) => d.uv)) : null
 
   return (
     <div className="w-full h-64 md:h-96">

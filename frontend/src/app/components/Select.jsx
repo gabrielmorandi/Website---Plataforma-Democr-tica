@@ -9,12 +9,17 @@ const Select = ({
   isActive,
   setIsActive,
   setCod,
+  isPurple,
 }) => {
   return (
     <div className="relative flex flex-col select-none">
       <h2 className="font-medium leading-none text-purple">{title}</h2>
       <div
-        className="flex items-center justify-between gap-4 px-6 py-4 bg-white text-lg leading-none cursor-pointer border-[2px] border-purple h-full"
+        className={
+          isPurple
+            ? "flex items-center justify-between gap-4 px-6 py-4 bg-white text-lg leading-none cursor-pointer border-[2px] border-purple h-full text-purple"
+            : "flex items-center justify-between gap-4 px-6 py-4 bg-white text-lg leading-none cursor-pointer border-[2px] border-purple h-full"
+        }
         onClick={() => setIsActive(title)}
       >
         {selected}

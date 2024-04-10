@@ -1,3 +1,5 @@
+"use client"
+
 import Accordion from "./components/Accordion"
 import Header from "./components/Header"
 import { principios } from "../../data/principios"
@@ -8,8 +10,11 @@ import { ButtonPrimary } from "./components/Buttons"
 import MenuLink from "./components/MenuLink"
 import Chart from "./components/Chart"
 import Footer from "./components/Footer"
+import { useState } from "react"
+import Select from "./components/Select"
 
 export default function Page() {
+  const [chart, setChart] = useState("Princípios")
   return (
     <>
       <Header />
@@ -88,17 +93,23 @@ export default function Page() {
                 Foi elaborado um questionário entre os alunos com os seguintes
                 etapas para este processo:
               </h3>
-              <p className="px-8 py-1 text-white rounded-full bg-purple">
-                <span className="pr-4 text-white">1.</span>
+              <p className="flex items-start gap-4 py-1 pl-4 font-bold text-purple">
+                <span className="text-white relative rounded-[100%] after:content-[''] after:size-6 after:bg-purple after:absolute after:top-0 after:left-0 after:-z-10 after:rounded-[100%] after:-translate-x-[32.5%]">
+                  1
+                </span>
                 Foi escolhido um dos sete princípios que orientam a Unifesspa.
               </p>
-              <p className="px-8 py-1 text-white rounded-full bg-purple">
-                <span className="pr-4 text-white">2.</span>
+              <p className="flex items-start gap-4 py-1 pl-4 font-bold text-purple">
+                <span className="text-white relative rounded-[100%] after:content-[''] after:size-6 after:bg-purple after:absolute after:top-0 after:left-0 after:-z-10 after:rounded-[100%] after:-translate-x-[32.5%]">
+                  2
+                </span>
                 Selecionou um tema do cotidiano da universidade com
                 considerações realmente relevante.
               </p>
-              <p className="px-8 py-1 text-white rounded-full bg-purple">
-                <span className="pr-4 text-white">3.</span>
+              <p className="flex items-start gap-4 py-1 pl-4 font-bold text-purple">
+                <span className="text-white relative rounded-[100%] after:content-[''] after:size-6 after:bg-purple after:absolute after:top-0 after:left-0 after:-z-10 after:rounded-[100%] after:-translate-x-[32.5%]">
+                  3
+                </span>
                 Sugeriu uma ação específica relacionada ao tema escolhido,
                 alinhada ao princípio selecionado.
               </p>
@@ -108,13 +119,19 @@ export default function Page() {
                 princípios da universidade como espaço/tempo de aprendizagem.
               </h3>
               <div className="flex flex-col w-full p-4 bg-white rounded-md shadow-sm">
-                <div className="flex py-2 mb-6">
-                  <h2 className="text-4xl font-bold text-purple text-balance">
+                <div className="flex items-center justify-between py-2 mb-6">
+                  <h2 className="text-4xl font-bold leading-none text-purple text-balance">
                     Gráfico de Escutas X Princípios mais sugeridos
                   </h2>
+                  <Select
+                    optionDefault={"Princípios"}
+                    selected={chart}
+                    setSelected={setChart}
+                    isPurple={true}
+                  />
                 </div>
-                <div className="flex md:p-8">
-                  <Chart />
+                <div className="flex">
+                  <Chart id={chart} />
                 </div>
               </div>
             </div>
