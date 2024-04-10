@@ -1,8 +1,12 @@
-"use client"
-import { CheckCircle, Ear, Share2 } from "lucide-react"
+"use client";
+import { CheckCircle, Ear, Share2 } from "lucide-react";
+import Link from "next/link";
 
 const ModalCompromisso = ({
   compromisso,
+  tema,
+  principio,
+  diretriz,
   escutas,
   isOpen,
   setIsOpen,
@@ -62,18 +66,21 @@ const ModalCompromisso = ({
               </div>
             </div>
             <div className="sticky bottom-0 z-50 flex flex-col w-full gap-2 py-2 bg-white">
-              <button className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]">
+              {/* <Link
+                href={`/compromisso-stories?compromisso=${compromisso}&tema=${tema}&principio=${principio}&diretriz=${diretriz}`}
+                className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]"
+              >
                 <p className="font-bold leading-6 transition-colors text-yellow">
                   Gostou desse Compromisso? Compartilhe!
                 </p>
                 <Share2 color="#FFD500" className="min-w-6" />
-              </button>
+              </Link> */}
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ModalCompromisso
+export default ModalCompromisso;
