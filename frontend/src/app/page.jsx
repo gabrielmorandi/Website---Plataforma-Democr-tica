@@ -15,6 +15,12 @@ import Select from "./components/Select"
 
 export default function Page() {
   const [chart, setChart] = useState("Princípios")
+  const options = [
+    { title: "Princípios" },
+    { title: "Temas" },
+    { title: "Diretrizes" },
+  ]
+  const [isActive, setIsActive] = useState(false)
   return (
     <>
       <Header />
@@ -124,10 +130,12 @@ export default function Page() {
                     Gráfico de Escutas X Princípios mais sugeridos
                   </h2>
                   <Select
-                    optionDefault={"Princípios"}
                     selected={chart}
                     setSelected={setChart}
                     isPurple={true}
+                    options={options}
+                    isActive={isActive}
+                    setIsActive={setIsActive}
                   />
                 </div>
                 <div className="flex">
