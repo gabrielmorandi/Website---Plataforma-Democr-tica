@@ -104,7 +104,9 @@
 
       screens: {
         xs: "340px",
+        xmd: "365px",
         xspan: "420px",
+        
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

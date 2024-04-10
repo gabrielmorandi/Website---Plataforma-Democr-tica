@@ -1,8 +1,12 @@
 "use client"
 import { CheckCircle, Ear, Share2 } from "lucide-react"
+import Link from "next/link"
 
 const ModalCompromisso = ({
   compromisso,
+  tema,
+  principio,
+  diretriz,
   escutas,
   isOpen,
   setIsOpen,
