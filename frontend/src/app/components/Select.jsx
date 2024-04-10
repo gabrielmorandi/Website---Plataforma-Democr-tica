@@ -8,6 +8,7 @@ const Select = ({
   options,
   isActive,
   setIsActive,
+  setCod,
 }) => {
   return (
     <div className="relative flex flex-col select-none">
@@ -32,6 +33,7 @@ const Select = ({
           <div
             onClick={() => {
               setSelected(optionDefault)
+              setCod(0)
               setIsActive("")
             }}
             className="w-full p-3 text-lg leading-none transition-colors cursor-pointer hover:bg-purple hover:text-yellow"
@@ -43,6 +45,7 @@ const Select = ({
               key={index}
               onClick={() => {
                 setSelected(option.title)
+                setCod(option.cod)
                 setIsActive("")
               }}
               className="w-full p-3 text-lg leading-none transition-colors cursor-pointer hover:bg-purple hover:text-yellow"

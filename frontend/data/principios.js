@@ -1,5 +1,6 @@
-export const principios = [  {
-    cod_principio: 1,
+export const principios = [
+  {
+    cod: 1,
     title:
       "P1 - Universidade popular com diversidade social e interculturalidade",
     description:
@@ -7,7 +8,7 @@ export const principios = [  {
     icon: "cap",
   },
   {
-    cod_principio: 2,
+    cod: 2,
     title:
       "P2 - Universidade como espaço de aprendizado, com ações indissociáveis de ensino-pesquisa-extensão e pautada em problemas socialmente relevantes",
     description:
@@ -15,28 +16,28 @@ export const principios = [  {
     icon: "cap",
   },
   {
-    cod_principio: 3,
+    cod: 3,
     title: "P3 - Universidade Democrática e Autônoma",
     description:
       "O binômio democracia e autonomia são fundamentais para a construção de ações da Unifesspa, desde a formação de agenda até os processos decisórios. A concepção de princípios rege a democracia, que está em constante mudança e é construída coletivamente em assembleias. As formas e funções da democracia incluem o diálogo e a concertação de demandas coletivas entre os diferentes grupos sociais da universidade. A participação majoritária dos representantes estudantis, dispositivos para atender demandas das minorias, democratização do planejamento financeiro e orçamentário e ampliação dos espaços presenciais para tomada de decisões também são importantes.",
     icon: "cap",
   },
   {
-    cod_principio: 4,
+    cod: 4,
     title: "P4 – Unifesspa com Integração Multicampi",
     description:
       "Para garantir uma experiência educacional de qualidade em todos os campi da Unifesspa, é necessário avançar na implementação de uma abordagem inclusiva que atenda às demandas dos alunos, TAEs e professores. O que requer que sejam enfrentados problemas tais como a atenção à saúde mental dos membros da comunidade acadêmica, administração participativa, infraestrutura física e orçamentária equânime, cultura, esporte e lazer. É crucial uma administração mais adaptada às particularidades locais, com representação democrática dos servidores fora do campus principal e a criação de um núcleo multicampi. Também é importante investir em infraestrutura, cultura, esporte e lazer em todos os campi. Além disso, são necessárias políticas que valorizem a diversidade étnico-racial e garantam o acesso e permanência de alunos de diferentes origens. É fundamental que a comunidade acadêmica receba suporte emocional e a organização de projetos pedagógicos aderência às realidades regionais.",
     icon: "cap",
   },
   {
-    cod_principio: 5,
+    cod: 5,
     title: "P5 - Universidade com protagonismo estudantil",
     description:
       "O fortalecimento do protagonismo estudantil na Unifesspa requer que seja disseminada e o enraizada entre a comunidade acadêmica a concepção de que discentes são agentes ativos em seu próprio processo formativo e na transformação da universidade e da sociedade. De forma que se deve buscar empoderar os(as) discentes, encorajando-os(as) a participar ativamente da vida universitária, a tomar decisões e a se engajar em atividades extracurriculares. O protagonismo estudantil dever ser fortalecido pelo estímulo à organização autônoma de eventos e projetos, à participação em órgãos colegiados e à defesa dos interesses da categoria. É um princípio fundamental para a construção da Unifesspa uma vez que garante aos discentes mais voz e influência na construção de uma universidade mais democrática e inclusiva.",
     icon: "cap",
   },
   {
-    cod_principio: 6,
+    cod: 6,
     title:
       "P6 - Universidade com gestão transparente, inclusiva e participativa",
     description:
@@ -44,10 +45,10 @@ export const principios = [  {
     icon: "cap",
   },
   {
-    cod_principio: 7,
+    cod: 7,
     title: "P7 - Universidade com Acolhimento, Saúde e Qualidade de Vida",
     description:
       "A noção de acolhimento está ligada à substantividade democrática, que requer respeito aos saberes e autonomia de educandos(as) e educadores(as), criticidade e eticidade nas tomadas de decisão, e a possibilidade histórica de mudança. Já a saúde é um direito social e bem coletivo que envolve bem-estar físico, mental, social e espiritual. Qualidade de vida é a percepção do indivíduo sobre a inserção na vida e envolve saúde, educação, habitação, saneamento básico e outros contextos. A atenção à saúde dos servidores e discentes está relacionada ao cuidado com o profissional, à prevenção e acompanhamento de doenças, impactando na prestação de serviços e na academia. É importante ampliar a participação democrática e promover ações de saúde que considerem a diversidade dos servidores e discentes. É necessário um orçamento que permita a ampliação da equipe multidisciplinar, além de garantir apoio psicológico e exames médicos periódicos. A comunidade universitária deve ser ouvida em suas necessidades de saúde e qualidade de vida.",
     icon: "cap",
   },
-];
+]
