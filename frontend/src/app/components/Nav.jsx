@@ -58,28 +58,39 @@ export default function Nav({ inCompromissos }) {
                   insta={true}
                 />
               </div>
-              <div className="flex flex-col gap-2">
-                <LinkBlend
-                  text={
-                    inCompromissos ? "Como Funciona" : "Visualizar Propostas"
-                  }
-                  href={inCompromissos ? "/" : "/nossos-compromissos"}
-                />
-                <MenuLink
-                  text={"Princípios Universidade"}
-                  href={"#principios"}
-                />
-                <MenuLink text={"Temas Trabalhados"} href={"#temas"} />
-                <MenuLink
-                  text={"Diretrizes dos Compromissos"}
-                  href={"#diretrizes"}
-                />
-                <MenuLink
-                  text={"Conheça nossos Compromissos"}
-                  href={"#compromissos"}
-                />
-                <MenuLink text={"As Escutas"} href={"#escutas"} />
-              </div>
+              {!inCompromissos ? (
+                <div className="flex flex-col gap-2">
+                  <LinkBlend
+                    text={
+                      inCompromissos ? "Como Funciona" : "Visualizar Propostas"
+                    }
+                    href={inCompromissos ? "/" : "/nossos-compromissos"}
+                  />
+                  <MenuLink
+                    text={"Princípios Universidade"}
+                    href={"#principios"}
+                  />
+                  <MenuLink text={"Temas Trabalhados"} href={"#temas"} />
+                  <MenuLink
+                    text={"Diretrizes dos Compromissos"}
+                    href={"#diretrizes"}
+                  />
+                  <MenuLink
+                    text={"Conheça nossos Compromissos"}
+                    href={"#compromissos"}
+                  />
+                  <MenuLink text={"As Escutas"} href={"#escutas"} />
+                </div>
+              ) : (
+                <div className="flex flex-col gap-2">
+                  <LinkBlend
+                    text={
+                      inCompromissos ? "Como Funciona" : "Visualizar Propostas"
+                    }
+                    href={inCompromissos ? "/" : "/nossos-compromissos"}
+                  />{" "}
+                </div>
+              )}
             </div>
           </div>
           <div
@@ -89,25 +100,31 @@ export default function Nav({ inCompromissos }) {
         </div>
       </div>
       <div className="grid w-full gap-2 place-items-center bg-purple max-lg:hidden">
-        <div className="flex justify-between w-11/12 max-w-[1160px]">
-          <MenuLink
-            text={"Princípios Universidade"}
-            isWhite={true}
-            href={"#principios"}
-          />
-          <MenuLink text={"Temas Trabalhados"} isWhite={true} href={"#temas"} />
-          <MenuLink
-            text={"Diretrizes dos Compromissos"}
-            isWhite={true}
-            href={"#diretrizes"}
-          />
-          <MenuLink
-            text={"Conheça nossos Compromissos"}
-            isWhite={true}
-            href={"#compromissos"}
-          />
-          <MenuLink text={"As Escutas"} isWhite={true} href={"#escutas"} />
-        </div>
+        {!inCompromissos ? (
+          <div className="flex justify-between w-11/12 max-w-[1160px]">
+            <MenuLink
+              text={"Princípios Universidade"}
+              isWhite={true}
+              href={"#principios"}
+            />
+            <MenuLink
+              text={"Temas Trabalhados"}
+              isWhite={true}
+              href={"#temas"}
+            />
+            <MenuLink
+              text={"Diretrizes dos Compromissos"}
+              isWhite={true}
+              href={"#diretrizes"}
+            />
+            <MenuLink
+              text={"Conheça nossos Compromissos"}
+              isWhite={true}
+              href={"#compromissos"}
+            />
+            <MenuLink text={"As Escutas"} isWhite={true} href={"#escutas"} />
+          </div>
+        ) : null}
       </div>
     </nav>
   )

@@ -52,7 +52,7 @@ export default function Page() {
       <Nav inCompromissos={true} />
       <main
         className="grid w-full gap-16 mt-6 place-items-start"
-        style={{ "min-height": "calc(100vh - 471px)" }}
+        style={{ "min-height": "calc(100vh - 440px)" }}
       >
         <div className="grid w-full place-items-center">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-6">
