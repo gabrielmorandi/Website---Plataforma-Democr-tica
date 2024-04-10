@@ -61,7 +61,7 @@ const ModalCompromisso = ({
                 </div>
               </div>
             </div>
-            <div className="fixed bottom-0 z-50 flex flex-col w-full gap-2 py-2 bg-white">
+            <div className="sticky bottom-0 z-50 flex flex-col w-full gap-2 py-2 bg-white">
               <button className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]">
                 <p className="font-bold leading-6 transition-colors text-yellow">
                   Gostou desse Compromisso? Compartilhe!
