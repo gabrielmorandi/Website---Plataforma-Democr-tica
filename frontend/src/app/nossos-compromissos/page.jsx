@@ -9,6 +9,7 @@ import { principios } from "@/../data/principios"
 import { temas } from "@/../data/temas"
 import { diretrizes } from "@/../data/diretrizes"
 import { compromissos } from "@/../data/compromissos"
+import ModalCompromisso from "../components/ModalCompromisso"
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
@@ -27,6 +28,7 @@ export default function Page() {
   const [codTema, setCodTema] = useState(0)
   const [codDiretriz, setCodDiretriz] = useState(0)
   const [compromissosFiltrados, setCompromissosFiltrados] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const filtrados = compromissos.filter((compromisso) =>
@@ -47,6 +49,21 @@ export default function Page() {
     setCompromissosFiltrados(filtrados)
   }, [codPrincipio, codTema, codDiretriz, busca])
 
+  useEffect(() => {
+    if (isOpen) {
+      document.querySelector("html").style.overflow = "hidden"
+    } else {
+      document.querySelector("html").style.overflow = "auto"
+    }
+
+    return () => {
+      document.querySelector("html").style.overflow = "auto"
+    }
+  }, [isOpen])
+
+  const open = () => setIsOpen(true)
+  const close = () => setIsOpen(false)
+
   return (
     <>
       <Nav inCompromissos={true} />
@@ -56,7 +73,7 @@ export default function Page() {
       >
         <div className="grid w-full place-items-center">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-6">
-            <h2 className="text-4xl font-bold text-purple">
+            <h2 className="text-3xl font-bold sm:text-4xl text-purple">
               Nossos Compromissos
             </h2>
             <div className="grid gap-x-6 gap-y-4 sm:grid-cols-2">
@@ -100,7 +117,13 @@ export default function Page() {
               <h3 className="text-xl font-semibold border-b-2 border-purple">
                 {compromissosFiltrados && compromissosFiltrados.length != 0
                   ? compromissosFiltrados.length + " Compromissos encontrados!"
-                  : compromissosFiltrados && compromissosFiltrados.length == 0
+                  : compromissosFiltrados &&
+                    compromissosFiltrados.length == 0 &&
+                    busca == ""
+                  ? "Selecione Todas as Diretrizes!"
+                  : compromissosFiltrados &&
+                    compromissosFiltrados.length == 0 &&
+                    busca != ""
                   ? "0 Compromissos encontrados!"
                   : ""}{" "}
               </h3>
@@ -108,12 +131,20 @@ export default function Page() {
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {compromissosFiltrados &&
                 compromissosFiltrados.map((c, index) => (
-                  <Card key={index} compromisso={c.compromisso} />
+                  <Card key={index} compromisso={c.compromisso} open={open} />
                 ))}
             </div>
           </div>
         </div>
       </main>
+      <ModalCompromisso
+        compromisso={
+          "Definir uma estratégia para otimizar os contratos de vigilância patrimonial, locação de veículos, conservação predial, manutenção de veiculos,  manutenção de aparelhos de ar condicionado, de locação de mão de obra e de limpeza, reduzindo custos e aprimorando os serviços"
+        }
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        close={close}
+      />
       <Footer />
     </>
   )
