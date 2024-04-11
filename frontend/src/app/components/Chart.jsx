@@ -227,7 +227,7 @@ const Chart = ({ id }) => {
 
   useEffect(() => {
     if (id == "Princípios") {
-      setData(dataUm)
+      // setData(dataUm)
     }
   }, [id])
 

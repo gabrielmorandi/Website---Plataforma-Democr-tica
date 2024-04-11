@@ -12,6 +12,7 @@ import Chart from "./components/Chart"
 import Footer from "./components/Footer"
 import { useState } from "react"
 import Select from "./components/Select"
+import CardCompromissoAnimated from "./components/CardCompromissoAnimated"
 
 export default function Page() {
   const [chart, setChart] = useState("Princípios")
@@ -65,12 +66,19 @@ export default function Page() {
               Descubra como os princípios e temas se unem para moldar o futuro
               da nossa universidade! 🎓
             </h3>
-            <Image
-              src="/descubra.png"
-              width={1160}
-              height={670}
-              alt="descubra"
-            />
+            <div className="flex flex-col items-center justify-between mt-10 sm:flex-row">
+              <CardCompromissoAnimated />
+              <div className="flex md:pb-10 max-h-[545px]">
+                <picture>
+                  <source
+                    srcset="/descubra.png"
+                    alt="Descubra"
+                    media="(min-width: 768px)"
+                  />
+                  <img src="/descubra2.png" alt="Descubra" className="w-max" />
+                </picture>
+              </div>
+            </div>
             <p className="text-lg leading-none">
               Veja todos os compromissos agora! Clique para acessar e conhecer
               detalhadamente.
@@ -125,7 +133,7 @@ export default function Page() {
                 princípios da universidade como espaço/tempo de aprendizagem.
               </h3>
               <div className="flex flex-col w-full p-4 bg-white rounded-md shadow-sm">
-                <div className="flex items-center justify-between py-2 mb-6">
+                <div className="flex flex-col items-start justify-between gap-4 py-2 mb-6 sm:items-center sm:flex-row">
                   <h2 className="text-4xl font-bold leading-none text-purple text-balance">
                     Gráfico de Escutas X Princípios mais sugeridos
                   </h2>

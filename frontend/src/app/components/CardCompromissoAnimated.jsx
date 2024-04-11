@@ -6,7 +6,7 @@ export default function CardCompromissoAnimated() {
       viewBox="0 0 300 300"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="overflow-visible"
+      className="overflow-visible md:scale-125"
     >
       <g
         id="Card"
@@ -55,7 +55,10 @@ export default function CardCompromissoAnimated() {
                 </g>
               </g>
               <g id="DiretrizBalloon">
-                <g id="DiretrizBal&#195;&#163;o" className="animate-cardBalloonThree">
+                <g
+                  id="DiretrizBal&#195;&#163;o"
+                  className="animate-cardBalloonThree"
+                >
                   <path
                     id="Vector_3"
                     d="M248 -10C239.164 -10 232 -3.45973 232 4.60969C232 8.71286 233.858 12.4092 236.84 15.0633C236.189 18.9495 231.986 20.5316 232.273 21.601C236.032 23.2089 243.476 19.4764 244.605 18.8978C245.696 19.1122 246.839 19.2207 248 19.2207C256.836 19.2207 264 12.6791 264 4.60969C264 -3.45973 256.835 -10 248 -10Z"
@@ -177,5 +180,5 @@ export default function CardCompromissoAnimated() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

@@ -38,10 +38,6 @@ export default function Header() {
                 text="Visualizar Propostas"
                 href={"/nossos-compromissos"}
               />
-              <LinkBlend
-                text="Compartilhar Compromissos"
-                href={"/compromisso-stories"}
-              />
             </div>
           </div>
         </div>
