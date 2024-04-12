@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */ module.exports = {  content: [
+/** @type {import('tailwindcss').Config} */ module.exports = {
+  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,7 +9,7 @@
       keyframes: {
         buttonBounce: {
           "0%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.1)" },
+          "50%": { transform: "scale(1.05)" },
           "100%": { transform: "scale(1)" },
         },
         balloonAppear: {
@@ -90,8 +91,7 @@
         },
       },
       animation: {
-        balloonYellow:
-          "balloonYellow 1s ease forwards) infinite",
+        balloonYellow: "balloonYellow 1s ease forwards) infinite",
         buttonBounce:
           "buttonBounce 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         balloonAppear1: "balloonAppear 2s ease forwards infinite",
@@ -133,4 +133,4 @@
     },
   },
   plugins: [],
-};
+}

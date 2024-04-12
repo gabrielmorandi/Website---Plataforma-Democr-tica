@@ -35,7 +35,7 @@ const ModalCompromisso = ({
         <div className="relative grid w-full place-items-center">
           <div className="sticky top-0 z-50 grid w-full gap-2 py-2 mb-2 bg-white shadow place-items-center">
             <div className="flex flex-col w-11/12 max-w-[1160px]">
-              <div
+              <button
                 className="w-[175px] bg-purple self-center rounded-full h-3 cursor-pointer"
                 onClick={close}
               />
@@ -92,7 +92,7 @@ const ModalCompromisso = ({
       </div>
 
       {isStoriesModalOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
           <ModalStoriesCompromisso
             compromisso={compromissoStories}
             isOpen={isStoriesModalOpen}
@@ -102,7 +102,7 @@ const ModalCompromisso = ({
         </div>
       )}
     </div>
-  );
+  )
 };
 
 export default ModalCompromisso;

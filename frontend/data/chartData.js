@@ -1,4 +1,5 @@
-export const chartData = [  {
+export const chartData = [
+  {
     Dados: "Princípios",
     data: [
       {
@@ -193,4 +194,4 @@ export const chartData = [  {
       },
     ],
   },
-];
+]

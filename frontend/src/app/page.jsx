@@ -22,7 +22,7 @@ export default function Page() {
   const [isActive, setIsActive] = useState(false);
   const options = chartData.map((data) => ({
     title: data.Dados,
-  }));
+  }))
 
   const handleSelectChange = (selectedOption) => {
     console.log(selectedOption);
