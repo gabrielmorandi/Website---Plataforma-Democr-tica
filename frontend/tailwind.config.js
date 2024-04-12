@@ -91,7 +91,7 @@
       },
       animation: {
         balloonYellow:
-          "balloonYellow 1s ease forwards) infinite",
+          "balloonYellow 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         buttonBounce:
           "buttonBounce 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         balloonAppear1: "balloonAppear 2s ease forwards infinite",

@@ -1,5 +1,4 @@
-"use client";
-import Accordion from "./components/Accordion";
+"use client";import Accordion from "./components/Accordion";
 import Header from "./components/Header";
 import { InfosPDTC } from "../../data/InfosPTDC";
 import SectionTemas from "./components/SectionTemas";
@@ -16,7 +15,6 @@ import { chartData } from "@/../data/chartData";
 import Balloons from "./components/Balloons";
 import MessagePropostas from "./components/MessagePropostas";
 
-
 export default function Page() {
   const [chart, setChart] = useState("Princípios");
   const [isActive, setIsActive] = useState(false);
@@ -28,7 +26,6 @@ export default function Page() {
     console.log(selectedOption);
     setChart(selectedOption);
     console.log(chart);
-  
   };
 
   return (
@@ -40,7 +37,10 @@ export default function Page() {
           className="w-full grid place-items-center pt-[130px] -mt-[130px] relative"
         >
           <div className="flex flex-col w-11/12 max-w-[1160px] relative">
-          <div className="absolute -top-28 -z-10 -left-48 scale-x-[-1]"><Balloons/></div>
+            <div className="sm:absolute -top-24 -z-10 -right-36 sm:right-auto sm:-left-44 sm:scale-x-[-1] scale-x-[1]">
+              <Balloons />
+            </div>
+
             <h2 className="text-4xl font-bold text-purple">PRINCÍPIOS</h2>
             <h3 className="mb-2 text-xl font-medium leading-tight">
               Princípios de uma universidade como espaço/tempo de aprendizagem
@@ -163,7 +163,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="flex overflow-visible">
-                  <Chart id={chart}/>
+                  <Chart id={chart} />
                 </div>
               </div>
             </div>
