@@ -3,11 +3,15 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useRef, createRef } from "react";
+import React, { useState, useRef, createRef, useEffect } from "react";
 import { ImageDown } from "lucide-react";
 import { useScreenshot, createFileName } from "use-react-screenshot";
+import MessagePropostas from "../components/MessageComponentAnimated";
+import Balloons from "../components/BalloonsAnimated";
 
 export default function Compartilhar() {
+
+
   const ref = createRef(null);
 
   const [image, takeScreenShot] = useScreenshot({
@@ -27,11 +31,22 @@ export default function Compartilhar() {
 
   const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
 
-  // const router = useRouter();
+  const router = useRouter();
 
-  // const { compromisso, tema, principio, diretriz } = router.query;
+  const [compromisso, setCompromisso] = useState("");
 
-  const { compromisso, tema, principio, diretriz } = "";
+
+  const { tema, principio, diretriz} = ''
+
+  useEffect(() => {
+    const compromissoValue = router.query && router.query.compromisso;
+    console.log('valor pego'+compromissoValue);
+    setCompromisso(compromissoValue || "");
+
+  }, [router.query]);
+
+  console.log('valor atual'+compromisso);
+
   return (
     <>
       <Nav />
@@ -47,7 +62,10 @@ export default function Compartilhar() {
           </p>
         </div>
         <div className="rounde-lg stroke-purple border-2 p-2">
-          <div ref={ref} className="flex overflow-hidden scale-[0.6] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md">
+          <div
+            ref={ref}
+            className="flex overflow-hidden scale-[0.6] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
+          >
             <div className="flex">
               <svg
                 width="72"
@@ -88,11 +106,10 @@ export default function Compartilhar() {
             </div>
             <div className="flex items-center justify-center mt-6 relative m-10">
               <div className="min-h-[160px] bg-yellow w-full  rounded-xl">
-                <p className="leading-none text-justify pl-12 pr-14 text-purple font-bold z-10">
-                  {compromisso}
+                <p className="leading-none text-justify pl-12 pr-14 text-purple font-bold">
+                {compromisso} oi
                 </p>
               </div>
-            
             </div>
             <div>
               <div>
@@ -142,6 +159,7 @@ export default function Compartilhar() {
             </p>
             <ImageDown color="#FFD500" />
           </button>
+         
         </div>
       </main>
       <Footer />
