@@ -2,7 +2,7 @@
 
 import Accordion from "./components/Accordion"
 import Header from "./components/Header"
-import { principios } from "../../data/principios"
+import { InfosPDTC } from "../../data/InfosPTDC"
 import SectionTemas from "./components/SectionTemas"
 import Carossel from "./components/Carossel"
 import Image from "next/image"
@@ -35,7 +35,7 @@ export default function Page() {
             <h3 className="mb-2 text-xl font-medium leading-tight">
               Princípios de uma universidade como espaço/tempo de aprendizagem
             </h3>
-            <Accordion items={principios} />
+            <Accordion items={InfosPDTC.principio} />
           </div>
         </section>
         <SectionTemas />
