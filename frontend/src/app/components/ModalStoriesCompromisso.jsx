@@ -6,6 +6,9 @@ import { useScreenshot, createFileName } from "use-react-screenshot"
 
 export default function ModalStoriesCompromisso({
   compromisso,
+  // maxP,
+  // maxT,
+  // maxD,
   isOpen,
   setIsOpen,
   close,
