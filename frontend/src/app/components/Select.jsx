@@ -68,11 +68,6 @@ const Select = ({
               }
               className="w-full p-3 text-lg leading-none transition-colors cursor-pointer hover:bg-purple hover:text-yellow"
             >
-              {title && title == "Selecionar Tema"
-                ? `T${option.cod} - `
-                : title == "Selecionar Diretriz"
-                ? `D${option.cod} - `
-                : null}
               {option.title}
             </div>
           ))}

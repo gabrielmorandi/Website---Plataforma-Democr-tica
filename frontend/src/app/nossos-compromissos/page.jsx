@@ -5,9 +5,7 @@ import Footer from "../components/Footer"
 import Select from "../components/Select"
 import SearchBar from "../components/SearchBar"
 import Card from "../components/Card"
-import { principios } from "@/../data/principios"
-import { temas } from "@/../data/temas"
-import { diretrizes } from "@/../data/diretrizes"
+import { InfosPDTC } from "../../../data/InfosPTDC"
 import { compromissos } from "@/../data/compromissos"
 import ModalCompromisso from "../components/ModalCompromisso"
 
@@ -83,7 +81,7 @@ export default function Page() {
                 title="Selecionar Princípio"
                 selected={principioSelected}
                 setSelected={setPrincipioSelected}
-                options={principios}
+                options={InfosPDTC.principio}
                 optionDefault="Todos os Princípios"
                 setCod={setCodPrincipio}
                 isActive={activeSelect === "Selecionar Princípio"}
@@ -93,7 +91,7 @@ export default function Page() {
                 title="Selecionar Tema"
                 selected={temaSelected}
                 setSelected={setTemaSelected}
-                options={temas}
+                options={InfosPDTC.tema}
                 optionDefault="Todos os Temas"
                 setCod={setCodTema}
                 isActive={activeSelect === "Selecionar Tema"}
@@ -103,7 +101,7 @@ export default function Page() {
                 title="Selecionar Diretriz"
                 selected={diretrizSelected}
                 setSelected={setDiretrizSelected}
-                options={diretrizes}
+                options={InfosPDTC.diretriz}
                 setCod={setCodDiretriz}
                 optionDefault="Todas as Diretrizes"
                 isActive={activeSelect === "Selecionar Diretriz"}
