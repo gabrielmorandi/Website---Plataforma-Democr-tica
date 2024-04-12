@@ -1,5 +1,4 @@
-/** @type {import('tailwindcss').Config} */ module.exports = {
-  content: [
+/** @type {import('tailwindcss').Config} */ module.exports = {  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +6,15 @@
   theme: {
     extend: {
       keyframes: {
+        buttonBounce: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" },
+        },
+        balloonAppear: {
+          "0%": { transform: "translateY(10px)", opacity: 0 },
+          "100%": { transform: "translateY(0px)", opacity: 1 },
+        },
         balloonYellow: {
           "0%": { transform: "scale(1)", fill: "none", stroke: "#FFD500" },
           "50%": {
@@ -83,7 +91,13 @@
       },
       animation: {
         balloonYellow:
-          "balloonYellow 10s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+          "balloonYellow 1s ease forwards) infinite",
+        buttonBounce:
+          "buttonBounce 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+        balloonAppear1: "balloonAppear 2s ease forwards infinite",
+        balloonAppear2: "balloonAppear 2s ease forwards infinite",
+        balloonAppear3: "balloonAppear 2s ease forwards infinite",
+        balloonAppear4: "balloonAppear 2s ease forwards infinite",
         balloonPurple:
           "balloonPurple 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         arrowDown:
@@ -106,7 +120,6 @@
         xs: "340px",
         xmd: "365px",
         xspan: "420px",
-        
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -120,4 +133,4 @@
     },
   },
   plugins: [],
-}
+};

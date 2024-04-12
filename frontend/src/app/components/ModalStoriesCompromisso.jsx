@@ -1,18 +1,31 @@
 "use client";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import React, { useState, useRef, createRef, useEffect } from "react";
-import { ImageDown } from "lucide-react";
+import { ImageDown, X } from "lucide-react";
 import { useScreenshot, createFileName } from "use-react-screenshot";
-import MessagePropostas from "../components/MessageComponentAnimated";
-import Balloons from "../components/BalloonsAnimated";
-
-export default function Compartilhar() {
 
 
+export default function ModalStoriesCompromisso({
+  compromisso,
+  isOpen,
+  setIsOpen,
+  close,
+}) {
   const ref = createRef(null);
+
+  const [fontSize, setFontSize] = useState(24)
+
+  useEffect(() => {
+    // Calcula o comprimento do texto e ajusta o tamanho da fonte
+    const textLength = compromisso.length;
+    if (textLength < 100) {
+      setFontSize(24); // Defina o tamanho da fonte para texto curto
+    } else if (textLength >= 100 && textLength < 200) {
+      setFontSize(20); // Defina o tamanho da fonte para texto médio
+    } else {
+      setFontSize(16); // Defina o tamanho da fonte para texto longo
+    }
+  }, [compromisso]);
 
   const [image, takeScreenShot] = useScreenshot({
     type: "image/jpeg",
@@ -31,37 +44,42 @@ export default function Compartilhar() {
 
   const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
 
-  const router = useRouter();
-
-  const [compromisso, setCompromisso] = useState("");
-
-
-  const { tema, principio, diretriz} = ''
-
-  useEffect(() => {
-    const compromissoValue = router.query && router.query.compromisso;
-    console.log('valor pego'+compromissoValue);
-    setCompromisso(compromissoValue || "");
-
-  }, [router.query]);
-
-  console.log('valor atual'+compromisso);
-
   return (
     <>
-      <Nav />
-      <main className="grid w-full gap-6 mt-12 place-items-center">
-        <div className="flex flex-col w-11/12 max-w-[1160px] gap-2">
+      <div
+        className="fixed z-50 flex flex-col gap-2 items-center justify-center -bottom-full transition-all w-full h-full bg-white place-items-start rounded-t-3xl max-h-[80%]  data-[state=open]:bottom-0 my-2"
+        data-state={isOpen ? "open" : "closed"}
+      >
+        <div className="flex flex-col">
+        <button
+            className="cursor-default"
+            onClick={close}
+          />
+          <button
+            className="absolute top-4 right-4 cursor-pointer bg-white rounded-full w-8 h-8 grid place-items-center shadow-md"
+            onClick={close}
+          >
+            <X size={24} color="#5A007A" />
+          </button>
           <h2 className="text-4xl font-bold text-purple">
             Compartilhar Compromisso!
           </h2>
-          <p>
+          <p className="text-justify">
             Você está comprometido com uma causa importante? Quer compartilhar
             seu apoio e inspirar outros a se juntarem a você? Baixe nosso
             template de compartilhamento e espalhe a mensagem!
           </p>
+          <button
+            onClick={downloadScreenshot}
+            className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]"
+          >
+            <p className="font-bold leading-6 transition-colors text-yellow">
+              Baixa imagem
+            </p>
+            <ImageDown color="#FFD500" />
+          </button>
         </div>
-        <div className="rounde-lg stroke-purple border-2 p-2">
+        <div className="flex justify-center items-center">
           <div
             ref={ref}
             className="flex overflow-hidden scale-[0.6] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
@@ -94,20 +112,23 @@ export default function Compartilhar() {
               </h2>
               <div className="flex flex-row justify-between gap-2">
                 <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                  <p className="font-bold text-purple">{tema}</p>
+                  <p className="font-bold text-purple">1</p>
                 </div>
                 <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                  <p className="font-bold text-purple">{principio}</p>
+                  <p className="font-bold text-purple">1</p>
                 </div>
                 <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                  <p className="font-bold text-purple">{diretriz}</p>
+                  <p className="font-bold text-purple">1</p>
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center mt-6 relative m-10">
-              <div className="min-h-[160px] bg-yellow w-full  rounded-xl">
-                <p className="leading-none text-justify pl-12 pr-14 text-purple font-bold">
-                {compromisso} oi
+            <div className="flex items-center justify-center mt-6 relative m-4">
+              <div
+                className="flex items-center max-h-[250px] bg-yellow w-full rounded-xl py-2"
+                style={{ fontSize: `${fontSize}px` }}
+              >
+                <p className="text-center leading-none pl-10 pr-10 text-purple font-bold">
+                  {compromisso}
                 </p>
               </div>
             </div>
@@ -122,8 +143,8 @@ export default function Compartilhar() {
                 />
                 <Image
                   src="/LogoBalao.png"
-                  width={100}
-                  height={100}
+                  width={75}
+                  height={75}
                   alt="Pessoa"
                   className="absolute -right-2 bottom-[140px]"
                 />
@@ -149,20 +170,7 @@ export default function Compartilhar() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
-          <button
-            onClick={downloadScreenshot}
-            className="flex gap-2.5 items-center py-2 px-6 justify-between bg-purple transition-colors hover:bg-[#8817b2]"
-          >
-            <p className="font-bold leading-6 transition-colors text-yellow">
-              Baixa imagem
-            </p>
-            <ImageDown color="#FFD500" />
-          </button>
-         
-        </div>
-      </main>
-      <Footer />
+      </div>
     </>
   );
 }

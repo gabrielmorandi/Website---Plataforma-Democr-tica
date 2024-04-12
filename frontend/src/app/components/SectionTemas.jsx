@@ -20,7 +20,7 @@ export default function SectionTemas() {
           </h3>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             {InfosPDTC.tema.map((tema, index) => (
-              <BalloonChat key={index} iconName={tema.icon} text={tema.title} />
+              <BalloonChat key={index} iconName={tema.icon} text={tema.title} delay={1000 * (index + 1)} />
             ))}
           </div>
         </div>

@@ -1,68 +1,68 @@
-"use client"
-import { useState, useEffect } from "react"
-import Nav from "../components/Nav"
-import Footer from "../components/Footer"
-import Select from "../components/Select"
-import SearchBar from "../components/SearchBar"
-import Card from "../components/Card"
-import { InfosPDTC } from "../../../data/InfosPTDC"
-import { compromissos } from "@/../data/compromissos"
-import ModalCompromisso from "../components/ModalCompromisso"
+"use client";
+import { useState, useEffect } from "react";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import Select from "../components/Select";
+import SearchBar from "../components/SearchBar";
+import Card from "../components/Card";
+import { InfosPDTC } from "../../../data/InfosPTDC";
+import { compromissos } from "@/../data/compromissos";
+import ModalCompromisso from "../components/ModalCompromisso";
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
     "Todos os Princípios"
-  )
-  const [temaSelected, setTemaSelected] = useState("Todos os Temas")
+  );
+  const [temaSelected, setTemaSelected] = useState("Todos os Temas");
   const [diretrizSelected, setDiretrizSelected] = useState(
     "Todas as Diretrizes"
-  )
-  const [activeSelect, setActiveSelect] = useState("")
+  );
+  const [activeSelect, setActiveSelect] = useState("");
   const handleSetActiveSelect = (title) => {
-    setActiveSelect(activeSelect !== title ? title : "")
-  }
-  const [busca, setBusca] = useState("")
-  const [codPrincipio, setCodPrincipio] = useState(0)
-  const [codTema, setCodTema] = useState(0)
-  const [codDiretriz, setCodDiretriz] = useState(0)
-  const [compromissosFiltrados, setCompromissosFiltrados] = useState(null)
-  const [isOpen, setIsOpen] = useState(false)
-  const [compromissoModal, setCompromissoModal] = useState("")
-  const [escutaModal, setEscutaModal] = useState([])
+    setActiveSelect(activeSelect !== title ? title : "");
+  };
+  const [busca, setBusca] = useState("");
+  const [codPrincipio, setCodPrincipio] = useState(0);
+  const [codTema, setCodTema] = useState(0);
+  const [codDiretriz, setCodDiretriz] = useState(0);
+  const [compromissosFiltrados, setCompromissosFiltrados] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [compromissoModal, setCompromissoModal] = useState("");
+  const [escutaModal, setEscutaModal] = useState([]);
 
   useEffect(() => {
     const filtrados = compromissos.filter((compromisso) =>
       compromisso.escutas.some((escuta) => {
         const filtroPrincipio = codPrincipio
           ? escuta.cod_principio === codPrincipio
-          : true
-        const filtroTema = codTema ? escuta.cod_tema === codTema : true
+          : true;
+        const filtroTema = codTema ? escuta.cod_tema === codTema : true;
         const filtroDiretriz = codDiretriz
           ? escuta.cod_diretriz === codDiretriz
-          : true
+          : true;
         const filtroTexto = busca
           ? compromisso.compromisso.toLowerCase().includes(busca.toLowerCase())
-          : true
-        return filtroPrincipio && filtroTema && filtroDiretriz && filtroTexto
+          : true;
+        return filtroPrincipio && filtroTema && filtroDiretriz && filtroTexto;
       })
-    )
-    setCompromissosFiltrados(filtrados)
-  }, [codPrincipio, codTema, codDiretriz, busca])
+    );
+    setCompromissosFiltrados(filtrados);
+  }, [codPrincipio, codTema, codDiretriz, busca]);
 
   useEffect(() => {
     if (isOpen) {
-      document.querySelector("html").style.overflow = "hidden"
+      document.querySelector("html").style.overflow = "hidden";
     } else {
-      document.querySelector("html").style.overflow = "auto"
+      document.querySelector("html").style.overflow = "auto";
     }
 
     return () => {
-      document.querySelector("html").style.overflow = "auto"
-    }
-  }, [isOpen])
+      document.querySelector("html").style.overflow = "auto";
+    };
+  }, [isOpen]);
 
-  const open = () => setIsOpen(true)
-  const close = () => setIsOpen(false)
+  const open = () => setIsOpen(true);
+  const close = () => setIsOpen(false);
 
   return (
     <>
@@ -153,5 +153,5 @@ export default function Page() {
       />
       <Footer />
     </>
-  )
+  );
 }

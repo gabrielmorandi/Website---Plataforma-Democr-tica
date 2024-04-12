@@ -1,27 +1,36 @@
-"use client"
+"use client";
+import Accordion from "./components/Accordion";
+import Header from "./components/Header";
+import { InfosPDTC } from "../../data/InfosPTDC";
+import SectionTemas from "./components/SectionTemas";
+import Carossel from "./components/Carossel";
+import Image from "next/image";
+import { ButtonPrimary } from "./components/Buttons";
+import MenuLink from "./components/MenuLink";
+import Chart from "./components/Chart";
+import Footer from "./components/Footer";
+import { useState } from "react";
+import Select from "./components/Select";
+import CardCompromissoAnimated from "./components/CardCompromissoAnimated";
+import { chartData } from "@/../data/chartData";
+import Balloons from "./components/Balloons";
+import MessagePropostas from "./components/MessagePropostas";
 
-import Accordion from "./components/Accordion"
-import Header from "./components/Header"
-import { InfosPDTC } from "../../data/InfosPTDC"
-import SectionTemas from "./components/SectionTemas"
-import Carossel from "./components/Carossel"
-import Image from "next/image"
-import { ButtonPrimary } from "./components/Buttons"
-import MenuLink from "./components/MenuLink"
-import Chart from "./components/Chart"
-import Footer from "./components/Footer"
-import { useState } from "react"
-import Select from "./components/Select"
-import CardCompromissoAnimated from "./components/CardCompromissoAnimated"
 
 export default function Page() {
-  const [chart, setChart] = useState("Princípios")
-  const options = [
-    { title: "Princípios" },
-    { title: "Temas" },
-    { title: "Diretrizes" },
-  ]
-  const [isActive, setIsActive] = useState(false)
+  const [chart, setChart] = useState("Princípios");
+  const [isActive, setIsActive] = useState(false);
+  const options = chartData.map((data) => ({
+    title: data.Dados,
+  }));
+
+  const handleSelectChange = (selectedOption) => {
+    console.log(selectedOption);
+    setChart(selectedOption);
+    console.log(chart);
+  
+  };
+
   return (
     <>
       <Header />
@@ -30,7 +39,8 @@ export default function Page() {
           id="principios"
           className="w-full grid place-items-center pt-[130px] -mt-[130px] relative"
         >
-          <div className="flex flex-col w-11/12 max-w-[1160px]">
+          <div className="flex flex-col w-11/12 max-w-[1160px] relative">
+          <div className="absolute -top-28 -z-10 -left-48 scale-x-[-1]"><Balloons/></div>
             <h2 className="text-4xl font-bold text-purple">PRINCÍPIOS</h2>
             <h3 className="mb-2 text-xl font-medium leading-tight">
               Princípios de uma universidade como espaço/tempo de aprendizagem
@@ -141,19 +151,19 @@ export default function Page() {
               <div className="flex flex-col w-full p-4 bg-white rounded-md shadow-sm">
                 <div className="flex flex-col items-start justify-between gap-4 py-2 mb-6 sm:items-center sm:flex-row">
                   <h2 className="text-4xl font-bold leading-none text-purple text-balance">
-                    Gráfico de Escutas X Princípios mais sugeridos
+                    Gráfico de {chart} X Princípios mais sugeridos
                   </h2>
                   <Select
                     selected={chart}
-                    setSelected={setChart}
+                    setSelected={handleSelectChange}
                     isPurple={true}
-                    options={options}
+                    options={options.map((option) => option)}
                     isActive={isActive}
                     setIsActive={setIsActive}
                   />
                 </div>
-                <div className="flex">
-                  <Chart id={chart} />
+                <div className="flex overflow-visible">
+                  <Chart id={chart}/>
                 </div>
               </div>
             </div>
@@ -173,5 +183,5 @@ export default function Page() {
       </main>
       <Footer />
     </>
-  )
+  );
 }

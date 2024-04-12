@@ -4,9 +4,6 @@ import Nav from "./Nav";
 import YellowBalloon from "./YellowBalloonAnimated";
 import PurpleBalloon from "./PurpleBalloonAnimated";
 import ArrowsYellow from "./ArrowsYellowAnimated";
-import Balloons from "./BalloonsAnimated";
-import CardCompromissoAnimated from "./cardCompromissoAnimated";
-import MessagePropostas from "./MessageComponentAnimated";
 import CompartilharCompromisso from "./CompartilharCompromisso";
 export default function Header() {
   return (
@@ -16,7 +13,7 @@ export default function Header() {
         <div className="grid w-full place-items-center mt-[160px] lg:mt-[250px]">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-2">
             <div className="relative flex flex-col w-max">
-              <div className="absolute -top-16 -left-6 -z-10">
+              <div className="absolute -top-16 -left-16 -z-10">
                 <YellowBalloon />
               </div>
               <div className="relative flex flex-col w-min">

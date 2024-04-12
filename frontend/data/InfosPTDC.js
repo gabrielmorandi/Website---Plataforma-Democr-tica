@@ -55,7 +55,7 @@ export const InfosPDTC = {
     {
       cod: "T1",
       title: "Acessibilidade",
-      icon: "Wheelchair",
+      icon: "Accessibility",
     },
     {
       cod: "T2",
@@ -115,12 +115,12 @@ export const InfosPDTC = {
     {
       cod: "T13",
       title: "Laboratórios",
-      icon: "Flask",
+      icon: "FlaskConical",
     },
     {
       cod: "T14",
       title: "Lazer",
-      icon: "Football",
+      icon: "Smile",
     },
     {
       cod: "T15",
@@ -130,7 +130,7 @@ export const InfosPDTC = {
     {
       cod: "T16",
       title: "Permanência",
-      icon: "HomeHeart",
+      icon: "Home",
     },
     {
       cod: "T17",
