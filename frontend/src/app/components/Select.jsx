@@ -68,7 +68,7 @@ const Select = ({
               }
               className="w-full p-3 text-lg leading-none transition-colors cursor-pointer hover:bg-purple hover:text-yellow"
             >
-              {option.title}
+              {`${option.cod} - ${option.title}`}
             </div>
           ))}
         </div>
