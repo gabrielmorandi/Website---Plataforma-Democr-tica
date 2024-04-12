@@ -1,9 +1,6 @@
-"use client"
-
-import { useEffect } from "react"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
-import { temas } from "../../../data/temas"
+import { InfosPDTC } from "../../../data/InfosPTDC"
 import BalloonChat from "../components/BalloonChat"
 
 gsap.registerPlugin(ScrollTrigger)
@@ -22,12 +19,8 @@ export default function SectionTemas() {
             nosso futuro!
           </h3>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
-            {temas.map((tema, index) => (
-              <BalloonChat
-                key={index}
-                iconName={tema.iconName}
-                text={tema.title}
-              />
+            {InfosPDTC.tema.map((tema, index) => (
+              <BalloonChat key={index} iconName={tema.icon} text={tema.title} />
             ))}
           </div>
         </div>
