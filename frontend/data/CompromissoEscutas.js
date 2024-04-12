@@ -1,4 +1,4 @@
-export const CompromissosEscutas = {  CompromissosEscutas: [
+export const CompromissosEscutas = [
     {
       Cod_Compromisso: 1,
       Descricao:
