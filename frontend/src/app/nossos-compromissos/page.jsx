@@ -57,17 +57,23 @@ export default function Page() {
   return (
     <>
       <Nav inCompromissos={true} />
-      <main className="grid w-full gap-16 mt-6 place-items-start" style={{ "minHeight": "calc(100vh - 440px)" }}>
+      <main
+        className="grid w-full gap-16 mt-6 place-items-start"
+        style={{ minHeight: "calc(100vh - 440px)" }}
+      >
         <div className="grid w-full place-items-center">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-6">
-            <h2 className="text-3xl font-bold sm:text-4xl text-purple">Nossos Compromissos</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl text-purple">
+              Nossos Compromissos
+            </h2>
             <div className="grid gap-x-6 gap-y-4 sm:grid-cols-2">
-            <Select
+              <Select
                 title="Selecionar Princípio"
                 selected={principioSelected}
                 setSelected={setPrincipioSelected}
                 options={InfosPDTC.principio}
                 optionDefault="Todos os Princípios"
+                codSelected={codPrincipio}
                 setCod={setCodPrincipio}
                 isActive={activeSelect === "Selecionar Princípio"}
                 setIsActive={handleSetActiveSelect}
@@ -78,6 +84,7 @@ export default function Page() {
                 setSelected={setTemaSelected}
                 options={InfosPDTC.tema}
                 optionDefault="Todos os Temas"
+                codSelected={codTema}
                 setCod={setCodTema}
                 isActive={activeSelect === "Selecionar Tema"}
                 setIsActive={handleSetActiveSelect}
@@ -87,6 +94,7 @@ export default function Page() {
                 selected={diretrizSelected}
                 setSelected={setDiretrizSelected}
                 options={InfosPDTC.diretriz}
+                codSelected={codDiretriz}
                 setCod={setCodDiretriz}
                 optionDefault="Todas as Diretrizes"
                 isActive={activeSelect === "Selecionar Diretriz"}
@@ -129,5 +137,5 @@ export default function Page() {
       />
       <Footer />
     </>
-  );
+  )
 }
