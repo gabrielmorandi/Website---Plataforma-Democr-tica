@@ -65,32 +65,32 @@ const Chart = ({ id }) => {
         <BarChart
           data={data}
           margin={{
-            top: 5,
+            top: 0,
             right: 5,
-            left: 5,
+            left: -25,
             bottom: 0,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#5A007A" />
           <XAxis dataKey="name" stroke="#5A007A" />
-          <YAxis stroke="#5A007A" domain={[0, maxUv * 2]} />
+          <YAxis stroke="#5A007A" domain={[0, maxUv * 1.2]} />
           <Tooltip
             content={<CustomTooltip />}
             cursor={{ fill: "rgba(90, 0, 122, 0.1)" }}
           />
           <Bar
             dataKey="uv"
-            fill={colors[id].fill} 
+            fill={colors[id].fill}
             stroke={colors[id].stroke}
-            strokeWidth={2} 
+            strokeWidth={2}
           />
         </BarChart>
       </ResponsiveContainer>
-      <div className="text-center mt-4 ">
-        <p className="text-purple text-sm py-2">Total de Escutas: {totalUv}</p>
+      <div className="mt-4 text-center ">
+        <p className="py-2 text-sm text-purple">Total de Escutas: {totalUv}</p>
       </div>
     </div>
-  );
+  )
 };
 
 export default Chart;
