@@ -78,7 +78,7 @@ export default function ModalStoriesCompromisso({
                 </button>
               </div>
             </div>
-            <div className="w-11/12 max-w-[1160px] flex flex-col gap-2 pb-2">
+            <div className="w-11/12 max-w-[1160px] flex flex-col gap-2 pb-2 items-center">
               <div
                 ref={ref}
                 className="flex overflow-hidden scale-[0.6] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
@@ -174,12 +174,12 @@ export default function ModalStoriesCompromisso({
                   onClick={downloadScreenshot}
                   className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#8817b2] animate-buttonBounce"
                 >
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center flex-row gap-2">
                     <p className="font-bold leading-6 transition-colors sm:text-2xl text-yellow">
                       Baixar imagem
                     </p>
+                    <ImageDown color="#FFD500" />
                   </div>
-                  <ImageDown color="#FFD500" />
                 </button>
               </div>
             </div>
