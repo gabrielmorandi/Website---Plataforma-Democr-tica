@@ -27,15 +27,21 @@ export default function Page() {
   const [escutaModal, setEscutaModal] = useState([]);
 
   useEffect(() => {
-    const filtrados = CompromissosEscutas.CompromissosEscutas.filter((compromisso) =>
+    const filtrados = CompromissosEscutas.filter((compromisso) =>
       compromisso.Escutas.some((escuta) => {
-        const filtroPrincipio = codPrincipio ? escuta.Cod_Principio === codPrincipio : true;
-        const filtroTema = codTema ? escuta.Cod_Tema === codTema : true;
-        const filtroDiretriz = codDiretriz ? escuta.Cod_Diretriz === codDiretriz : true;
-        const filtroTexto = busca ? escuta.Descricao.toLowerCase().includes(busca.toLowerCase()) : true;
-        return filtroPrincipio && filtroTema && filtroDiretriz && filtroTexto;
+        const filtroPrincipio = codPrincipio
+          ? escuta.Cod_Principio === codPrincipio
+          : true
+        const filtroTema = codTema ? escuta.Cod_Tema === codTema : true
+        const filtroDiretriz = codDiretriz
+          ? escuta.Cod_Diretriz === codDiretriz
+          : true
+        const filtroTexto = busca
+          ? escuta.Descricao.toLowerCase().includes(busca.toLowerCase())
+          : true
+        return filtroPrincipio && filtroTema && filtroDiretriz && filtroTexto
       })
-    );
+    )
     setCompromissosFiltrados(filtrados);
   }, [codPrincipio, codTema, codDiretriz, busca]);
 
