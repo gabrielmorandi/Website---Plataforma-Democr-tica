@@ -8,6 +8,7 @@ const Select = ({
   options,
   isActive,
   setIsActive,
+  codSelected,
   setCod,
   isPurple,
 }) => {
@@ -26,7 +27,7 @@ const Select = ({
           title ? () => setIsActive(title) : () => setIsActive(!isActive)
         }
       >
-        {selected}
+        {codSelected ? `${codSelected} - ${selected}` : selected}
         <ChevronDown
           width={24}
           color={"#5A007A"}
