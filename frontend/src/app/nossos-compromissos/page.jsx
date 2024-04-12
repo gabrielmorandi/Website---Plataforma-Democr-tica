@@ -7,8 +7,7 @@ import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
 import { InfosPDTC } from "../../../data/InfosPTDC";
 import { compromissos } from "@/../data/compromissos";
-import ModalCompromisso from "../components/ModalCompromisso";
-import { CompromissosEscutas } from "../../../data/CompromissoEscutas";
+import ModalCompromisso from "../components/ModalCompromisso"
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
