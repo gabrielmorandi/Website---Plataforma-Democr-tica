@@ -111,13 +111,13 @@ export default function ModalStoriesCompromisso({
                   </h2>
                   <div className="flex flex-row justify-between gap-2">
                     <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                      <p className="font-bold text-purple">1</p>
+                      <p className="font-bold text-purple">P1</p>
                     </div>
                     <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                      <p className="font-bold text-purple">1</p>
+                      <p className="font-bold text-purple">T2</p>
                     </div>
                     <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                      <p className="font-bold text-purple">1</p>
+                      <p className="font-bold text-purple">D5</p>
                     </div>
                   </div>
                 </div>
