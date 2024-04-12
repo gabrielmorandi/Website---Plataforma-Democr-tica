@@ -28,13 +28,13 @@ export default function Page() {
       <main className="grid w-full gap-16 mt-16 place-items-center">
         <section
           id="principios"
-          className="flex flex-col w-11/12 max-w-[1160px] pt-[130px] -mt-[130px]"
+          className="w-full grid place-items-center pt-[130px] -mt-[130px] relative"
         >
-          <h2 className="text-4xl font-bold text-purple">PRINCÍPIOS</h2>
-          <h3 className="mb-2 text-xl font-medium leading-tight">
-            Princípios de uma universidade como espaço/tempo de aprendizagem
-          </h3>
-          <div className="flex">
+          <div className="flex flex-col w-11/12 max-w-[1160px]">
+            <h2 className="text-4xl font-bold text-purple">PRINCÍPIOS</h2>
+            <h3 className="mb-2 text-xl font-medium leading-tight">
+              Princípios de uma universidade como espaço/tempo de aprendizagem
+            </h3>
             <Accordion items={principios} />
           </div>
         </section>
@@ -67,7 +67,9 @@ export default function Page() {
               da nossa universidade! 🎓
             </h3>
             <div className="flex flex-col items-center justify-between mt-10 sm:flex-row">
-              <CardCompromissoAnimated />
+              <div className="flex -mb-[50px] ml-5 sm:ml-0">
+                <CardCompromissoAnimated />
+              </div>
               <div className="flex md:pb-10 max-h-[545px]">
                 <picture>
                   <source
@@ -75,11 +77,15 @@ export default function Page() {
                     alt="Descubra"
                     media="(min-width: 768px)"
                   />
-                  <img src="/descubra2.png" alt="Descubra" className="w-max" />
+                  <img
+                    src="/descubra2.png"
+                    alt="Descubra"
+                    className="max-h-[545px]"
+                  />
                 </picture>
               </div>
             </div>
-            <p className="text-lg leading-none">
+            <p className="text-lg leading-none sm:mt-10">
               Veja todos os compromissos agora! Clique para acessar e conhecer
               detalhadamente.
             </p>

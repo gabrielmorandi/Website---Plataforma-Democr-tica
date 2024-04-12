@@ -6,7 +6,7 @@ export default function CardCompromissoAnimated() {
       viewBox="0 0 300 300"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="overflow-visible md:scale-125"
+      className="w-[250px] xs:w-full overflow-visible md:scale-125"
     >
       <g
         id="Card"

@@ -9,21 +9,6 @@ import BalloonChat from "../components/BalloonChat"
 gsap.registerPlugin(ScrollTrigger)
 
 export default function SectionTemas() {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".fade-up")
-    elements.forEach((element) => {
-      gsap.fromTo(
-        element,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          scrollTrigger: { trigger: element, start: "top bottom" },
-        }
-      )
-    })
-  }, [])
   return (
     <section
       id="temas"
