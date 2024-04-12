@@ -23,10 +23,8 @@ export default function Page() {
   }))
 
   const handleSelectChange = (selectedOption) => {
-    console.log(selectedOption);
-    setChart(selectedOption);
-    console.log(chart);
-  };
+    setChart(selectedOption)
+  }
 
   return (
     <>

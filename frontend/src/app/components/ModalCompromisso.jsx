@@ -11,18 +11,16 @@ const ModalCompromisso = ({
   close,
 }) => {
   const [compromissoStories, setCompromissoStories] = useState("");
-  const [isStoriesModalOpen, setIsStoriesModalOpen] = useState(false);
-  console.log(escutas);
-  console.log(compromisso);
+  const [isStoriesModalOpen, setIsStoriesModalOpen] = useState(false)
 
   const openStoriesModal = () => {
-    setCompromissoStories(compromisso);
-    setIsStoriesModalOpen(true);
-  };
+    setCompromissoStories(compromisso)
+    setIsStoriesModalOpen(true)
+  }
 
   const closeStoriesModal = () => {
-    setIsStoriesModalOpen(false);
-  };
+    setIsStoriesModalOpen(false)
+  }
 
   return (
     <div
@@ -65,12 +63,11 @@ const ModalCompromisso = ({
               </div>
               <div className="flex flex-col gap-4 p-4">
                 {escutas.map((e, index) => (
-                  
                   <div
                     key={index}
                     className="flex p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
                   >
-                    {e.escutas}
+                    {e.Descricao}
                   </div>
                 ))}
               </div>

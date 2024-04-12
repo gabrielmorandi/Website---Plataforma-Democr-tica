@@ -7,6 +7,19 @@ const Card = ({
   setEscutaModal,
   setCompromissoModal,
 }) => {
+  const uniqueEscutas = (escutas) => {
+    const unique = []
+    const descriptions = new Set() // Usado para verificar descrições únicas
+
+    escutas.forEach((escuta) => {
+      if (!descriptions.has(escuta.Descricao)) {
+        descriptions.add(escuta.Descricao)
+        unique.push(escuta)
+      }
+    })
+    return unique
+  }
+
   return (
     <div className="flex flex-col bg-white min-h-[225px] gap-1 justify-between p-4 rounded border-[2px] border-purple">
       <div className="flex flex-col gap-1">
@@ -25,7 +38,7 @@ const Card = ({
         onClick={() => {
           open()
           setCompromissoModal(compromisso)
-          setEscutaModal(escuta)
+          setEscutaModal(uniqueEscutas(escuta))
         }}
       >
         <p className="font-bold leading-6 transition-colors text-yellow">
