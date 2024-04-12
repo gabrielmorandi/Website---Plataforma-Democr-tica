@@ -162,7 +162,7 @@ export default function Page() {
                     setIsActive={setIsActive}
                   />
                 </div>
-                <div className="flex overflow-visible">
+                <div className="flex overflow-visible h-max">
                   <Chart id={chart} />
                 </div>
               </div>
@@ -183,5 +183,5 @@ export default function Page() {
       </main>
       <Footer />
     </>
-  );
+  )
 }

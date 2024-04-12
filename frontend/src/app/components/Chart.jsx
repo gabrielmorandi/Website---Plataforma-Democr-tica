@@ -57,6 +57,9 @@ const Chart = ({ id }) => {
 
   return (
     <div className="w-full h-64 md:h-96">
+      <div className="text-center sm:text-left">
+        <p className="-mt-4 text-sm text-purple">Total de Escutas: {totalUv}</p>
+      </div>
       <ResponsiveContainer
         width="100%"
         height="100%"
@@ -73,7 +76,7 @@ const Chart = ({ id }) => {
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#5A007A" />
           <XAxis dataKey="name" stroke="#5A007A" />
-          <YAxis stroke="#5A007A" domain={[0, maxUv * 1.2]} />
+          <YAxis stroke="#5A007A" domain={[0, Math.ceil(maxUv * 1.2)]} />
           <Tooltip
             content={<CustomTooltip />}
             cursor={{ fill: "rgba(90, 0, 122, 0.1)" }}
@@ -86,9 +89,6 @@ const Chart = ({ id }) => {
           />
         </BarChart>
       </ResponsiveContainer>
-      <div className="mt-4 text-center ">
-        <p className="py-2 text-sm text-purple">Total de Escutas: {totalUv}</p>
-      </div>
     </div>
   )
 };
