@@ -8,23 +8,28 @@ import Card from "../components/Card";
 import ModalCompromisso from "../components/ModalCompromisso";
 import { CompromissosEscutas } from "../../../data/CompromissoEscutas";
 import { InfosPDTC } from "../../../data/InfosPTDC";
+import { CornerDownLeft } from "lucide-react"
 
 export default function Page() {
-  const [principioSelected, setPrincipioSelected] = useState("Todos os Princípios");
-  const [temaSelected, setTemaSelected] = useState("Todos os Temas");
-  const [diretrizSelected, setDiretrizSelected] = useState("Todas as Diretrizes");
-  const [activeSelect, setActiveSelect] = useState("");
+  const [principioSelected, setPrincipioSelected] = useState(
+    "Todos os Princípios"
+  )
+  const [temaSelected, setTemaSelected] = useState("Todos os Temas")
+  const [diretrizSelected, setDiretrizSelected] = useState(
+    "Todas as Diretrizes"
+  )
+  const [activeSelect, setActiveSelect] = useState("")
   const handleSetActiveSelect = (title) => {
-    setActiveSelect(activeSelect !== title ? title : "");
-  };
-  const [busca, setBusca] = useState("");
-  const [codPrincipio, setCodPrincipio] = useState(0);
-  const [codTema, setCodTema] = useState(0);
-  const [codDiretriz, setCodDiretriz] = useState(0);
-  const [compromissosFiltrados, setCompromissosFiltrados] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);
-  const [compromissoModal, setCompromissoModal] = useState("");
-  const [escutaModal, setEscutaModal] = useState([]);
+    setActiveSelect(activeSelect !== title ? title : "")
+  }
+  const [busca, setBusca] = useState("")
+  const [codPrincipio, setCodPrincipio] = useState(0)
+  const [codTema, setCodTema] = useState(0)
+  const [codDiretriz, setCodDiretriz] = useState(0)
+  const [compromissosFiltrados, setCompromissosFiltrados] = useState([])
+  const [isOpen, setIsOpen] = useState(false)
+  const [compromissoModal, setCompromissoModal] = useState("")
+  const [escutaModal, setEscutaModal] = useState([])
 
   useEffect(() => {
     const filtrados = CompromissosEscutas.filter((compromisso) =>
@@ -36,29 +41,38 @@ export default function Page() {
         const filtroDiretriz = codDiretriz
           ? escuta.Cod_Diretriz === codDiretriz
           : true
-        const filtroTexto = busca
-          ? escuta.Descricao.toLowerCase().includes(busca.toLowerCase())
-          : true
-        return filtroPrincipio && filtroTema && filtroDiretriz && filtroTexto
+        return filtroPrincipio && filtroTema && filtroDiretriz
       })
     )
-    setCompromissosFiltrados(filtrados);
-  }, [codPrincipio, codTema, codDiretriz, busca]);
+    console.log("====================================")
+    console.log(filtrados)
+    console.log("====================================")
+    if (busca) {
+      const buscaFiltrada = filtrados.filter((compromisso) =>
+        compromisso.Escutas.some((escuta) =>
+          escuta.Descricao.toLowerCase().includes(busca.toLowerCase())
+        )
+      )
+      setCompromissosFiltrados(buscaFiltrada)
+    } else {
+      setCompromissosFiltrados(filtrados)
+    }
+  }, [codPrincipio, codTema, codDiretriz, busca])
 
   useEffect(() => {
     if (isOpen) {
-      document.querySelector("html").style.overflow = "hidden";
+      document.querySelector("html").style.overflow = "hidden"
     } else {
-      document.querySelector("html").style.overflow = "auto";
+      document.querySelector("html").style.overflow = "auto"
     }
 
     return () => {
-      document.querySelector("html").style.overflow = "auto";
-    };
-  }, [isOpen]);
+      document.querySelector("html").style.overflow = "auto"
+    }
+  }, [isOpen])
 
-  const open = () => setIsOpen(true);
-  const close = () => setIsOpen(false);
+  const open = () => setIsOpen(true)
+  const close = () => setIsOpen(false)
 
   return (
     <>
@@ -116,7 +130,7 @@ export default function Page() {
               <h3 className="text-xl font-semibold border-b-2 border-purple animate-cardUp">
                 {compromissosFiltrados.length !== 0
                   ? `${compromissosFiltrados.length} Compromissos encontrados!`
-                  :`Selecione outra opção em uma das categorias para "Todas as Categorias"!`}{" "}
+                  : `Selecione outra opção em uma das categorias para "Todas as Categorias"!`}{" "}
               </h3>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
