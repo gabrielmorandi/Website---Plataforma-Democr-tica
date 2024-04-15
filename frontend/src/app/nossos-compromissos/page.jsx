@@ -113,10 +113,10 @@ export default function Page() {
               />
             </div>
             <div className="flex">
-              <h3 className="text-xl font-semibold border-b-2 border-purple">
+              <h3 className="text-xl font-semibold border-b-2 border-purple animate-cardUp">
                 {compromissosFiltrados.length !== 0
                   ? `${compromissosFiltrados.length} Compromissos encontrados!`
-                  : "Selecione Todas as Diretrizes!"}{" "}
+                  :`Selecione outra opção em uma das categorias para "Todas as Categorias"!`}{" "}
               </h3>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

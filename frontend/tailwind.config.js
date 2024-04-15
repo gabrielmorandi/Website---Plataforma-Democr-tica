@@ -1,5 +1,4 @@
-/** @type {import('tailwindcss').Config} */ module.exports = {
-  content: [
+/** @type {import('tailwindcss').Config} */ module.exports = {  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -54,6 +53,11 @@
           "50%": { transform: "translateY(6px)" },
           "100%": { transform: "translateY(0px)" },
         },
+        cardUpCompromissos: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(0.9)" },
+          "100%": { transform: "scale(1)" },
+        },
         cardBalloonOne: {
           "0%": { transform: "scale(1)" },
           "20%": { transform: "scale(1.1) translateY(-10px)" },
@@ -104,6 +108,7 @@
         arrowDown:
           "arrowDown 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         cardUp: "cardUp 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
+        cardUpCompromissos: "cardUpCompromissos 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
         messageAnimation: " messageAnimation 3s ease-in infinite",
         cardBalloonOne:
           "cardBalloonOne 3s cubic-bezier(0.175, 0.885, 0.32, 0.900) infinite",
@@ -133,5 +138,26 @@
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".scrollbar-thumb-purple": {
+          "scrollbar-color": "#5A007A", // Cor da barra de rolagem para navegadores modernos
+          "scrollbar-width": "thin", // Largura da barra de rolagem para navegadores modernos
+        },
+        // Estilos específicos para navegadores que não suportam scrollbar-color
+        "::-webkit-scrollbar": {
+          width: "6px",
+        },
+        "::-webkit-scrollbar-track": {
+          background: "none", // Cor do fundo da barra de rolagem
+        },
+        "::-webkit-scrollbar-thumb": {
+          background: "#5A007A", // Cor da barra de rolagem
+          borderRadius: "3px",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
+};

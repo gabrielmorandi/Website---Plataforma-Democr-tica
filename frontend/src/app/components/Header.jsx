@@ -32,7 +32,7 @@ export default function Header() {
                 queremos.
               </h3>
               <LinkBlend
-                text="Visualizar Propostas"
+                text="Visualizar Compromissos"
                 href={"/nossos-compromissos"}
               />
             </div>

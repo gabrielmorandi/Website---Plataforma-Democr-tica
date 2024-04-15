@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import React, { useState, useRef, createRef, useEffect } from "react"
-import { CheckCircle, ImageDown, X } from "lucide-react"
+import { Share2, ImageDown, X } from "lucide-react"
 import { useScreenshot, createFileName } from "use-react-screenshot"
 
 export default function ModalStoriesCompromisso({
@@ -53,35 +53,37 @@ export default function ModalStoriesCompromisso({
       >
         <button className="w-full h-full cursor-default" onClick={close} />
         <div
-          className="fixed -bottom-full transition-all grid w-full h-full bg-white place-items-start rounded-t-3xl max-h-[80%] sm:max-h-[62.5%] overflow-y-scroll bg-scroll data-[state=open]:bottom-0"
+          className="fixed place-self-center -bottom-full transition-all grid h-full bg-white place-items-start rounded-t-3xl max-h-[70%] sm:max-h-[70%] overflow-y-scroll bg-scroll data-[state=open]:bottom-0"
           data-state={isOpen ? "open" : "closed"}
         >
           <div className="relative grid w-full place-items-center">
             <div className="sticky top-0 z-50 grid w-full gap-2 py-2 mb-2 bg-white shadow place-items-center">
-              <div className="flex items-center justify-between w-11/12 max-w-[1160px]">
-                <div className="flex items-center gap-2 z-[100]">
-                  <CheckCircle
-                    color="#5A007A"
-                    width={30}
-                    height={30}
-                    className="min-w-[30px]"
-                  />
-                  <h2 className="text-xl font-bold sm:text-3xl text-purple">
-                    É nosso Compromisso
-                  </h2>
-                </div>
+              <div className="flex flex-col items-center justify-between w-11/12 max-w-[1160px]">
+               
                 <button
                   className="p-1 rounded-full shadow-md shadow-purple/25"
                   onClick={close}
                 >
                   <X size={24} color="#5A007A" />
                 </button>
+                <div className="flex items-center gap-2 z-[100]">
+                  <Share2
+                    color="#5A007A"
+                    width={30}
+                    height={30}
+                    className="min-w-[30px]"
+                  />
+                  <h2 className="text-xl font-bold sm:text-3xl text-purple">
+                    Compartilhar
+                  </h2>
+                
+                </div>
               </div>
             </div>
-            <div className="w-11/12 max-w-[1160px] flex flex-col gap-2 pb-2 items-center">
+            <div className="w-11/12 max-w-[1160px] flex flex-col items-center">
               <div
                 ref={ref}
-                className="flex overflow-hidden scale-[0.6] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
+                className="flex item overflow-hidden scale-[0.7] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
               >
                 <div className="flex">
                   <svg
@@ -168,14 +170,14 @@ export default function ModalStoriesCompromisso({
                 </div>
               </div>
             </div>
-            <div className="sticky bottom-0 z-50 grid w-full gap-2 py-4 bg-white shadow-[0_0_3px_rgba(0,0,0,.2)] place-items-center">
+            <div className="sticky bottom-0 z-50 grid w-full gap-2 px-11 py-4 bg-white shadow-[0_0_3px_rgba(0,0,0,.2)] place-items-center">
               <div className="flex flex-col w-11/12 max-w-[1160px]">
                 <button
                   onClick={downloadScreenshot}
                   className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#8817b2] animate-buttonBounce"
                 >
                   <div className="flex items-center flex-row gap-2">
-                    <p className="font-bold leading-6 transition-colors sm:text-2xl text-yellow">
+                    <p className="font-bold leading-6 transition-colors sm:text-1xl text-yellow">
                       Baixar imagem
                     </p>
                     <ImageDown color="#FFD500" />

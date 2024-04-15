@@ -21,7 +21,7 @@ const Card = ({
   }
 
   return (
-    <div className="flex flex-col bg-white min-h-[225px] gap-1 justify-between p-4 rounded border-[2px] border-purple">
+    <div className="flex flex-col bg-white min-h-[225px] gap-1 justify-between p-4 rounded border-[2px] border-purple animate-cardUpCompromissos">
       <div className="flex flex-col gap-1">
         <div className="flex items-center gap-2">
           <CheckCircle color="#5A007A" className="min-w-6" />

@@ -149,7 +149,7 @@ export default function Page() {
               <div className="flex flex-col w-full p-4 bg-white rounded-md shadow-sm">
                 <div className="flex flex-col items-start justify-between gap-4 py-2 mb-6 sm:items-center sm:flex-row">
                   <h2 className="text-4xl font-bold leading-none text-purple text-balance">
-                    Gráfico de {chart} X Princípios mais sugeridos
+                    Gráfico de {chart} X Escutas mais sugeridas
                   </h2>
                   <Select
                     selected={chart}
