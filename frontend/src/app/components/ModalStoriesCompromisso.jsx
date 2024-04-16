@@ -53,7 +53,7 @@ export default function ModalStoriesCompromisso({
       >
         <button className="w-full h-full cursor-default" onClick={close} />
         <div
-          className="fixed place-self-center -bottom-full transition-all grid h-full bg-white place-items-start rounded-t-3xl max-h-[70%] sm:max-h-[70%] overflow-y-scroll bg-scroll data-[state=open]:bottom-0"
+          className="fixed place-self-center w-full -bottom-full transition-all grid h-full bg-white place-items-start rounded-t-3xl max-h-[70%] sm:max-h-[70%] overflow-y-scroll bg-scroll data-[state=open]:bottom-0"
           data-state={isOpen ? "open" : "closed"}
         >
           <div className="relative grid w-full place-items-center">
@@ -81,7 +81,7 @@ export default function ModalStoriesCompromisso({
             <div className="w-11/12 max-w-[1160px] flex flex-col items-center">
               <div
                 ref={ref}
-                className="flex item overflow-hidden scale-[0.7] xmd:scale-100 flex-col relative max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
+                className="flex item overflow-hidden scale-[0.7] xmd:scale-100 flex-col relative max-w-[265px] xmd:max-w-[360px] h-[640px] gap-2 bg-purple shadow-md"
               >
                 <div className="flex">
                   <svg
@@ -106,18 +106,18 @@ export default function ModalStoriesCompromisso({
                   </svg>
                 </div>
                 <div className="flex flex-col gap-4 px-10">
-                  <h2 className="text-4xl font-bold leading-7 text-yellow animate-cardUp py-2">
+                  <h2 className="py-2 text-4xl font-bold leading-7 text-yellow animate-cardUp">
                     É Nosso Compromisso!
                   </h2>
                   <div className="flex flex-row justify-between gap-6">
                     <div className="animate-buttonBounce flex items-center justify-center bg-yellow rounded-xl w-[96px] pb-3 text-2xl">
-                      <p className="font-bold text-purple text-center">P1</p>
+                      <p className="font-bold text-center text-purple">P1</p>
                     </div>
                     <div className="animate-buttonBounce flex items-center justify-center bg-yellow rounded-xl w-[96px] pb-3 text-2xl">
-                      <p className="font-bold text-purple text-center">T2</p>
+                      <p className="font-bold text-center text-purple">T2</p>
                     </div>
                     <div className="animate-buttonBounce flex items-center justify-center bg-yellow rounded-xl w-[96px] pb-3 text-2xl">
-                      <p className="font-bold text-purple text-center">D5</p>
+                      <p className="font-bold text-center text-purple">D5</p>
                     </div>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function ModalStoriesCompromisso({
                     className="flex justify-center items-start max-h-[250px] bg-yellow w-full rounded-xl pb-6 pt-2"
                     style={{ fontSize: `${fontSize}px` }}
                   >
-                    <p className="pl-10 pr-10 h-full font-bold leading-none text-center text-purple">
+                    <p className="h-full pl-10 pr-10 font-bold leading-none text-center text-purple">
                       {compromisso}
                     </p>
                   </div>
