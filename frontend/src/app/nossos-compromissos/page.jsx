@@ -7,8 +7,7 @@ import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
 import ModalCompromisso from "../components/ModalCompromisso";
 import { CompromissosEscutas } from "../../../data/CompromissoEscutas";
-import { InfosPDTC } from "../../../data/InfosPTDC";
-import { CornerDownLeft } from "lucide-react"
+import { InfosPDTC } from "../../../data/InfosPTDC"
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
@@ -130,11 +129,11 @@ export default function Page() {
                   : `Selecione outra opção em uma das categorias para "Todas as Categorias"!`}{" "}
               </h3>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid gap-4 mt-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {compromissosFiltrados.map((compromisso, index) => (
                 <Card
                   key={index}
-                  compromisso={compromisso.Descricao}
+                  compromisso={compromisso}
                   open={open}
                   escuta={compromisso.Escutas}
                   setCompromissoModal={setCompromissoModal}
