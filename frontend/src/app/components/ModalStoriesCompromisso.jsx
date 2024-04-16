@@ -48,7 +48,7 @@ export default function ModalStoriesCompromisso({
   return (
     <>
       <div
-        className="fixed z-50 grid w-full h-screen place-items-end -bottom-full bg-zinc-900/80 data-[state=open]:bottom-0 transition-opacity"
+        className="fixed z-50 grid w-full h-screen place-items-end -bottom-[100dvh] bg-zinc-900/80 data-[state=open]:bottom-0 transition-opacity"
         data-state={isOpen ? "open" : "closed"}
       >
         <button className="w-full h-full cursor-default" onClick={close} />
@@ -59,7 +59,6 @@ export default function ModalStoriesCompromisso({
           <div className="relative grid w-full place-items-center">
             <div className="sticky top-0 z-50 grid w-full gap-2 py-2 mb-2 bg-white shadow place-items-center">
               <div className="flex flex-col items-center justify-between w-11/12 max-w-[1160px]">
-               
                 <button
                   className="p-1 rounded-full shadow-md shadow-purple/25"
                   onClick={close}
@@ -76,7 +75,6 @@ export default function ModalStoriesCompromisso({
                   <h2 className="text-xl font-bold sm:text-3xl text-purple">
                     Compartilhar
                   </h2>
-                
                 </div>
               </div>
             </div>
@@ -176,7 +174,7 @@ export default function ModalStoriesCompromisso({
                   onClick={downloadScreenshot}
                   className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#8817b2] animate-buttonBounce"
                 >
-                  <div className="flex items-center flex-row gap-2">
+                  <div className="flex flex-row items-center gap-2">
                     <p className="font-bold leading-6 transition-colors sm:text-1xl text-yellow">
                       Baixar imagem
                     </p>
