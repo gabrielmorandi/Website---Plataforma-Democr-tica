@@ -41,6 +41,7 @@ export default function Nav({ inCompromissos }) {
           <LinkBlend
             text={inCompromissos ? "Como Funciona" : "Visualizar Propostas"}
             href={inCompromissos ? "/" : "/nossos-compromissos"}
+            scaleType={inCompromissos ? 2 : null}
           />
         </div>
         <div className="lg:hidden">
@@ -65,6 +66,7 @@ export default function Nav({ inCompromissos }) {
                       inCompromissos ? "Como Funciona" : "Visualizar Propostas"
                     }
                     href={inCompromissos ? "/" : "/nossos-compromissos"}
+                    scaleType={inCompromissos ? 2 : null}
                   />
                   <MenuLink
                     text={"Princípios Universidade"}
@@ -88,7 +90,8 @@ export default function Nav({ inCompromissos }) {
                       inCompromissos ? "Como Funciona" : "Visualizar Propostas"
                     }
                     href={inCompromissos ? "/" : "/nossos-compromissos"}
-                  />{" "}
+                    scaleType={inCompromissos ? 2 : null}
+                  />
                 </div>
               )}
             </div>
