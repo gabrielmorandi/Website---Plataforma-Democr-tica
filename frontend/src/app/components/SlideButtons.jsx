@@ -42,7 +42,10 @@ export default function SlideNextButton() {
     <>
       <div className="flex flex-col-reverse justify-between gap-4 mt-10 xspan:flex-row">
         <div className="flex items-center justify-start">
-          <ButtonPrimary text="Conferir Todos os Compromissos" href={"/"} />
+          <ButtonPrimary
+            text="Conferir Todos os Compromissos"
+            href={"/nossos-compromissos"}
+          />
         </div>
         <div className="flex items-end justify-end gap-4 slide-actions">
           <button onClick={() => swiper.slidePrev()}>

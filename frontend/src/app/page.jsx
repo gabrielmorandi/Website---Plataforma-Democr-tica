@@ -98,7 +98,10 @@ export default function Page() {
               detalhadamente.
             </p>
             <div className="flex mt-4">
-              <ButtonPrimary href="/" text="ACESSAR OS COMPROMISSOS" />
+              <ButtonPrimary
+                href="/nossos-compromissos"
+                text="ACESSAR OS COMPROMISSOS"
+              />
             </div>
           </div>
         </section>
