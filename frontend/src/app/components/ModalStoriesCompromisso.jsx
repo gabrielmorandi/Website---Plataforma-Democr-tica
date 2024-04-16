@@ -105,28 +105,28 @@ export default function ModalStoriesCompromisso({
                     </g>
                   </svg>
                 </div>
-                <div className="flex flex-col gap-6 px-10">
-                  <h2 className="text-4xl font-bold leading-7 text-yellow">
+                <div className="flex flex-col gap-4 px-10">
+                  <h2 className="text-4xl font-bold leading-7 text-yellow animate-cardUp py-2">
                     É Nosso Compromisso!
                   </h2>
-                  <div className="flex flex-row justify-between gap-2">
-                    <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                      <p className="font-bold text-purple">P1</p>
+                  <div className="flex flex-row justify-between gap-6">
+                    <div className="animate-buttonBounce flex items-center justify-center bg-yellow rounded-xl w-[96px] pb-3 text-2xl">
+                      <p className="font-bold text-purple text-center">P1</p>
                     </div>
-                    <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                      <p className="font-bold text-purple">T2</p>
+                    <div className="animate-buttonBounce flex items-center justify-center bg-yellow rounded-xl w-[96px] pb-3 text-2xl">
+                      <p className="font-bold text-purple text-center">T2</p>
                     </div>
-                    <div className=" flex items-center justify-center bg-yellow rounded-xl w-[112px] h-[32px]">
-                      <p className="font-bold text-purple">D5</p>
+                    <div className="animate-buttonBounce flex items-center justify-center bg-yellow rounded-xl w-[96px] pb-3 text-2xl">
+                      <p className="font-bold text-purple text-center">D5</p>
                     </div>
                   </div>
                 </div>
-                <div className="relative flex items-center justify-center m-4 mt-6">
+                <div className="relative flex items-center justify-center m-10 mt-8">
                   <div
-                    className="flex items-center max-h-[250px] bg-yellow w-full rounded-xl py-2"
+                    className="flex justify-center items-start max-h-[250px] bg-yellow w-full rounded-xl pb-6 pt-2"
                     style={{ fontSize: `${fontSize}px` }}
                   >
-                    <p className="pl-10 pr-10 font-bold leading-none text-center text-purple">
+                    <p className="pl-10 pr-10 h-full font-bold leading-none text-center text-purple">
                       {compromisso}
                     </p>
                   </div>
@@ -134,18 +134,18 @@ export default function ModalStoriesCompromisso({
                 <div>
                   <div>
                     <Image
-                      src="/CaraPequeno.png"
-                      width={150}
-                      height={250}
+                      src="/CaraPequeno.webp"
+                      width={125}
+                      height={225}
                       alt="Pessoa"
-                      className="absolute bottom-0 -left-2"
+                      className="absolute bottom-6 -left-2 animate-buttonBounce"
                     />
                     <Image
-                      src="/LogoBalao.png"
-                      width={75}
-                      height={75}
-                      alt="Pessoa"
-                      className="absolute -right-2 bottom-[140px]"
+                      src="/LogoBalloon.webp"
+                      width={90}
+                      height={90}
+                      alt="Balão"
+                      className="absolute -right-2 bottom-32 animate-buttonBounce"
                     />
                   </div>
                   <div className="absolute bottom-0 p-2 rounded-t-lg bg-yellow">
@@ -162,7 +162,7 @@ export default function ModalStoriesCompromisso({
                       compromissos!
                     </p>
                     <p className="py-1 text-sm font-bold text-center text-purple">
-                      unifesspademocratica.org
+                    plataforma-democratica.org
                     </p>
                   </div>
                 </div>

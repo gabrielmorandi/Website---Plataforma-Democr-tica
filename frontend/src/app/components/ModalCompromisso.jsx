@@ -53,8 +53,8 @@ const ModalCompromisso = ({
             </div>
           </div>
           <div className="w-11/12 max-w-[1160px] flex flex-col gap-2 pb-2">
-            <div className="flex px-4 py-2 font-semibold border-[2px] rounded text-purple border-purple">
-              {compromisso}
+            <div className="flex px-4 py-2  border-[2px] rounded bg-purple border-purple">
+              <p className="text-justify w-full text-yellow font-semibold">{compromisso}</p>
             </div>
             <div className="flex flex-col font-semibold border-[2px] rounded text-purple border-purple">
               <div className="flex items-center w-full gap-2 px-4 py-3 bg-purple">

@@ -142,7 +142,7 @@
     function ({ addUtilities }) {
       const newUtilities = {
         ".scrollbar-thumb-purple": {
-          "scrollbar-color": "#5A007A", // Cor da barra de rolagem para navegadores modernos
+          "scrollbar-color": "#f3f3f3", // Cor da barra de rolagem para navegadores modernos
           "scrollbar-width": "thin", // Largura da barra de rolagem para navegadores modernos
         },
         // Estilos específicos para navegadores que não suportam scrollbar-color
@@ -150,10 +150,10 @@
           width: "6px",
         },
         "::-webkit-scrollbar-track": {
-          background: "none", // Cor do fundo da barra de rolagem
+          background: "#5A007A", // Cor do fundo da barra de rolagem
         },
         "::-webkit-scrollbar-thumb": {
-          background: "#5A007A", // Cor da barra de rolagem
+          background: "#f3f3f3", // Cor da barra de rolagem
           borderRadius: "3px",
         },
       };

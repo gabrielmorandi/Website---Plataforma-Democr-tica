@@ -81,12 +81,12 @@ export default function Page() {
               <div className="flex md:pb-10 max-h-[545px]">
                 <picture>
                   <source
-                    srcset="/descubra.png"
+                    srcSet="/descubra.webp"
                     alt="Descubra"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/descubra2.png"
+                    src="/descubra2.webp"
                     alt="Descubra"
                     className="max-h-[545px]"
                   />

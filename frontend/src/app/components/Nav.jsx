@@ -30,7 +30,7 @@ export default function Nav({ inCompromissos }) {
     <nav className="sticky top-0 z-50 grid w-full shadow bg-yellow place-items-center">
       <div className="flex items-center justify-between w-11/12 max-w-[1160px] py-3">
         <Link href={"/"} className="flex">
-          <Image src="/logo.png" width={90} height={70} alt="Logo" />
+          <Image src="/logo.webp" width={90} height={70} alt="Logo" />
         </Link>
         <div className="flex gap-4 max-lg:hidden">
           <ButtonPrimary

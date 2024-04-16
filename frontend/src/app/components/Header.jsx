@@ -39,7 +39,7 @@ export default function Header() {
           </div>
         </div>
         <Image
-          src="/cara.png"
+          src="/cara.webp"
           width={150}
           height={400}
           alt="Pessoa"
