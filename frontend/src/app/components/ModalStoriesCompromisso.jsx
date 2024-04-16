@@ -48,7 +48,7 @@ export default function ModalStoriesCompromisso({
   return (
     <>
       <div
-        className="fixed z-50 grid w-full h-screen place-items-end -bottom-[100dvh] bg-zinc-900/80 data-[state=open]:bottom-0 transition-opacity"
+        className="fixed z-50 grid w-full h-screen place-items-end -bottom-[125vh] bg-zinc-900/80 data-[state=open]:bottom-0 transition-opacity"
         data-state={isOpen ? "open" : "closed"}
       >
         <button className="w-full h-full cursor-default" onClick={close} />
