@@ -31,6 +31,15 @@ export default function Page() {
   const [escutaModal, setEscutaModal] = useState([])
 
   useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search)
+
+    if (queryParams.has("diretriz") && queryParams.has("codDiretriz")) {
+      setDiretrizSelected(queryParams.get("diretriz"))
+      setCodDiretriz(queryParams.get("codDiretriz"))
+    }
+  }, [])
+
+  useEffect(() => {
     const filtrados = CompromissosEscutas.filter((compromisso) =>
       compromisso.Escutas.some((escuta) => {
         const filtroPrincipio = codPrincipio
@@ -112,7 +121,7 @@ export default function Page() {
                 options={InfosPDTC.diretriz}
                 codSelected={codDiretriz}
                 setCod={setCodDiretriz}
-                optionDefault="Todas as Diretrizes"
+                optionDefault={diretrizSelected}
                 isActive={activeSelect === "Selecionar Diretriz"}
                 setIsActive={handleSetActiveSelect}
               />

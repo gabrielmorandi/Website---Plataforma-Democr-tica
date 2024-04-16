@@ -39,7 +39,10 @@ export default function Carossel() {
                   <p className="leading-none text-purple">{d.description}</p>
                 </div>
                 <div className="flex flex-col">
-                  <ButtonPrimary text="Conferir Compromissos" href={"/"} />
+                  <ButtonPrimary
+                    text="Conferir Compromissos"
+                    href={`/nossos-compromissos?diretriz=${d.title}&codDiretriz=${d.cod}`}
+                  />
                 </div>
               </div>
             </SwiperSlide>
