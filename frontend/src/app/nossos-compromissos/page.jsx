@@ -44,9 +44,6 @@ export default function Page() {
         return filtroPrincipio && filtroTema && filtroDiretriz
       })
     )
-    console.log("====================================")
-    console.log(filtrados)
-    console.log("====================================")
     if (busca) {
       const buscaFiltrada = filtrados.filter((compromisso) =>
         compromisso.Escutas.some((escuta) =>
