@@ -141,11 +141,11 @@ export default function ModalStoriesCompromisso({
                       className="absolute bottom-6 -left-2 animate-buttonBounce"
                     />
                     <Image
-                      src="/LogoBalloon.webp"
+                      src="/LogoBalao.webp"
                       width={90}
                       height={90}
                       alt="Balão"
-                      className="absolute -right-2 bottom-32 animate-buttonBounce"
+                      className="absolute -right-2 top-2 animate-buttonBounce"
                     />
                   </div>
                   <div className="absolute bottom-0 p-2 rounded-t-lg bg-yellow">
