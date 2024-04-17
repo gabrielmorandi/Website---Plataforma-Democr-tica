@@ -13,6 +13,7 @@ export default function Accordion({ items }) {
           <button
             className="flex items-start justify-between w-full gap-2 py-4"
             onClick={() => setOpenIndex(index === openIndex ? -1 : index)}
+            aria-label={item.title}
           >
             <GraduationCap color="#5A007A" className="min-w-6" />
             <h2 className="w-full text-lg font-semibold text-left text-purple">

@@ -26,10 +26,10 @@ export default function Header() {
                   </span>
                 </h1>
               </div>
-              <h3 className="mb-2 text-xl font-medium leading-tight md:text-2xl max-w-72 md:max-w-[550px]">
+              <h2 className="mb-2 text-xl font-medium leading-tight md:text-2xl max-w-72 md:max-w-[550px]">
                 Movimento de diálogo para a construção da Unifesspa que
                 queremos.
-              </h3>
+              </h2>
               <LinkBlend
                 text="Visualizar Compromissos"
                 href={"/nossos-compromissos"}

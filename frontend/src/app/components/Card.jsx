@@ -107,6 +107,7 @@ const Card = ({
           setCompromissoModal(compromisso.Descricao)
           setEscutaModal(uniqueEscutas(escuta))
         }}
+        aria-label={compromisso.Descricao}
       >
         <p className="font-bold leading-6 transition-colors text-yellow">
           Ver Mais

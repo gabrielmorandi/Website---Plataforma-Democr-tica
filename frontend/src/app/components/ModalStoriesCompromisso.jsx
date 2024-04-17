@@ -162,7 +162,7 @@ export default function ModalStoriesCompromisso({
                       compromissos!
                     </p>
                     <p className="py-1 text-sm font-bold text-center text-purple">
-                    plataforma-democratica.org
+                      plataforma-democratica.org
                     </p>
                   </div>
                 </div>
@@ -173,6 +173,7 @@ export default function ModalStoriesCompromisso({
                 <button
                   onClick={downloadScreenshot}
                   className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#8817b2] animate-buttonBounce"
+                  aria-label="Download Image"
                 >
                   <div className="flex flex-row items-center gap-2">
                     <p className="font-bold leading-6 transition-colors sm:text-1xl text-yellow">

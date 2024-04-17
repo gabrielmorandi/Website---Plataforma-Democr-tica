@@ -48,10 +48,10 @@ export default function SlideNextButton() {
           />
         </div>
         <div className="flex items-end justify-end gap-4 slide-actions">
-          <button onClick={() => swiper.slidePrev()}>
+          <button onClick={() => swiper.slidePrev()} aria-label="Voltar">
             <ArrowLeft color="#5A007A" />
           </button>
-          <button onClick={() => swiper.slideNext()}>
+          <button onClick={() => swiper.slideNext()} aria-label="Avançar">
             <ArrowRight color="#5A007A" />
           </button>
         </div>
