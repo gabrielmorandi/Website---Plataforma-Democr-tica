@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { CheckCircle, ArrowUpRight, MessageCircle } from "lucide-react"
 import { InfosPDTC } from "../../../data/InfosPTDC"
+import BalloonCard from "./BalloonCard"
 
 const Card = ({
   compromisso,
@@ -30,70 +31,13 @@ const Card = ({
       <div className="flex flex-col gap-1">
         <div className="absolute right-0 flex gap-3 -top-5">
           {compromisso.Max_Principio && (
-            <div
-              className="relative cursor-default"
-              onMouseEnter={() => setPHover(true)}
-              onMouseLeave={() => setPHover(false)}
-            >
-              <MessageCircle className="fill-purple stroke-purple size-9" />
-              <p className="absolute top-0 left-0 w-full leading-9 text-center text-yellow">
-                {compromisso.Max_Principio}
-              </p>
-              <div
-                className="absolute w-max max-w-[235px] -z-50 font-semibold leading-tight text-center m text-balance opacity-0 bottom-0 bg-yellow text-purple text-sm data-[state=active]:z-50 data-[state=active]:bottom-10 data-[state=active]:opacity-100 transition-all delay-150 p-2 rounded-lg left-1/2 -translate-x-1/2"
-                data-state={pHover ? "active" : "inactive"}
-              >
-                {InfosPDTC.principio.map((p) => {
-                  if (p.cod == compromisso.Max_Principio) {
-                    return p.title
-                  }
-                })}
-              </div>
-            </div>
+            <BalloonCard content={compromisso.Max_Principio} type={1} />
           )}
           {compromisso.Max_Tema && (
-            <div
-              className="relative cursor-default"
-              onMouseEnter={() => setTHover(true)}
-              onMouseLeave={() => setTHover(false)}
-            >
-              <MessageCircle className="fill-purple stroke-purple size-9" />
-              <p className="absolute top-0 left-0 w-full leading-9 text-center text-yellow">
-                {compromisso.Max_Tema}
-              </p>
-              <div
-                className="absolute w-max max-w-[235px] -z-50 font-semibold leading-tight text-center m text-balance opacity-0 bottom-0 bg-yellow text-purple text-sm data-[state=active]:z-50 data-[state=active]:bottom-10 data-[state=active]:opacity-100 transition-all delay-150 p-2 rounded-lg left-1/2 -translate-x-1/2"
-                data-state={tHover ? "active" : "inactive"}
-              >
-                {InfosPDTC.tema.map((p) => {
-                  if (p.cod == compromisso.Max_Tema) {
-                    return p.title
-                  }
-                })}
-              </div>
-            </div>
+            <BalloonCard content={compromisso.Max_Tema} type={2} />
           )}
           {compromisso.Max_Diretriz && (
-            <div
-              className="relative cursor-default"
-              onMouseEnter={() => setDHover(true)}
-              onMouseLeave={() => setDHover(false)}
-            >
-              <MessageCircle className="fill-purple stroke-purple size-9" />
-              <p className="absolute top-0 left-0 w-full leading-9 text-center text-yellow">
-                {compromisso.Max_Diretriz}
-              </p>
-              <div
-                className="absolute w-max max-w-[235px] -z-50 font-semibold leading-tight text-center m text-balance opacity-0 bottom-0 bg-yellow text-purple text-sm data-[state=active]:z-50 data-[state=active]:bottom-10 data-[state=active]:opacity-100 transition-all delay-150 p-2 rounded-lg -right-4 sm:-right-8 "
-                data-state={dHover ? "active" : "inactive"}
-              >
-                {InfosPDTC.diretriz.map((p) => {
-                  if (p.cod == compromisso.Max_Diretriz) {
-                    return p.title
-                  }
-                })}
-              </div>
-            </div>
+            <BalloonCard content={compromisso.Max_Diretriz} type={3} />
           )}
         </div>
         <div className="flex items-center gap-2">

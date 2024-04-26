@@ -1,5 +1,7 @@
-import React, { useState } from "react";import { Share2, CheckCircle, Ear, MessageCircle } from "lucide-react";
-import ModalStoriesCompromisso from "./ModalStoriesCompromisso";
+import React, { useState } from "react"
+import { Share2, CheckCircle, Ear, MessageCircle } from "lucide-react"
+import ModalStoriesCompromisso from "./ModalStoriesCompromisso"
+import BalloonCard from "./BalloonCard"
 
 const ModalCompromisso = ({
   compromisso,
@@ -9,18 +11,18 @@ const ModalCompromisso = ({
   setIsOpen,
   close,
 }) => {
-  const [compromissoStories, setCompromissoStories] = useState("");
-  const [isStoriesModalOpen, setIsStoriesModalOpen] = useState(false);
+  const [compromissoStories, setCompromissoStories] = useState("")
+  const [isStoriesModalOpen, setIsStoriesModalOpen] = useState(false)
 
   const openStoriesModal = () => {
-    setCompromissoStories(compromisso);
-    setIsStoriesModalOpen(true);
-  };
+    setCompromissoStories(compromisso)
+    setIsStoriesModalOpen(true)
+  }
 
   const closeStoriesModal = () => {
-    setIsStoriesModalOpen(false);
-  };
-  console.log(compromissoCod);
+    setIsStoriesModalOpen(false)
+  }
+  console.log(compromissoCod)
 
   return (
     <div
@@ -68,14 +70,18 @@ const ModalCompromisso = ({
                   <Ear color="white" />
                   <h2 className="text-2xl leading-none text-white">Escutas</h2>
                 </div>
-                <div className="flex flex-col gap-4 p-4">
+                <div className="flex flex-col gap-5 p-5">
                   {escutas.map((e, index) => (
                     <div
                       key={index}
-                      className="flex flex-col p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
+                      className="relative flex flex-col p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
                     >
                       <div className="text-sm font-bold text-purple">
-                        {`${e.Cod_Principio} ${e.Cod_Tema} ${e.Cod_Diretriz}`}
+                        <div className="absolute right-0 flex gap-3 -top-5">
+                          <BalloonCard content={e.Cod_Principio} type={1} />
+                          <BalloonCard content={e.Cod_Diretriz} type={3} />
+                          <BalloonCard content={e.Cod_Tema} type={2} />
+                        </div>
                       </div>
                       {e.Descricao}
                     </div>
@@ -128,7 +134,7 @@ const ModalCompromisso = ({
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default ModalCompromisso;
+export default ModalCompromisso
