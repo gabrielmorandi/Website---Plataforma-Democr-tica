@@ -126,7 +126,7 @@ export default function Page() {
                 options={InfosPDTC.diretriz}
                 codSelected={codDiretriz}
                 setCod={setCodDiretriz}
-                optionDefault={diretrizSelected}
+                optionDefault={"Todas as Diretrizes"}
                 isActive={activeSelect === "Selecionar Diretriz"}
                 setIsActive={handleSetActiveSelect}
               />
@@ -170,5 +170,5 @@ export default function Page() {
       />
       <Footer />
     </>
-  );
+  )
 }
