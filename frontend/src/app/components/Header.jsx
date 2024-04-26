@@ -12,7 +12,7 @@ export default function Header() {
         <div className="grid w-full place-items-center mt-[160px] lg:mt-[250px]">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-2">
             <div className="relative flex flex-col w-max">
-              <div className="absolute -top-16 -left-12 sm:top-28-16 -z-10 sm:scale-125">
+              <div className="absolute -top-20 -left-12 sm:top-28-16 -z-10 sm:scale-125">
                 <YellowBalloon />
               </div>
               <div className="relative flex flex-col w-min">
