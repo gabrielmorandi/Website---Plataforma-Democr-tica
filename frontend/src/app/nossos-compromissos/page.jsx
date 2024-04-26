@@ -1,5 +1,4 @@
-"use client";
-import React, { useState, useEffect } from "react";
+"use client";import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Select from "../components/Select";
@@ -140,7 +139,9 @@ export default function Page() {
               <h3 className="text-xl font-semibold border-b-2 border-purple animate-cardUp">
                 {compromissosFiltrados.length !== 0
                   ? `${compromissosFiltrados.length} Compromissos encontrados!`
-                  : `Selecione em uma das categorias Todas[os] as[os] "Princípios/Temas/Diretrizes"!`}{" "}
+                  : busca && !compromissosFiltrados.length
+                  ? "Nenhum compromisso encontrado. Por favor, revise a palavra buscada ou tente outra."
+                  : `Selecione em uma das categorias Todas[os] as[os] "Princípios/Temas/Diretrizes"!`}
               </h3>
             </div>
             <div className="grid gap-4 mt-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -170,5 +171,5 @@ export default function Page() {
       />
       <Footer />
     </>
-  )
+  );
 }

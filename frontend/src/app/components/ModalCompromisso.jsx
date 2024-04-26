@@ -56,7 +56,7 @@ const ModalCompromisso = ({
           </div>
           <div className="w-11/12 max-w-[1160px] flex flex-col gap-2 pb-2">
             <div className="flex px-4 py-2  border-[2px] rounded bg-purple border-purple">
-              <p className="w-full font-semibold text-justify text-yellow">
+              <p className="w-full font-semibold text-justify text-yellow text-lg">
                 {compromisso}
               </p>
               <p className="ml-auto text-xs font-semibold text-purple">
@@ -74,7 +74,7 @@ const ModalCompromisso = ({
                   {escutas.map((e, index) => (
                     <div
                       key={index}
-                      className="relative flex flex-col p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
+                      className="relative flex flex-col p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium capitalize"
                     >
                       <div className="text-sm font-bold text-purple">
                         <div className="absolute right-0 flex gap-3 -top-5">
