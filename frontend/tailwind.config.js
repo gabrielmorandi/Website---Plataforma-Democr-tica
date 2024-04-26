@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */ module.exports = {  content: [
+/** @type {import('tailwindcss').Config} */ module.exports = {
+  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,14 +7,15 @@
   theme: {
     extend: {
       keyframes: {
+        caraEnter: {
+          "0%": { transform: "translateX(200px)", opacity: 0 },
+          "100%": { transform: "translateX(0px)", opacity: 1 },
+        },
+
         buttonBounce: {
           "0%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.05)" },
           "100%": { transform: "scale(1)" },
-        },
-        balloonAppear: {
-          "0%": { transform: "translateY(10px)", opacity: 0 },
-          "100%": { transform: "translateY(0px)", opacity: 1 },
         },
         balloonYellow: {
           "0%": { transform: "scale(1)", fill: "none", stroke: "#FFD500" },
@@ -99,16 +101,14 @@
           "balloonYellow 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         buttonBounce:
           "buttonBounce 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
-        balloonAppear1: "balloonAppear 2s ease forwards infinite",
-        balloonAppear2: "balloonAppear 2s ease forwards infinite",
-        balloonAppear3: "balloonAppear 2s ease forwards infinite",
-        balloonAppear4: "balloonAppear 2s ease forwards infinite",
+        caraEnter: "caraEnter 1s ease-in",
         balloonPurple:
           "balloonPurple 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         arrowDown:
           "arrowDown 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
         cardUp: "cardUp 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite",
-        cardUpCompromissos: "cardUpCompromissos 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+        cardUpCompromissos:
+          "cardUpCompromissos 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
         messageAnimation: " messageAnimation 3s ease-in infinite",
         cardBalloonOne:
           "cardBalloonOne 3s cubic-bezier(0.175, 0.885, 0.32, 0.900) infinite",

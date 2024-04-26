@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import { Share2, CheckCircle, Ear } from "lucide-react";
-import Link from "next/link";
+import React, { useState } from "react";import { Share2, CheckCircle, Ear, MessageCircle } from "lucide-react";
 import ModalStoriesCompromisso from "./ModalStoriesCompromisso";
 
 const ModalCompromisso = ({
   compromisso,
+  compromissoCod,
   escutas,
   isOpen,
   setIsOpen,
   close,
 }) => {
   const [compromissoStories, setCompromissoStories] = useState("");
-  const [isStoriesModalOpen, setIsStoriesModalOpen] = useState(false)
+  const [isStoriesModalOpen, setIsStoriesModalOpen] = useState(false);
 
   const openStoriesModal = () => {
-    setCompromissoStories(compromisso)
-    setIsStoriesModalOpen(true)
-  }
+    setCompromissoStories(compromisso);
+    setIsStoriesModalOpen(true);
+  };
 
   const closeStoriesModal = () => {
-    setIsStoriesModalOpen(false)
-  }
+    setIsStoriesModalOpen(false);
+  };
+  console.log(compromissoCod);
 
   return (
     <div
@@ -57,23 +57,46 @@ const ModalCompromisso = ({
               <p className="w-full font-semibold text-justify text-yellow">
                 {compromisso}
               </p>
+              <p className="ml-auto text-xs font-semibold text-purple">
+                {compromissoCod}
+              </p>
             </div>
-            <div className="flex flex-col font-semibold border-[2px] rounded text-purple border-purple">
-              <div className="flex items-center w-full gap-2 px-4 py-3 bg-purple">
-                <Ear color="white" />
-                <h2 className="text-2xl leading-none text-white">Escutas</h2>
+
+            {escutas.length > 0 ? (
+              <div className="flex flex-col font-semibold border-[2px] rounded text-purple border-purple">
+                <div className="flex items-center w-full gap-2 px-4 py-3 bg-purple">
+                  <Ear color="white" />
+                  <h2 className="text-2xl leading-none text-white">Escutas</h2>
+                </div>
+                <div className="flex flex-col gap-4 p-4">
+                  {escutas.map((e, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
+                    >
+                      <div className="text-sm font-bold text-purple">
+                        {`${e.Cod_Principio} ${e.Cod_Tema} ${e.Cod_Diretriz}`}
+                      </div>
+                      {e.Descricao}
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-col gap-4 p-4">
-                {escutas.map((e, index) => (
-                  <div
-                    key={index}
-                    className="flex p-4 border-[2px] rounded border-purple text-purple text-lg leading-tight font-medium"
-                  >
-                    {e.Descricao}
+            ) : (
+              <div className="flex flex-col font-semibold border-[2px] rounded text-purple border-purple">
+                <div className="flex items-center w-full gap-2 px-4 py-3 bg-purple">
+                  <Ear color="white" />
+                  <h2 className="text-2xl leading-none text-white">Escutas</h2>
+                </div>
+                <div className="flex flex-col gap-4 p-4">
+                  <div className="flex justify-center py-4">
+                    <p className="text-lg text-purple">
+                      Não há escutas disponíveis para este compromisso.
+                    </p>
                   </div>
-                ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="sticky bottom-0 z-50 grid w-full gap-2 py-4 bg-white shadow-[0_0_3px_rgba(0,0,0,.2)] place-items-center">
             <div className="flex flex-col w-11/12 max-w-[1160px]">
@@ -105,7 +128,7 @@ const ModalCompromisso = ({
         </div>
       )}
     </div>
-  )
+  );
 };
 
 export default ModalCompromisso;

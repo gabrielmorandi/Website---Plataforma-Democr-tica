@@ -43,7 +43,7 @@ export default function Header() {
           width={150}
           height={400}
           alt="Pessoa"
-          className="absolute bottom-0 right-0 sm:w-[300px] lg:w-[450px] -z-40"
+          className="absolute bottom-0 right-0 sm:w-[300px] lg:w-[450px] -z-40 animate-caraEnter"
         />
         <div className="pointer-events-none custom-shape-divider-bottom-1712081362 -z-50">
           <div className="absolute z-10 grid w-full bottom-6 place-items-center">

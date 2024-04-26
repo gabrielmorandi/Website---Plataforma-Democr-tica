@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Select from "../components/Select";
@@ -7,77 +7,82 @@ import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
 import ModalCompromisso from "../components/ModalCompromisso";
 import { CompromissosEscutas } from "../../../data/CompromissoEscutas";
-import { InfosPDTC } from "../../../data/InfosPTDC"
+import { InfosPDTC } from "../../../data/InfosPTDC";
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
     "Todos os Princípios"
-  )
-  const [temaSelected, setTemaSelected] = useState("Todos os Temas")
+  );
+  const [temaSelected, setTemaSelected] = useState("Todos os Temas");
   const [diretrizSelected, setDiretrizSelected] = useState(
     "Todas as Diretrizes"
-  )
-  const [activeSelect, setActiveSelect] = useState("")
+  );
+  const [activeSelect, setActiveSelect] = useState("");
   const handleSetActiveSelect = (title) => {
-    setActiveSelect(activeSelect !== title ? title : "")
-  }
-  const [busca, setBusca] = useState("")
-  const [codPrincipio, setCodPrincipio] = useState(0)
-  const [codTema, setCodTema] = useState(0)
-  const [codDiretriz, setCodDiretriz] = useState(0)
-  const [compromissosFiltrados, setCompromissosFiltrados] = useState([])
-  const [isOpen, setIsOpen] = useState(false)
-  const [compromissoModal, setCompromissoModal] = useState("")
-  const [escutaModal, setEscutaModal] = useState([])
+    setActiveSelect(activeSelect !== title ? title : "");
+  };
+  const [busca, setBusca] = useState("");
+  const [codPrincipio, setCodPrincipio] = useState(0);
+  const [codTema, setCodTema] = useState(0);
+  const [codDiretriz, setCodDiretriz] = useState(0);
+  const [compromissosFiltrados, setCompromissosFiltrados] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [compromissoModal, setCompromissoModal] = useState("");
+  const [compromissoCodModal, setCompromissoCodModal] = useState("");
+  const [escutaModal, setEscutaModal] = useState([]);
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search)
+    const queryParams = new URLSearchParams(window.location.search);
 
     if (queryParams.has("diretriz") && queryParams.has("codDiretriz")) {
-      setDiretrizSelected(queryParams.get("diretriz"))
-      setCodDiretriz(queryParams.get("codDiretriz"))
+      setDiretrizSelected(queryParams.get("diretriz"));
+      setCodDiretriz(queryParams.get("codDiretriz"));
     }
-  }, [])
-
+  }, []);
   useEffect(() => {
-    const filtrados = CompromissosEscutas.filter((compromisso) =>
-      compromisso.Escutas.some((escuta) => {
-        const filtroPrincipio = codPrincipio
-          ? escuta.Cod_Principio === codPrincipio
-          : true
-        const filtroTema = codTema ? escuta.Cod_Tema === codTema : true
-        const filtroDiretriz = codDiretriz
-          ? escuta.Cod_Diretriz === codDiretriz
-          : true
-        return filtroPrincipio && filtroTema && filtroDiretriz
-      })
-    )
-    if (busca) {
-      const buscaFiltrada = filtrados.filter((compromisso) =>
-        compromisso.Escutas.some((escuta) =>
-          escuta.Descricao.toLowerCase().includes(busca.toLowerCase())
-        )
-      )
-      setCompromissosFiltrados(buscaFiltrada)
-    } else {
-      setCompromissosFiltrados(filtrados)
-    }
-  }, [codPrincipio, codTema, codDiretriz, busca])
+    const filtrados = CompromissosEscutas.filter((compromisso) => {
+      const filtroEscutas = busca
+        ? compromisso.Escutas.some((escuta) =>
+            escuta.Descricao.toLowerCase().includes(busca.toLowerCase())
+          )
+        : true;
+
+      const filtroPrincipio = codPrincipio
+        ? compromisso.Escutas.some(
+            (escuta) => escuta.Cod_Principio === codPrincipio
+          )
+        : true;
+
+      const filtroTema = codTema
+        ? compromisso.Escutas.some((escuta) => escuta.Cod_Tema === codTema)
+        : true;
+
+      const filtroDiretriz = codDiretriz
+        ? compromisso.Escutas.some(
+            (escuta) => escuta.Cod_Diretriz === codDiretriz
+          )
+        : true;
+
+      return filtroEscutas && filtroPrincipio && filtroTema && filtroDiretriz;
+    });
+
+    setCompromissosFiltrados(filtrados);
+  }, [codPrincipio, codTema, codDiretriz, busca]);
 
   useEffect(() => {
     if (isOpen) {
-      document.querySelector("html").style.overflow = "hidden"
+      document.querySelector("html").style.overflow = "hidden";
     } else {
-      document.querySelector("html").style.overflow = "auto"
+      document.querySelector("html").style.overflow = "auto";
     }
 
     return () => {
-      document.querySelector("html").style.overflow = "auto"
-    }
-  }, [isOpen])
+      document.querySelector("html").style.overflow = "auto";
+    };
+  }, [isOpen]);
 
-  const open = () => setIsOpen(true)
-  const close = () => setIsOpen(false)
+  const open = () => setIsOpen(true);
+  const close = () => setIsOpen(false);
 
   return (
     <>
@@ -135,7 +140,7 @@ export default function Page() {
               <h3 className="text-xl font-semibold border-b-2 border-purple animate-cardUp">
                 {compromissosFiltrados.length !== 0
                   ? `${compromissosFiltrados.length} Compromissos encontrados!`
-                  : `Selecione outra opção em uma das categorias para "Todas as Categorias"!`}{" "}
+                  : `Selecione em uma das categorias Todas[os] as[os] "Princípios/Temas/Diretrizes"!`}{" "}
               </h3>
             </div>
             <div className="grid gap-4 mt-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -143,9 +148,11 @@ export default function Page() {
                 <Card
                   key={index}
                   compromisso={compromisso}
+                  compromissoCod={compromisso.Cod_Compromisso}
                   open={open}
                   escuta={compromisso.Escutas}
                   setCompromissoModal={setCompromissoModal}
+                  setCompromissoCodModal={setCompromissoCodModal}
                   setEscutaModal={setEscutaModal}
                 />
               ))}
@@ -155,6 +162,7 @@ export default function Page() {
       </main>
       <ModalCompromisso
         compromisso={compromissoModal}
+        compromissoCod={compromissoCodModal}
         escutas={escutaModal}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
@@ -162,5 +170,5 @@ export default function Page() {
       />
       <Footer />
     </>
-  )
+  );
 }
