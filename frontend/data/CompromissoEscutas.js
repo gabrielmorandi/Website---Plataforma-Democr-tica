@@ -1,8 +1,7 @@
-export const CompromissosEscutas = [  
-    {
+export const CompromissosEscutas = [  {
     Cod_Compromisso: 1,
     Descricao:
-      "Adequar a infraestrutura existente para a permanência saudável nos espaços da Unifesspa",
+      "Adequar a infraestrutura existente para a permanência saudável nos espaços da Unifesspa.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D8",
@@ -67,7 +66,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 2,
     Descricao:
-      "Adequar a Unifesspa à participação efetiva de povos e comunidades tradicionais",
+      "Adequar a Unifesspa à participação efetiva de povos e comunidades tradicionais.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -286,7 +285,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 3,
-    Descricao: "Ampliar e aprimorar as formas de ingresso na Unifesspa",
+    Descricao: "Ampliar e aprimorar as formas de ingresso na Unifesspa.",
     Max_Principio: "P3",
     Max_Tema: "T2",
     Max_Diretriz: "D2",
@@ -554,7 +553,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 4,
-    Descricao: "Ampliar e institucionalizar os espaços de escuta e de debates",
+    Descricao: "Ampliar e institucionalizar os espaços de escuta e de debates.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -779,7 +778,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 5,
     Descricao:
-      "Ampliar e criar espaços multiuso de fomento à integração, à cultura, ao esporte e ao lazer na Unifesspa",
+      "Ampliar e criar espaços multiuso de fomento à integração, à cultura, ao esporte e ao lazer na Unifesspa.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D1",
@@ -1110,7 +1109,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 6,
     Descricao:
-      "Aperfeiçoar o Sistema Polare de acompanhamento ao Programa de Gestão e Desempenho (PGD)",
+      "Aperfeiçoar o Sistema Polare de acompanhamento ao Programa de Gestão e Desempenho (PGD).",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D8",
@@ -1141,7 +1140,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 7,
     Descricao:
-      "Apresentar alternativas às estratégias de formação docente atuais",
+      "Apresentar alternativas às estratégias de formação docente atuais.",
     Max_Principio: "P2",
     Max_Tema: "T6",
     Max_Diretriz: "D9",
@@ -1158,7 +1157,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 8,
     Descricao:
-      "Apresentar e pactuar estratégia para viabilizar a construção de prédios para atender aos institutos",
+      "Apresentar e pactuar estratégia para viabilizar a construção de prédios para atender aos institutos.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D6",
@@ -1238,7 +1237,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 9,
     Descricao:
-      "Propor regulamentação sobre a presença de animais domésticos nas unidades da Unifesspa",
+      "Propor regulamentação sobre a presença de animais domésticos nas unidades da Unifesspa.",
     Max_Principio: "P2",
     Max_Tema: "T15",
     Max_Diretriz: "D2",
@@ -1262,7 +1261,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 10,
     Descricao:
-      "Aprimorar a política de segurança dos campi, utilizando estratégias de tecnologia e gestão",
+      "Aprimorar a política de segurança dos campi, utilizando estratégias de tecnologia e gestão.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D3",
@@ -1757,7 +1756,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 12,
     Descricao:
-      "Articular uma política de esportes e integração em diálogo com as atléticas",
+      "Articular uma política de esportes e integração em diálogo com as atléticas.",
     Max_Principio: "P7",
     Max_Tema: "T8",
     Max_Diretriz: "D4",
@@ -1804,7 +1803,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 13,
     Descricao:
-      "Avaliar e promover ajustes no desenho institucional da Unifesspa",
+      "Avaliar e promover ajustes no desenho institucional da Unifesspa.",
     Max_Principio: "P1",
     Max_Tema: "T3",
     Max_Diretriz: "D1",
@@ -1919,7 +1918,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 14,
     Descricao:
-      "Avançar nas políticas de acolhimento e permanência estudantil com perspectiva multicampi",
+      "Avançar nas políticas de acolhimento e permanência estudantil com perspectiva multicampi.",
     Max_Principio: "P7",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -2046,7 +2045,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 15,
-    Descricao: "Avançar e institucionalizar políticas de combate ao racismo",
+    Descricao: "Avançar e institucionalizar políticas de combate ao racismo.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -2252,7 +2251,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 16,
     Descricao:
-      "Avançar na política de internacionalização da Unifesspa, como universidade da Pan-Amazônia, interligando-se com protagonismo em redes de cooperação internacional e intercâmbios de discentes e docentes estrangeiros na pós-graduação",
+      "Avançar na política de internacionalização da Unifesspa, como universidade da Pan-Amazônia, interligando-se com protagonismo em redes de cooperação internacional e intercâmbios de discentes e docentes estrangeiros na pós-graduação.",
     Max_Principio: "P1",
     Max_Tema: "T7",
     Max_Diretriz: "D7",
@@ -2290,7 +2289,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 17,
     Descricao:
-      "Apresentar ferramentas para a desburocratizar o uso de recursos orçamentários por coordenadores de projetos de ensino, pesquisa ou extensão",
+      "Apresentar ferramentas para a desburocratizar o uso de recursos orçamentários por coordenadores de projetos de ensino, pesquisa ou extensão.",
     Max_Principio: "P2",
     Max_Tema: "T13",
     Max_Diretriz: "D7",
@@ -2342,7 +2341,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 18,
     Descricao:
-      "Colocar em funcionamento imediatamente espaços físicos que estejam ociosos na Unifesspa",
+      "Colocar em funcionamento imediatamente espaços físicos que estejam ociosos na Unifesspa.",
     Max_Principio: "P7",
     Max_Tema: "T3",
     Max_Diretriz: "D6",
@@ -2386,7 +2385,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 19,
-    Descricao: "Avançar e institucionalizar políticas de combate à LGBTfobia",
+    Descricao: "Avançar e institucionalizar políticas de combate à LGBTfobia.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -2410,7 +2409,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 20,
     Descricao:
-      "Concluir as obras e colocar para funcionar do RU da Unidade II em Marabá",
+      "Concluir as obras e colocar para funcionar do RU da Unidade II em Marabá.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D6",
@@ -2434,7 +2433,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 21,
     Descricao:
-      "Construir condições para que todos os programas de pós-graduação alcancem nota 4",
+      "Construir condições para que todos os programas de pós-graduação alcancem nota 4.",
     Max_Principio: "P6",
     Max_Tema: "T18",
     Max_Diretriz: "D6",
@@ -2486,7 +2485,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 22,
     Descricao:
-      "Construir o fórum e a política de cultura da Unifesspa multicampi",
+      "Construir o fórum e a política de cultura da Unifesspa multicampi.",
     Max_Principio: "P2",
     Max_Tema: "T4",
     Max_Diretriz: "D4",
@@ -2868,7 +2867,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 23,
     Descricao:
-      "Construir uma política ambiental e um plano diretor de arborização da Unifesspa",
+      "Construir uma política ambiental e um plano diretor de arborização da Unifesspa.",
     Max_Principio: "P7",
     Max_Tema: "T15",
     Max_Diretriz: "D3",
@@ -2939,7 +2938,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 24,
     Descricao:
-      "Construir uma política de acolhimento às/aos filhas/os de servidoras(es) e de estudantes",
+      "Construir uma política de acolhimento às/aos filhas/os de servidoras(es) e de estudantes.",
     Max_Principio: "P7",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -3027,7 +3026,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 25,
     Descricao:
-      "Propor criação de núcleo de integração multicampi e institucionalização da política multicampi da Unifesspa",
+      "Propor criação de núcleo de integração multicampi e institucionalização da política multicampi da Unifesspa.",
     Max_Principio: "P4",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -3120,7 +3119,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 26,
     Descricao:
-      "Criar a política de atenção, saúde e qualidade de vida e um fórum permanente de acompanhamento",
+      "Criar a política de atenção, saúde e qualidade de vida e um fórum permanente de acompanhamento.",
     Max_Principio: "P7",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -3455,7 +3454,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 27,
     Descricao:
-      "Implementar uma política destinada à reciclagem ou à reutilização de equipamentos e de material eletroeletrônico",
+      "Implementar uma política destinada à reciclagem ou à reutilização de equipamentos e de material eletroeletrônico.",
     Max_Principio: "P6",
     Max_Tema: "T15",
     Max_Diretriz: "D3",
@@ -3545,7 +3544,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 29,
     Descricao:
-      "Definir uma estratégia para otimizar os contratos de vigilância patrimonial, locação de veículos, conservação predial, manutenção de veículos, manutenção de aparelhos de ar condicionado, de locação de mão de obra e de limpeza, reduzindo custos e aprimorando os serviços",
+      "Definir uma estratégia para otimizar os contratos de vigilância patrimonial, locação de veículos, conservação predial, manutenção de veículos, manutenção de aparelhos de ar condicionado, de locação de mão de obra e de limpeza, reduzindo custos e aprimorando os serviços.",
     Max_Principio: "P6",
     Max_Tema: "T18",
     Max_Diretriz: "D3",
@@ -3569,7 +3568,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 30,
     Descricao:
-      "Definir uma política clara e transparente de oferta de turmas de convênio e contratos, incluindo condições plenas de integração e permanência dos estudantes",
+      "Definir uma política clara e transparente de oferta de turmas de convênio e contratos, incluindo condições plenas de integração e permanência dos estudantes.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D5",
@@ -3765,7 +3764,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 31,
     Descricao:
-      "Ampliar a democratizar o planejamento e gestão orçamentária da Unifesspa",
+      "Ampliar a democratizar o planejamento e gestão orçamentária da Unifesspa.",
     Max_Principio: "P6",
     Max_Tema: "T18",
     Max_Diretriz: "D2",
@@ -4034,7 +4033,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 32,
     Descricao:
-      "Dialogar com as prefeituras municipais e o governo estadual para construir soluções para problemas de segurança e iluminação públicas no entorno dos campus",
+      "Dialogar com as prefeituras municipais e o governo estadual para construir soluções para problemas de segurança e iluminação públicas no entorno dos campus.",
     Max_Principio: "P7",
     Max_Tema: "T18",
     Max_Diretriz: "D7",
@@ -4070,7 +4069,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 33,
-    Descricao: "Disponibilizar infraestrutura às entidades estudantis",
+    Descricao: "Disponibilizar infraestrutura às entidades estudantis.",
     Max_Principio: "P1",
     Max_Tema: "T11",
     Max_Diretriz: "D9",
@@ -4269,7 +4268,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 34,
     Descricao:
-      "Efetivar os fóruns de ensino, pesquisa e extensão como espaços de diálogo e deliberação",
+      "Efetivar os fóruns de ensino, pesquisa e extensão como espaços de diálogo e deliberação.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -4530,7 +4529,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 35,
-    Descricao: "Enfrentar o problema da evasão estudantil",
+    Descricao: "Enfrentar o problema da evasão estudantil.",
     Max_Principio: "P1",
     Max_Tema: "T16",
     Max_Diretriz: "D7",
@@ -4575,7 +4574,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 36,
     Descricao:
-      "Estabelecer diretrizes e fomentar a submissão de propostas de projetos institucionais junto às agências de fomento",
+      "Estabelecer diretrizes e fomentar a submissão de propostas de projetos institucionais junto às agências de fomento.",
     Max_Principio: "P3",
     Max_Tema: "T18",
     Max_Diretriz: "D5",
@@ -4641,7 +4640,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 37,
     Descricao:
-      "Estabelecer diálogos e apresentar propostas junto ao Governo do Estado e aos órgãos de fomento para implementação de ações dirigidas à fixação de recursos humanos em cidades nas quais tal condição tem se mostrado limitada",
+      "Estabelecer diálogos e apresentar propostas junto ao Governo do Estado e aos órgãos de fomento para implementação de ações dirigidas à fixação de recursos humanos em cidades nas quais tal condição tem se mostrado limitada.",
     Max_Principio: "P6",
     Max_Tema: "T10",
     Max_Diretriz: "D8",
@@ -4686,7 +4685,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 38,
     Descricao:
-      "Estabelecer uma política de formulação de editais e chamamentos para que a comunidade acadêmica se engajar na solução de problemas administrativos e de infraestrutura enfrentados pela Unifesspa",
+      "Estabelecer uma política de formulação de editais e chamamentos para que a comunidade acadêmica se engajar na solução de problemas administrativos e de infraestrutura enfrentados pela Unifesspa.",
     Max_Principio: "P3",
     Max_Tema: "T3",
     Max_Diretriz: "D5",
@@ -4716,7 +4715,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 39,
-    Descricao: "Estabelecer uma política de moradia estudantil multicampi",
+    Descricao: "Estabelecer uma política de moradia estudantil multicampi.",
     Max_Principio: "P7",
     Max_Tema: "T16",
     Max_Diretriz: "D6",
@@ -4800,7 +4799,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 40,
-    Descricao: "Estimular a integração ensino-pesquisa-extensão",
+    Descricao: "Estimular a integração ensino-pesquisa-extensão.",
     Max_Principio: "P2",
     Max_Tema: "T9",
     Max_Diretriz: "D9",
@@ -4999,7 +4998,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 41,
     Descricao:
-      "Estimular e apoiar a realização de cursos de pós-graduação para servidores",
+      "Estimular e apoiar a realização de cursos de pós-graduação para servidores.",
     Max_Principio: "P2",
     Max_Tema: "T7",
     Max_Diretriz: "D1",
@@ -5221,7 +5220,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 43,
     Descricao:
-      "Fomentar o debate sobre ações interculturais no âmbito do ensino-pesquisa-extensão",
+      "Fomentar o debate sobre ações interculturais no âmbito do ensino-pesquisa-extensão.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -5244,7 +5243,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 44,
-    Descricao: "Fomentar os intercâmbios interculturais",
+    Descricao: "Fomentar os intercâmbios interculturais.",
     Max_Principio: "P5",
     Max_Tema: "T4",
     Max_Diretriz: "D4",
@@ -5275,7 +5274,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 45,
     Descricao:
-      "Formular uma nova política de apoio à inovação no âmbito da Unifesspa, incluindo a reformulação do Núcleo de Inovação Tecnológica (NIT)",
+      "Formular uma nova política de apoio à inovação no âmbito da Unifesspa, incluindo a reformulação do Núcleo de Inovação Tecnológica (NIT).",
     Max_Principio: "P2",
     Max_Tema: "T12",
     Max_Diretriz: "D6",
@@ -5322,7 +5321,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 47,
-    Descricao: "Fortalecer a política de monitoria estudantil",
+    Descricao: "Fortalecer a política de monitoria estudantil.",
     Max_Principio: "P7",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -5360,7 +5359,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 48,
     Descricao:
-      "Fortalecer a relação universidade - educação básica e cursinhos populares",
+      "Fortalecer a relação universidade - educação básica e cursinhos populares.",
     Max_Principio: "P2",
     Max_Tema: "T17",
     Max_Diretriz: "D2",
@@ -5555,7 +5554,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 49,
     Descricao:
-      "Fortalecer as ações afirmativas e políticas de valorização da diversidade",
+      "Fortalecer as ações afirmativas e políticas de valorização da diversidade.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -5712,7 +5711,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 50,
     Descricao:
-      "Fortalecer os grupos de pesquisa-extensão, especialmente os interdisciplinares e multicampi, com diálogo com a sociedade regional e seus desafios ao desenvolvimento",
+      "Fortalecer os grupos de pesquisa-extensão, especialmente os interdisciplinares e multicampi, com diálogo com a sociedade regional e seus desafios ao desenvolvimento.",
     Max_Principio: "P2",
     Max_Tema: "T9",
     Max_Diretriz: "D7",
@@ -6323,7 +6322,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 51,
     Descricao:
-      "Fortalecimento do Departamento de Apoio Psicossociopedagógico (DAPSI) e a Divisão de Saúde e Qualidade de Vida (DSQV), com pessoal e recursos",
+      "Fortalecimento do Departamento de Apoio Psicossociopedagógico (DAPSI) e a Divisão de Saúde e Qualidade de Vida (DSQV), com pessoal e recursos.",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D8",
@@ -6408,7 +6407,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 52,
-    Descricao: "Garantir a atualização e a ampliação do acervo bibliográfico",
+    Descricao: "Garantir a atualização e a ampliação do acervo bibliográfico.",
     Max_Principio: "P2",
     Max_Tema: "T18",
     Max_Diretriz: "D7",
@@ -6425,7 +6424,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 53,
     Descricao:
-      "Garantir orçamento, apoio administrativo e acompanhamento às aquisições de consumíveis para atender aos laboratórios e práticas de ensino",
+      "Garantir orçamento, apoio administrativo e acompanhamento às aquisições de consumíveis para atender aos laboratórios e práticas de ensino.",
     Max_Principio: "P2",
     Max_Tema: "T18",
     Max_Diretriz: "D7",
@@ -6505,7 +6504,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 54,
     Descricao:
-      "Garantir as vagas de docentes e TAES remanescente da criação da Unifesspa, bem como agilizar concursos de reposição e ações de realocação interna",
+      "Garantir as vagas de docentes e TAES remanescente da criação da Unifesspa, bem como agilizar concursos de reposição e ações de realocação interna.",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D6",
@@ -6955,7 +6954,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 56,
     Descricao:
-      "Garantir e aprimorar a JEPE como evento anual de diálogo acadêmico envolvendo a comunidade interna e externa",
+      "Garantir e aprimorar a JEPE como evento anual de diálogo acadêmico envolvendo a comunidade interna e externa.",
     Max_Principio: "P2",
     Max_Tema: "T6",
     Max_Diretriz: "D9",
@@ -7119,7 +7118,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 57,
     Descricao:
-      "Garantir que em todos os convênios que envolvam atividades de ensino haja a devida compensação aos institutos e as faculdades nos termos que determina a Resolução nº 05/2014 do Consun",
+      "Garantir que em todos os convênios que envolvam atividades de ensino haja a devida compensação aos institutos e as faculdades nos termos que determina a Resolução nº 05/2014 do Consun.",
     Max_Principio: "P6",
     Max_Tema: "T18",
     Max_Diretriz: "D5",
@@ -7176,7 +7175,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 58,
-    Descricao: "Garantir recursos para as viagens de campo",
+    Descricao: "Garantir recursos para as viagens de campo.",
     Max_Principio: "P2",
     Max_Tema: "T18",
     Max_Diretriz: "D7",
@@ -7200,7 +7199,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 59,
     Descricao:
-      "Implantar o Campus Universitário de Canaã dos Carajás em parceria com a Prefeitura Municipal",
+      "Implantar o Campus Universitário de Canaã dos Carajás em parceria com a Prefeitura Municipal.",
     Max_Principio: "P4",
     Max_Tema: "T12",
     Max_Diretriz: "D6",
@@ -7238,7 +7237,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 60,
     Descricao:
-      "Implementar jornada de 30 horas nas unidades nas quais houver atividades contínuas em regime de turnos",
+      "Implementar jornada de 30 horas nas unidades nas quais houver atividades contínuas em regime de turnos.",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D8",
@@ -7300,7 +7299,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 61,
     Descricao:
-      "Implementar o Portal Alumni-Unifesspa para integrar os egressos",
+      "Implementar o Portal Alumni-Unifesspa para integrar os egressos.",
     Max_Principio: "P2",
     Max_Tema: "T12",
     Max_Diretriz: "D9",
@@ -7338,7 +7337,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 62,
     Descricao:
-      "Implementar programa de inclusão digital para fins acadêmicos para discentes",
+      "Implementar programa de inclusão digital para fins acadêmicos para discentes.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D9",
@@ -7362,7 +7361,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 63,
     Descricao:
-      "Implementar um plano de divulgação da Unifesspa nas escolas, na mídia e juntos a segmentos específicos da sociedade, recorrendo a estratégias diversificadas e atrativas, como a a Feira das Profissões, com dotação orçamentária própria",
+      "Implementar um plano de divulgação da Unifesspa nas escolas, na mídia e juntos a segmentos específicos da sociedade, recorrendo a estratégias diversificadas e atrativas, como a a Feira das Profissões, com dotação orçamentária própria.",
     Max_Principio: "P1",
     Max_Tema: "T2",
     Max_Diretriz: "D5",
@@ -7443,7 +7442,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 65,
-    Descricao: "Incentivar e apoiar à participação discente em eventos",
+    Descricao: "Incentivar e apoiar à participação discente em eventos.",
     Max_Principio: "P5",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -7481,7 +7480,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 66,
     Descricao:
-      "Inovar na política de editais internos de fomento e de publicização da produção acadêmica",
+      "Inovar na política de editais internos de fomento e de publicização da produção acadêmica.",
     Max_Principio: "P2",
     Max_Tema: "T17",
     Max_Diretriz: "D9",
@@ -7785,7 +7784,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 67,
     Descricao:
-      "Instalar espaços destinados à realização de trabalhos em grupo em todas a bibliotecas",
+      "Instalar espaços destinados à realização de trabalhos em grupo em todas a bibliotecas.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D9",
@@ -7830,7 +7829,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 68,
     Descricao:
-      "Instalar um laboratório de informática de uso coletivo em cada uma das unidades da Unifesspa",
+      "Instalar um laboratório de informática de uso coletivo em cada uma das unidades da Unifesspa.",
     Max_Principio: "P1",
     Max_Tema: "T11",
     Max_Diretriz: "D9",
@@ -7923,7 +7922,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 69,
-    Descricao: "Fortalecer a comissão de acessibilidade",
+    Descricao: "Fortalecer a comissão de acessibilidade.",
     Max_Principio: "P7",
     Max_Tema: "T1",
     Max_Diretriz: "D5",
@@ -7940,7 +7939,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 70,
     Descricao:
-      "Fortalecer a comissão permanente para diversidade, heteroidentificação e etnicidade",
+      "Fortalecer a comissão permanente para diversidade, heteroidentificação e etnicidade.",
     Max_Principio: "P1",
     Max_Tema: "T11",
     Max_Diretriz: "D1",
@@ -8006,7 +8005,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 71,
     Descricao:
-      "Institucionalizar o reconhecimento do “notório saber” e/ou “mestres da cultura”",
+      "Institucionalizar o reconhecimento do “notório saber” e/ou “mestres da cultura”.",
     Max_Principio: "P1",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -8030,7 +8029,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 72,
     Descricao:
-      "Instituir processos participativos de elaboração e atualização do Plano de Desenvolvimento Institucional (PDI) e demais planos",
+      "Instituir processos participativos de elaboração e atualização do Plano de Desenvolvimento Institucional (PDI) e demais planos.",
     Max_Principio: "P6",
     Max_Tema: "T18",
     Max_Diretriz: "D2",
@@ -8479,7 +8478,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 73,
     Descricao:
-      "Integrar e articular as políticas de acolhimento destinadas aos servidores",
+      "Integrar e articular as políticas de acolhimento destinadas aos servidores.",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D8",
@@ -8515,7 +8514,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 74,
-    Descricao: "Investir em políticas de qualificação dos servidores",
+    Descricao: "Investir em políticas de qualificação dos servidores.",
     Max_Principio: "P2",
     Max_Tema: "T6",
     Max_Diretriz: "D7",
@@ -8552,7 +8551,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 75,
-    Descricao: "Investir na gestão, adequação e expansão de laboratórios",
+    Descricao: "Investir na gestão, adequação e expansão de laboratórios.",
     Max_Principio: "P2",
     Max_Tema: "T13",
     Max_Diretriz: "D7",
@@ -8944,7 +8943,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 77,
     Descricao:
-      "Melhorar as ferramentas de gestão e simplificar processos internos",
+      "Melhorar as ferramentas de gestão e simplificar processos internos.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D1",
@@ -9072,7 +9071,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 78,
     Descricao:
-      "Promover capacitação para o desenvolvimento e a gestão do trabalho remoto",
+      "Promover capacitação para o desenvolvimento e a gestão do trabalho remoto.",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D8",
@@ -9095,7 +9094,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 79,
-    Descricao: "Promover feiras de saúde",
+    Descricao: "Promover feiras de saúde.",
     Max_Principio: "P5",
     Max_Tema: "T2",
     Max_Diretriz: "D1",
@@ -9119,7 +9118,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 80,
     Descricao:
-      "Retomar e fortalecer o programa Unifesspa de todos nós, com o intuito de aproximar a comunidade acadêmica os dirigentes da administração superior",
+      "Retomar e fortalecer o programa Unifesspa de todos nós, com o intuito de aproximar a comunidade acadêmica os dirigentes da administração superior.",
     Max_Principio: "P3",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9143,7 +9142,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 81,
     Descricao:
-      "Qualificar os processos de progressão funcional para além do produtivismo acadêmico",
+      "Qualificar os processos de progressão funcional para além do produtivismo acadêmico.",
     Max_Principio: "P2",
     Max_Tema: "T10",
     Max_Diretriz: "D9",
@@ -9160,7 +9159,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 82,
     Descricao:
-      "Reconstruir a política de TIC da Unifesspa, recompondo o quadro de pessoal do CTIC e a na estrutura organizacionais",
+      "Reconstruir a política de TIC da Unifesspa, recompondo o quadro de pessoal do CTIC e a na estrutura organizacionais.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D5",
@@ -9264,7 +9263,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 84,
     Descricao:
-      "Recuperar e atualizar o laboratório de computação científica - LCC",
+      "Recuperar e atualizar o laboratório de computação científica - LCC.",
     Max_Principio: "P2",
     Max_Tema: "T19",
     Max_Diretriz: "D6",
@@ -9301,7 +9300,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 85,
     Descricao:
-      "Reestabelecer rotinas que tornem mais ágeis a realização de concursos",
+      "Reestabelecer rotinas que tornem mais ágeis a realização de concursos.",
     Max_Principio: "P7",
     Max_Tema: "T3",
     Max_Diretriz: "D5",
@@ -9318,7 +9317,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 86,
     Descricao:
-      "Reforçar, por intermédio do Núcleo de Ações Afirmativas, Diversidade e Equidade (Nuade), a articulação institucional com os povos indígenas e com os quilombolas",
+      "Reforçar, por intermédio do Núcleo de Ações Afirmativas, Diversidade e Equidade (Nuade), a articulação institucional com os povos indígenas e com os quilombolas.",
     Max_Principio: "P3",
     Max_Tema: "T18",
     Max_Diretriz: "D1",
@@ -9463,7 +9462,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 88,
     Descricao:
-      "Dialogar com as prefeituras municipais e o governo estadual para construir soluções para problemas de mobilidade urbana em nossos campi",
+      "Dialogar com as prefeituras municipais e o governo estadual para construir soluções para problemas de mobilidade urbana em nossos campi.",
     Max_Principio: "P7",
     Max_Tema: "T2",
     Max_Diretriz: "D1",
@@ -9521,7 +9520,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 89,
     Descricao:
-      "Revisar e simplificar as normas e as exigências relacionadas aos editas internos da Unifesspa",
+      "Revisar e simplificar as normas e as exigências relacionadas aos editas internos da Unifesspa.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D5",
@@ -9629,7 +9628,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 90,
     Descricao:
-      "Revisar e simplificar as normas relacionadas a captação de recursos externos à instituição",
+      "Revisar e simplificar as normas relacionadas a captação de recursos externos à instituição.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9660,7 +9659,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 91,
     Descricao:
-      "Revisar e simplificar as normas relacionadas ao estabelecimento de empresas-júnior no âmbito da Unifesspa",
+      "Revisar e simplificar as normas relacionadas ao estabelecimento de empresas-júnior no âmbito da Unifesspa.",
     Max_Principio: "P1",
     Max_Tema: "T12",
     Max_Diretriz: "D5",
@@ -9684,7 +9683,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 92,
     Descricao:
-      "Voltar a garantir recursos para apoiar demandas de transporte urbano coletivo",
+      "Voltar a garantir recursos para apoiar demandas de transporte urbano coletivo.",
     Max_Principio: "P6",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -9735,7 +9734,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 93,
     Descricao:
-      "Construir o Hospital Universitário de Clínicas Veterinárias - HoVet",
+      "Construir o Hospital Universitário de Clínicas Veterinárias - HoVet.",
     Max_Principio: "P3",
     Max_Tema: "T11",
     Max_Diretriz: "D6",
@@ -9780,7 +9779,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 94,
     Descricao:
-      "Apresentar e pactuar estratégias para atração e manutenção equânime de TAEs nas diversas unidades da Unifesspa",
+      "Apresentar e pactuar estratégias para atração e manutenção equânime de TAEs nas diversas unidades da Unifesspa.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9803,7 +9802,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 95,
-    Descricao: "Realizar levantamento patrimonial completo",
+    Descricao: "Realizar levantamento patrimonial completo.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9855,7 +9854,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 96,
     Descricao:
-      "Impulsionar e construir relações colaborativas e sinérgicas entre as unidades da administração superior e os institutos",
+      "Impulsionar e construir relações colaborativas e sinérgicas entre as unidades da administração superior e os institutos.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9892,7 +9891,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 97,
-    Descricao: "Regulamentar e assegurar recebimento de bolsas pelos TAEs",
+    Descricao: "Regulamentar e assegurar recebimento de bolsas pelos TAEs.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9958,7 +9957,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 98,
     Descricao:
-      "Implantar, imediatamente, comissão especial para dar resolutibilidade ao planejamento do Hospital Universitário de Clínicas Veterinárias e da Fazenda Escola",
+      "Implantar, imediatamente, comissão especial para dar resolutibilidade ao planejamento do Hospital Universitário de Clínicas Veterinárias e da Fazenda Escola.",
     Max_Principio: "P2",
     Max_Tema: "T11",
     Max_Diretriz: "D7",
@@ -10038,7 +10037,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 99,
     Descricao:
-      "Construir uma quadra poliesportiva em cada um dos campi da Unifesspa",
+      "Construir uma quadra poliesportiva em cada um dos campi da Unifesspa.",
     Max_Principio: null,
     Max_Tema: null,
     Max_Diretriz: null,
@@ -10046,7 +10045,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 100,
-    Descricao: "Reimplantar a galeria de artes da Unifesspa",
+    Descricao: "Reimplantar a galeria de artes da Unifesspa.",
     Max_Principio: "P2",
     Max_Tema: "T4",
     Max_Diretriz: "D9",
@@ -10068,7 +10067,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 101,
-    Descricao: "Revitalizar a unidade I do campus de Marabá",
+    Descricao: "Revitalizar a unidade I do campus de Marabá.",
     Max_Principio: null,
     Max_Tema: null,
     Max_Diretriz: null,
@@ -10076,7 +10075,8 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 102,
-    Descricao: "Construir o segundo prédio no Instituto Estudos do Xingu (IEX)",
+    Descricao:
+      "Construir o segundo prédio no Instituto Estudos do Xingu (IEX).",
     Max_Principio: null,
     Max_Tema: null,
     Max_Diretriz: null,
@@ -10085,7 +10085,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 103,
     Descricao:
-      "Fomentar um percurso curricular discente mais flexível para formação interdisciplinar e de integração com diferentes campi",
+      "Fomentar um percurso curricular discente mais flexível para formação interdisciplinar e de integração com diferentes campi.",
     Max_Principio: "P5",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -10102,7 +10102,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 104,
     Descricao:
-      "Apoiar os cursos de graduação na mudança dos PPCs pautada na interculturalidade para dialogar com os saberes/vivências dos povos da Amazônia: indígenas, quilombolas, ribeirinhos, camponeses dentre outros, evidenciando a importância dos conhecimentos produzidos por autoras(es) negras(os) e indígenas nas ementas das disciplinas",
+      "Apoiar os cursos de graduação na mudança dos PPCs pautada na interculturalidade para dialogar com os saberes/vivências dos povos da Amazônia: indígenas, quilombolas, ribeirinhos, camponeses dentre outros, evidenciando a importância dos conhecimentos produzidos por autoras(es) negras(os) e indígenas nas ementas das disciplinas.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -10126,7 +10126,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 105,
     Descricao:
-      "Incentivar a curricularização da extensão nos PPCs enfocando a educação antirracista, antisexista, anticapacitista e antiLGBTQIAPN+fóbica, com o diálogo nas escolas e territórios",
+      "Incentivar a curricularização da extensão nos PPCs enfocando a educação antirracista, antisexista, anticapacitista e antiLGBTQIAPN+fóbica, com o diálogo nas escolas e territórios.",
     Max_Principio: "P2",
     Max_Tema: "T9",
     Max_Diretriz: "D9",
@@ -10171,7 +10171,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 106,
     Descricao:
-      "Fomentar discussão com o MEC para incentivar a criação de cursos interculturais de graduação em áreas demandadas pelos povos/populações/movimentos da região",
+      "Fomentar discussão com o MEC para incentivar a criação de cursos interculturais de graduação em áreas demandadas pelos povos/populações/movimentos da região.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -10194,7 +10194,8 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 107,
-    Descricao: "Fortalecer a oferta de ensino superior para o público do campo",
+    Descricao:
+      "Fortalecer a oferta de ensino superior para o público do campo.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -10211,7 +10212,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 108,
     Descricao:
-      "Incluir nos quesitos de progressão, formação sobre a temática da diversidade etnicorracial, como forma de incentivar a compreensão dos servidores sobre o compromisso expresso nos princípios da Unifesspa com os povos que a cercam",
+      "Incluir nos quesitos de progressão, formação sobre a temática da diversidade etnicorracial, como forma de incentivar a compreensão dos servidores sobre o compromisso expresso nos princípios da Unifesspa com os povos que a cercam.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -10228,7 +10229,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 109,
     Descricao:
-      "Regulamentar as políticas afirmativas etnicorraciais na Unifesspa para a graduação e pós-graduação",
+      "Regulamentar as políticas afirmativas etnicorraciais na Unifesspa para a graduação e pós-graduação.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -10245,7 +10246,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 110,
     Descricao:
-      "Garantir a representatividade etnicorracial na ocupação dos cargos da administração superior",
+      "Garantir a representatividade etnicorracial na ocupação dos cargos da administração superior.",
     Max_Principio: "P1",
     Max_Tema: "T10",
     Max_Diretriz: "D1",
@@ -10269,7 +10270,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 111,
     Descricao:
-      "Atentar para as legislações que garantam o ingresso de docentes e TAEs indígenas na carreira docente da Unifesspa",
+      "Atentar para as legislações que garantam o ingresso de docentes e TAEs indígenas na carreira docente da Unifesspa.",
     Max_Principio: "P1",
     Max_Tema: "T10",
     Max_Diretriz: "D1",
@@ -10286,7 +10287,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 112,
     Descricao:
-      "Instituir uma política de acolhimento pedagógico de estudantes negros, quilombolas e indígenas para promoção do letramento acadêmico, prioritariamente quanto às linguagens Matemática, Língua Portuguesa e Tecnologias da Informação e Comunicação",
+      "Instituir uma política de acolhimento pedagógico de estudantes negros, quilombolas e indígenas para promoção do letramento acadêmico, prioritariamente quanto às linguagens Matemática, Língua Portuguesa e Tecnologias da Informação e Comunicação.",
     Max_Principio: "P1",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -10310,7 +10311,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 113,
     Descricao:
-      "Instituir processos seletivos especiais para acesso de candidatos/as das ações afirmativas na pós-graduação",
+      "Instituir processos seletivos especiais para acesso de candidatos/as das ações afirmativas na pós-graduação.",
     Max_Principio: "P1",
     Max_Tema: "T2",
     Max_Diretriz: "D1",
@@ -10334,7 +10335,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 114,
     Descricao:
-      "Promover acompanhamento direcionado a discentes indígenas, negros, quilombolas, PCDs e LGBTQIAPN+ com atendimento psicossocial para promover a integração e o enfrentamento aos efeitos do racismo institucional e outras formas de segregação",
+      "Promover acompanhamento direcionado a discentes indígenas, negros, quilombolas, PCDs e LGBTQIAPN+ com atendimento psicossocial para promover a integração e o enfrentamento aos efeitos do racismo institucional e outras formas de segregação.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -10358,7 +10359,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 115,
     Descricao:
-      "Implementar planejamento estratégico para as compras de equipamentos e insumos vinculados às TICs pode resolver diversos problemas",
+      "Implementar planejamento estratégico para as compras de equipamentos e insumos vinculados às TICs pode resolver diversos problemas.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
@@ -10403,7 +10404,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 116,
     Descricao:
-      "Implementar infraestrutura capaz de melhorar a conectividade de internet em todas as unidades",
+      "Implementar infraestrutura capaz de melhorar a conectividade de internet em todas as unidades.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
@@ -10433,7 +10434,7 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 117,
-    Descricao: "Ampliar a capacidade de atendimento do CTIC",
+    Descricao: "Ampliar a capacidade de atendimento do CTIC.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D7",
@@ -10477,7 +10478,8 @@ export const CompromissosEscutas = [
   },
   {
     Cod_Compromisso: 118,
-    Descricao: "Realinhar e reavaliar a agenda de aquisição de sistemas de TIC",
+    Descricao:
+      "Realinhar e reavaliar a agenda de aquisição de sistemas de TIC.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
@@ -10515,7 +10517,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 119,
     Descricao:
-      "Ampliar o diálogo entre as estruturas organizacionais tornando mais claras as atribuições de cada unidade",
+      "Ampliar o diálogo entre as estruturas organizacionais tornando mais claras as atribuições de cada unidade.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
@@ -10532,7 +10534,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 120,
     Descricao:
-      "Estabelecer uma política que viabilize o pagamento do auxílio financeiro aos discentes durante a etapa tempo comunidade",
+      "Estabelecer uma política que viabilize o pagamento do auxílio financeiro aos discentes durante a etapa tempo comunidade.",
     Max_Principio: "P1",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -10647,7 +10649,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 121,
     Descricao:
-      "Agilizar o pagamento de bolsas e auxílios aos discentes a partir da criação do “CadUnico Unifesspa”",
+      "Agilizar o pagamento de bolsas e auxílios aos discentes a partir da criação do “CadUnico Unifesspa”.",
     Max_Principio: "P1",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -10692,15 +10694,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 122,
     Descricao:
-      "Retomar a circulação dos ônibus da Unifesspa entre a unidade I e a III do campus de Marabá",
-    Max_Principio: null,
-    Max_Tema: null,
-    Max_Diretriz: null,
-    Escutas: [],
-  },
-  {
-    Cod_Compromisso: 123,
-    Descricao: "Retomar a publicação de Editais de remoção.",
+      "Retomar a circulação dos ônibus da Unifesspa entre a unidade I e a III do campus de Marabá.",
     Max_Principio: "P7",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
@@ -10802,6 +10796,80 @@ export const CompromissosEscutas = [
         Cod_Principio: "P1",
         Cod_Tema: "T18",
         Cod_Diretriz: "D1",
+      },
+    ],
+  },
+  {
+    Cod_Compromisso: 123,
+    Descricao: "Retomar a publicação de Editais de remoção.",
+    Max_Principio: "P6",
+    Max_Tema: "T10",
+    Max_Diretriz: "D2",
+    Escutas: [
+      {
+        Descricao:
+          "Há falta transparência nesses processos de remoção, existe caso de colegas que ingressaram na Unifesspa e sete meses depois foram removidos para Marabá, para ficar só em um exemplo",
+        Cod_Principio: "P6",
+        Cod_Tema: "T10",
+        Cod_Diretriz: "D2",
+      },
+    ],
+  },
+  {
+    Cod_Compromisso: 124,
+    Descricao:
+      "Garantir o devido pagamento de adicionais de insalubridade e periculosidade aos TAEs e docentes.",
+    Max_Principio: "P7",
+    Max_Tema: "T3",
+    Max_Diretriz: "D8",
+    Escutas: [
+      {
+        Descricao:
+          "É necessário a revisão dos processos que envolveram as avaliações dos em ambientes nos quais há evidente exposição permanente ou habitual a agentes físicos, químicos ou biológicos já que, na sua maioria, são imprecisas e desviam do que  está previsto nas normas",
+        Cod_Principio: "P7",
+        Cod_Tema: "T3",
+        Cod_Diretriz: "D8",
+      },
+      {
+        Descricao:
+          "É necessário a revisão dos processos que envolveram as avaliações dos em ambientes nos quais há evidente exposição permanente ou habitual a agentes físicos, químicos ou biológicos já que, na sua maioria, são imprecisas e desviam do que  está previsto nas normas",
+        Cod_Principio: "P7",
+        Cod_Tema: "T10",
+        Cod_Diretriz: "D8",
+      },
+    ],
+  },
+  {
+    Cod_Compromisso: 125,
+    Descricao:
+      "Retomar a realização de concursos para preenchimento das vagas de TAEs.",
+    Max_Principio: "P7",
+    Max_Tema: "T10",
+    Max_Diretriz: "D8",
+    Escutas: [
+      {
+        Descricao:
+          "Durante a atual gestão não foram realizados concursos para a contratação de TAEs, mesmo havendo dezenas de vagas que desocupadas",
+        Cod_Principio: "P7",
+        Cod_Tema: "T10",
+        Cod_Diretriz: "D8",
+      },
+    ],
+  },
+  {
+    Cod_Compromisso: 126,
+    Descricao:
+      "Adotar solução permanente para recolhimento e destinação dos resíduos labotaroriais.",
+    Max_Principio: "P7",
+    Max_Tema: "T15",
+    Max_Diretriz: "D3",
+    Escutas: [
+      {
+        Descricao:
+          "Os resíduos gerados pelos nossos laboratórios carecem procedimentos de recolhimento e destinação de longo prazo, não é razoável fazer licitação todo o ano para resolver uma situação que sempre existirá",
+        Cod_Principio: "P7",
+        Cod_Tema: "T15",
+        Cod_Diretriz: "D3",
       },
     ],
   },

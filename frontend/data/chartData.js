@@ -6,40 +6,40 @@ export const chartData = [
         name: "P1",
         fullName:
           "P1 - Universidade popular com diversidade social e interculturalidade",
-        uv: 230,
+        uv: 282,
       },
       {
         name: "P2",
         fullName:
           "P2 - Universidade como espaço de aprendizado, com ações indissociáveis de ensino-pesquisa-extensão e pautada em problemas socialmente relevantes",
-        uv: 328,
+        uv: 348,
       },
       {
         name: "P3",
         fullName: "P3 - Universidade Democrática e Autônoma",
-        uv: 104,
+        uv: 106,
       },
       {
         name: "P4",
         fullName: "P4 - Unifesspa com Integração Multicampi",
-        uv: 91,
+        uv: 96,
       },
       {
         name: "P5",
         fullName: "P5 - Universidade com protagonismo estudantil",
-        uv: 114,
+        uv: 116,
       },
       {
         name: "P6",
         fullName:
           "P6 - Universidade com gestão transparente, inclusiva e participativa",
-        uv: 194,
+        uv: 213,
       },
       {
         name: "P7",
         fullName:
           "P7 - Universidade com Acolhimento, Saúde e Qualidade de Vida",
-        uv: 206,
+        uv: 230,
       },
     ],
   },
@@ -54,52 +54,52 @@ export const chartData = [
       {
         name: "T2",
         fullName: "T2 - Acesso à Universidade",
-        uv: 70,
+        uv: 72,
       },
       {
         name: "T3",
         fullName: "T3 - Administração",
-        uv: 139,
+        uv: 145,
       },
       {
         name: "T4",
         fullName: "T4 - Cultura",
-        uv: 46,
+        uv: 50,
       },
       {
         name: "T5",
         fullName: "T5 - Diversidade",
-        uv: 65,
+        uv: 75,
       },
       {
         name: "T6",
         fullName: "T6 - Ensino de graduação",
-        uv: 163,
+        uv: 178,
       },
       {
         name: "T7",
         fullName: "T7 - Ensino de pós-graduação",
-        uv: 74,
+        uv: 79,
       },
       {
         name: "T8",
         fullName: "T8 - Esporte",
-        uv: 10,
+        uv: 11,
       },
       {
         name: "T9",
         fullName: "T9 - Extensão",
-        uv: 61,
+        uv: 78,
       },
       {
         name: "T10",
         fullName: "T10 - Gestão de Pessoas",
-        uv: 82,
+        uv: 89,
       },
       {
         name: "T11",
         fullName: "T11 - Infraestrutura",
-        uv: 96,
+        uv: 100,
       },
       {
         name: "T12",
@@ -114,17 +114,17 @@ export const chartData = [
       {
         name: "T14",
         fullName: "T14 - Lazer",
-        uv: 13,
+        uv: 14,
       },
       {
         name: "T15",
         fullName: "T15 - Meio Ambiente",
-        uv: 24,
+        uv: 25,
       },
       {
         name: "T16",
         fullName: "T16 - Permanência",
-        uv: 100,
+        uv: 124,
       },
       {
         name: "T17",
@@ -134,12 +134,12 @@ export const chartData = [
       {
         name: "T18",
         fullName: "T18 - Planejamento, orçamento e finanças",
-        uv: 111,
+        uv: 121,
       },
       {
         name: "T19",
         fullName: "T19 - Tecnologias de informação e comunicação",
-        uv: 24,
+        uv: 41,
       },
     ],
   },
@@ -149,48 +149,48 @@ export const chartData = [
       {
         name: "D1",
         fullName: "D1 - Acolhimento, Inclusão Social e Diversidade",
-        uv: 275,
+        uv: 343,
       },
       {
         name: "D2",
         fullName: "D2 - Gestão Democrática e Participativa",
-        uv: 228,
+        uv: 248,
       },
       {
         name: "D3",
         fullName: "D3 - Gestão Ecológica e Humanizada dos Espaços",
-        uv: 14,
+        uv: 16,
       },
       {
         name: "D4",
         fullName: "D4 - Integração: arte, cultura, esporte, lazer e ciência",
-        uv: 88,
+        uv: 100,
       },
       {
         name: "D5",
         fullName: "D5 - Política Institucional com Transparência",
-        uv: 156,
+        uv: 157,
       },
       {
         name: "D6",
         fullName: "D6 - Retomar a Expansão com Planejamento e Diálogo",
-        uv: 128,
+        uv: 130,
       },
       {
         name: "D7",
         fullName: "D7 - Suporte eficiente ao ensino, à pesquisa e à extensão",
-        uv: 124,
+        uv: 131,
       },
       {
         name: "D8",
         fullName: "D8 - Trabalho Digno com Saúde e Qualidade de Vida",
-        uv: 67,
+        uv: 73,
       },
       {
         name: "D9",
         fullName:
           "D9 - Vivências Formativas e a Indissociabilidade Ensino, Pesquisa e Extensão",
-        uv: 187,
+        uv: 193,
       },
     ],
   },
