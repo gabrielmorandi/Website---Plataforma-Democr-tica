@@ -39,7 +39,7 @@ export default function Nav({ inCompromissos }) {
             insta={true}
           />
           <LinkBlend
-            text={inCompromissos ? "Como Funciona" : "Visualizar Propostas"}
+            text={inCompromissos ? "Como Funciona" : "Visualizar Compromisso"}
             href={inCompromissos ? "/" : "/nossos-compromissos"}
             scaleType={inCompromissos ? 2 : null}
           />

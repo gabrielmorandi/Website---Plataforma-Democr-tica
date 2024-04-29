@@ -13,7 +13,7 @@ export default function BalloonCard({ content, type }) {
       onMouseLeave={() => setIsHover(false)}
     >
       <MessageCircle className="fill-purple stroke-purple size-9" />
-      <p className="absolute top-0 left-0 w-full leading-9 text-center text-yellow">
+      <p className="absolute top-0 left-0 w-full leading-9 text-center text-yellow font-bold">
         {content}
       </p>
       <div
