@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { MessageCircle } from "lucide-react"
-import { InfosPDTC } from "../../../data/InfosPTDC"
+import { InfosPDT } from "../../../data/InfosPTD"
 
 export default function BalloonCard({ content, type }) {
   const [isHover, setIsHover] = useState(false)
@@ -29,24 +29,24 @@ export default function BalloonCard({ content, type }) {
         data-state={isHover ? "active" : "inactive"}
       >
         {type && type === 1
-          ? InfosPDTC.principio.map((p) => {
+          ? InfosPDT.principio.map((p) => {
               if (p.cod == content) {
                 return p.title
               }
             })
           : type === 2
-          ? InfosPDTC.tema.map((p) => {
+          ? InfosPDT.tema.map((p) => {
               if (p.cod == content) {
                 return p.title
               }
             })
           : type === 3
-          ? InfosPDTC.diretriz.map((p) => {
+          ? InfosPDT.diretriz.map((p) => {
               if (p.cod == content) {
                 return p.title
               }
             })
-          : InfosPDTC.principio.map((p) => {
+          : InfosPDT.principio.map((p) => {
               if (p.cod == content) {
                 return p.title
               }

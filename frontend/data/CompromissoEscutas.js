@@ -1,4 +1,5 @@
-export const CompromissosEscutas = [  {
+export const CompromissosEscutas = [
+  {
     Cod_Compromisso: 1,
     Descricao:
       "Adequar a infraestrutura existente para a permanência saudável nos espaços da Unifesspa.",
@@ -2409,7 +2410,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 20,
     Descricao:
-      "Concluir as obras e colocar para funcionar do RU da Unidade II em Marabá.",
+      "Concluir as obras e colocar para funcionar o RU da Unidade II em Marabá.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D6",
@@ -3544,7 +3545,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 29,
     Descricao:
-      "Definir uma estratégia para otimizar os contratos de vigilância patrimonial, locação de veículos, conservação predial, manutenção de veículos, manutenção de aparelhos de ar condicionado, de locação de mão de obra e de limpeza, reduzindo custos e aprimorando os serviços.",
+      "Definir uma estratégia para otimizar os contratos de vigilância patrimonial, locação de veículos, conservação predial, manutenção de veículos, manutenção de aparelhos de ar-condicionado, de locação de mão de obra e de limpeza, reduzindo custos e aprimorando os serviços.",
     Max_Principio: "P6",
     Max_Tema: "T18",
     Max_Diretriz: "D3",
@@ -4033,7 +4034,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 32,
     Descricao:
-      "Dialogar com as prefeituras municipais e o governo estadual para construir soluções para problemas de segurança e iluminação públicas no entorno dos campus.",
+      "Dialogar com as prefeituras municipais e o governo estadual para construir soluções para problemas de segurança e iluminação públicas no entorno dos campi.",
     Max_Principio: "P7",
     Max_Tema: "T18",
     Max_Diretriz: "D7",
@@ -4685,7 +4686,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 38,
     Descricao:
-      "Estabelecer uma política de formulação de editais e chamamentos para que a comunidade acadêmica se engajar na solução de problemas administrativos e de infraestrutura enfrentados pela Unifesspa.",
+      "Estabelecer uma política de formulação de editais e chamamentos para que a comunidade acadêmica possa se engajar na solução de problemas administrativos e de infraestrutura enfrentados pela Unifesspa.",
     Max_Principio: "P3",
     Max_Tema: "T3",
     Max_Diretriz: "D5",
@@ -6504,7 +6505,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 54,
     Descricao:
-      "Garantir as vagas de docentes e TAES remanescente da criação da Unifesspa, bem como agilizar concursos de reposição e ações de realocação interna.",
+      "Garantir as vagas de docentes e TAEs remanescentes da criação da Unifesspa, além de agilizar concursos de reposição e ações de realocação interna.",
     Max_Principio: "P7",
     Max_Tema: "T10",
     Max_Diretriz: "D6",
@@ -7361,7 +7362,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 63,
     Descricao:
-      "Implementar um plano de divulgação da Unifesspa nas escolas, na mídia e juntos a segmentos específicos da sociedade, recorrendo a estratégias diversificadas e atrativas, como a a Feira das Profissões, com dotação orçamentária própria.",
+      "Implementar um plano de divulgação da Unifesspa nas escolas, na mídia e juntos a segmentos específicos da sociedade, recorrendo a estratégias diversificadas e atrativas, como a Feira das Profissões, com dotação orçamentária própria.",
     Max_Principio: "P1",
     Max_Tema: "T2",
     Max_Diretriz: "D5",
@@ -7784,7 +7785,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 67,
     Descricao:
-      "Instalar espaços destinados à realização de trabalhos em grupo em todas a bibliotecas.",
+      "Instalar espaços destinados à realização de trabalhos em grupo em todas as bibliotecas.",
     Max_Principio: "P7",
     Max_Tema: "T11",
     Max_Diretriz: "D9",
@@ -9118,7 +9119,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 80,
     Descricao:
-      "Retomar e fortalecer o programa Unifesspa de todos nós, com o intuito de aproximar a comunidade acadêmica os dirigentes da administração superior.",
+      "Retomar e fortalecer o programa “Unifesspa de todos nós”, com o intuito de aproximar a comunidade acadêmica aos dirigentes da administração superior.",
     Max_Principio: "P3",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9239,7 +9240,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 83,
     Descricao:
-      "Estabelecer estratégia de apoio a captação de recursos, de maneira a auxiliar pesquisadores e estudantes.",
+      "Estabelecer estratégia de apoio à captação de recursos, de maneira a auxiliar pesquisadores e estudantes.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -9520,7 +9521,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 89,
     Descricao:
-      "Revisar e simplificar as normas e as exigências relacionadas aos editas internos da Unifesspa.",
+      "Revisar e simplificar as normas relacionadas à captação de recursos externos à instituição.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D5",
@@ -9628,7 +9629,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 90,
     Descricao:
-      "Revisar e simplificar as normas relacionadas a captação de recursos externos à instituição.",
+      "Revisar e simplificar as normas relacionadas à captação de recursos externos à instituição.",
     Max_Principio: "P6",
     Max_Tema: "T3",
     Max_Diretriz: "D2",
@@ -10038,10 +10039,45 @@ export const CompromissosEscutas = [  {
     Cod_Compromisso: 99,
     Descricao:
       "Construir uma quadra poliesportiva em cada um dos campi da Unifesspa.",
-    Max_Principio: null,
-    Max_Tema: null,
-    Max_Diretriz: null,
-    Escutas: [],
+    Max_Principio: "P7",
+    Max_Tema: "T8",
+    Max_Diretriz: "D1",
+    Escutas: [
+      {
+        Descricao:
+          "A falta de espaços de convivência e para a prática esportiva aqui no IEX é gritante.",
+        Cod_Principio: "P7",
+        Cod_Tema: "T8",
+        Cod_Diretriz: "D1",
+      },
+      {
+        Descricao:
+          "Construção de quadra poliesportiva, não faz sentido, temos jogos universitários e não temos onde treinar e nem treinador",
+        Cod_Principio: "P7",
+        Cod_Tema: "T8",
+        Cod_Diretriz: "D4",
+      },
+      {
+        Descricao: "Mas participação da comunidade acadêmica com o esporte",
+        Cod_Principio: "P7",
+        Cod_Tema: "T8",
+        Cod_Diretriz: "D4",
+      },
+      {
+        Descricao:
+          "Que  possamos ter uma universidade na qual seja possível particar esportes",
+        Cod_Principio: "P1",
+        Cod_Tema: "T8",
+        Cod_Diretriz: "D1",
+      },
+      {
+        Descricao:
+          "Pensando a partir do trabalho desempenhado por técnicos administrativos na Universidade acho que ter um espaço para a porática de esporte seria muito bom",
+        Cod_Principio: "P7",
+        Cod_Tema: "T8",
+        Cod_Diretriz: "D1",
+      },
+    ],
   },
   {
     Cod_Compromisso: 100,
@@ -10063,24 +10099,91 @@ export const CompromissosEscutas = [  {
         Cod_Tema: "T4",
         Cod_Diretriz: "D9",
       },
+      {
+        Descricao:
+          "A Unifesspa necessita espaço para consumirmos arte, quando digo consumir não é somente no sentido de comprar, mas de apreciar, conhecer a produção dos nossos artistas e porque não comprar também",
+        Cod_Principio: "P2",
+        Cod_Tema: "T4",
+        Cod_Diretriz: "D9",
+      },
+      {
+        Descricao:
+          "Precisamos na universidade de espaços destinados a realização exposições artísticas",
+        Cod_Principio: "P2",
+        Cod_Tema: "T4",
+        Cod_Diretriz: "D9",
+      },
+      {
+        Descricao:
+          "Nós do curso de Artes Visuais necessitamos de um espaço para que possamos expor nossos trabalhos",
+        Cod_Principio: "P2",
+        Cod_Tema: "T6",
+        Cod_Diretriz: "D9",
+      },
+      {
+        Descricao:
+          "Nós do curso de Artes Visuais necessitamos de um espaço para que possamos expor nossos trabalhos",
+        Cod_Principio: "P2",
+        Cod_Tema: "T6",
+        Cod_Diretriz: "D9",
+      },
     ],
   },
   {
     Cod_Compromisso: 101,
     Descricao: "Revitalizar a unidade I do campus de Marabá.",
-    Max_Principio: null,
-    Max_Tema: null,
-    Max_Diretriz: null,
-    Escutas: [],
+    Max_Principio: "P5",
+    Max_Tema: "T6",
+    Max_Diretriz: "D1",
+    Escutas: [
+      {
+        Descricao:
+          "O Campus 1 está sem vida, o Tapiri está fechado há quatro anos, nem parece que estamos em uma universidade, algo necessita ser feito para reverter essa situação.",
+        Cod_Principio: "P5",
+        Cod_Tema: "T6",
+        Cod_Diretriz: "D1",
+      },
+      {
+        Descricao:
+          "A gente vem só para ter aula no Campus 1, não tem um espaço de convivência, não tem uma cultural, não tem lanchonete, não tem quase nada para fazer. Parece que vai fechar",
+        Cod_Principio: "P5",
+        Cod_Tema: "T6",
+        Cod_Diretriz: "D1",
+      },
+    ],
   },
   {
     Cod_Compromisso: 102,
     Descricao:
       "Construir o segundo prédio no Instituto Estudos do Xingu (IEX).",
-    Max_Principio: null,
-    Max_Tema: null,
-    Max_Diretriz: null,
-    Escutas: [],
+    Max_Principio: "P7",
+    Max_Tema: "T11",
+    Max_Diretriz: "D6",
+    Escutas: [
+      {
+        Descricao:
+          "O IEX, no momento, enfrenta dos gravíssimos problemas: um é a falta de docentes e o outro é a falta de espaços físicos",
+        Cod_Principio: "P7",
+        Cod_Tema: "T11",
+        Cod_Diretriz: "D6",
+      },
+
+      {
+        Descricao:
+          "Aqui as salas de aula tiveram que ser divididas para receber as novas turmas, os microscópios e outros equipamentos estão empilhados e está cheio de equipamentos nas caixas e não temos onde colocar. Agora estão falando em reduzir ainda mais os espaços administrativos. A palavra para definir a situação é sufocante.",
+        Cod_Principio: "P7",
+        Cod_Tema: "T11",
+        Cod_Diretriz: "D6",
+      },
+
+      {
+        Descricao:
+          "A falta de infraestrutura predial  no IEX é dramática, esse problema vai desestimulado e estressando todo mundo. Tem que ser dada  uma solução urgente para isso.",
+        Cod_Principio: "P7",
+        Cod_Tema: "T11",
+        Cod_Diretriz: "D6",
+      },
+    ],
   },
   {
     Cod_Compromisso: 103,
@@ -10102,7 +10205,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 104,
     Descricao:
-      "Apoiar os cursos de graduação na mudança dos PPCs pautada na interculturalidade para dialogar com os saberes/vivências dos povos da Amazônia: indígenas, quilombolas, ribeirinhos, camponeses dentre outros, evidenciando a importância dos conhecimentos produzidos por autoras(es) negras(os) e indígenas nas ementas das disciplinas.",
+      "Apoiar os cursos de graduação na mudança dos PPCs pautada na interculturalidade para dialogar com os saberes/vivências dos povos da Amazônia: indígenas, quilombolas, ribeirinhos, camponeses, dentre outros, evidenciando a importância dos conhecimentos produzidos por autoras(es) negras(os) e indígenas nas ementas das disciplinas.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D1",
@@ -10212,7 +10315,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 108,
     Descricao:
-      "Incluir nos quesitos de progressão, formação sobre a temática da diversidade etnicorracial, como forma de incentivar a compreensão dos servidores sobre o compromisso expresso nos princípios da Unifesspa com os povos que a cercam.",
+      "Incluir nos critérios de progressão a formação sobre a temática da diversidade étnico-racial, como forma de incentivar a compreensão dos servidores sobre o compromisso expresso nos princípios da Unifesspa com os povos que a cercam.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -10229,7 +10332,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 109,
     Descricao:
-      "Regulamentar as políticas afirmativas etnicorraciais na Unifesspa para a graduação e pós-graduação.",
+      "Regulamentar as políticas afirmativas étnico-raciais na Unifesspa para a graduação e pós-graduação.",
     Max_Principio: "P1",
     Max_Tema: "T5",
     Max_Diretriz: "D1",
@@ -10246,7 +10349,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 110,
     Descricao:
-      "Garantir a representatividade etnicorracial na ocupação dos cargos da administração superior.",
+      "Garantir a representatividade étnico-raciais na ocupação dos cargos da administração superior.",
     Max_Principio: "P1",
     Max_Tema: "T10",
     Max_Diretriz: "D1",
@@ -10359,7 +10462,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 115,
     Descricao:
-      "Implementar planejamento estratégico para as compras de equipamentos e insumos vinculados às TICs pode resolver diversos problemas.",
+      "Implementar planejamento estratégico para as compras de equipamentos e insumos vinculados às TICs.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
@@ -10517,7 +10620,7 @@ export const CompromissosEscutas = [  {
   {
     Cod_Compromisso: 119,
     Descricao:
-      "Ampliar o diálogo entre as estruturas organizacionais tornando mais claras as atribuições de cada unidade.",
+      "Ampliar o diálogo entre as estruturas organizacionais, tornando mais claras as atribuições de cada unidade.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
@@ -10801,7 +10904,7 @@ export const CompromissosEscutas = [  {
   },
   {
     Cod_Compromisso: 123,
-    Descricao: "Retomar a publicação de Editais de remoção.",
+    Descricao: "Retomar a publicação de editais de remoção.",
     Max_Principio: "P6",
     Max_Tema: "T10",
     Max_Diretriz: "D2",

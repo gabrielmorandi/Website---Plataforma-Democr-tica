@@ -1,6 +1,6 @@
 "use client";import Accordion from "./components/Accordion";
 import Header from "./components/Header";
-import { InfosPDTC } from "../../data/InfosPTDC";
+import { InfosPDT } from "../../data/InfosPTD";
 import SectionTemas from "./components/SectionTemas";
 import Carossel from "./components/Carossel";
 import Image from "next/image";
@@ -43,7 +43,7 @@ export default function Page() {
             <h3 className="mb-2 text-xl font-medium leading-tight">
               Princípios de uma universidade como espaço/tempo de aprendizagem
             </h3>
-            <Accordion items={InfosPDTC.principio} />
+            <Accordion items={InfosPDT.principio} />
           </div>
         </section>
         <SectionTemas />
@@ -76,17 +76,17 @@ export default function Page() {
             </h3>
             <div className="flex flex-col items-center justify-between mt-10 sm:flex-row">
               <div className="flex -mb-[50px] ml-5 sm:ml-0">
-                <CardCompromissoAnimated />
+                <CardCompromissoAnimated/>
               </div>
               <div className="flex md:pb-10 max-h-[545px]">
                 <picture>
                   <source
-                    srcSet="/descubra.webp"
+                    srcSet="/DeviceDesktopDescubra.webp"
                     alt="Descubra"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="/descubra2.webp"
+                    src="/DeviceMobileDescubra.webp"
                     alt="Descubra"
                     className="max-h-[545px]"
                   />
@@ -152,7 +152,7 @@ export default function Page() {
               <div className="flex flex-col w-full p-4 bg-white rounded-md shadow-sm">
                 <div className="flex flex-col items-start justify-between gap-4 py-2 mb-6 sm:items-center sm:flex-row">
                   <h2 className="text-4xl font-bold leading-none text-purple text-balance">
-                    Gráfico de {chart} X Escutas mais sugeridas
+                  Gráfico de {chart} X Número de contribuições
                   </h2>
                   <Select
                     selected={chart}

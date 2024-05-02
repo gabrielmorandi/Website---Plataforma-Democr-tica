@@ -12,16 +12,16 @@ export const chartData = [
         name: "P2",
         fullName:
           "P2 - Universidade como espaço de aprendizado, com ações indissociáveis de ensino-pesquisa-extensão e pautada em problemas socialmente relevantes",
-        uv: 348,
+        uv: 353,
       },
       {
         name: "P3",
-        fullName: "P3 - Universidade Democrática e Autônoma",
+        fullName: "P3 - Universidade democrática e autônoma",
         uv: 106,
       },
       {
         name: "P4",
-        fullName: "P4 - Unifesspa com Integração Multicampi",
+        fullName: "P4 - Unifesspa com integração multicampi",
         uv: 96,
       },
       {
@@ -38,8 +38,8 @@ export const chartData = [
       {
         name: "P7",
         fullName:
-          "P7 - Universidade com Acolhimento, Saúde e Qualidade de Vida",
-        uv: 230,
+          "P7 - Universidade com acolhimento, saúde e qualidade de vida",
+        uv: 240,
       },
     ],
   },
@@ -53,7 +53,7 @@ export const chartData = [
       },
       {
         name: "T2",
-        fullName: "T2 - Acesso à Universidade",
+        fullName: "T2 - Acesso à universidade",
         uv: 72,
       },
       {
@@ -64,7 +64,7 @@ export const chartData = [
       {
         name: "T4",
         fullName: "T4 - Cultura",
-        uv: 50,
+        uv: 54,
       },
       {
         name: "T5",
@@ -74,7 +74,7 @@ export const chartData = [
       {
         name: "T6",
         fullName: "T6 - Ensino de graduação",
-        uv: 178,
+        uv: 179,
       },
       {
         name: "T7",
@@ -84,7 +84,7 @@ export const chartData = [
       {
         name: "T8",
         fullName: "T8 - Esporte",
-        uv: 11,
+        uv: 16,
       },
       {
         name: "T9",
@@ -93,13 +93,13 @@ export const chartData = [
       },
       {
         name: "T10",
-        fullName: "T10 - Gestão de Pessoas",
+        fullName: "T10 - Gestão de pessoas",
         uv: 89,
       },
       {
         name: "T11",
         fullName: "T11 - Infraestrutura",
-        uv: 100,
+        uv: 103,
       },
       {
         name: "T12",
@@ -118,13 +118,13 @@ export const chartData = [
       },
       {
         name: "T15",
-        fullName: "T15 - Meio Ambiente",
+        fullName: "T15 - Meio ambiente",
         uv: 25,
       },
       {
         name: "T16",
         fullName: "T16 - Permanência",
-        uv: 124,
+        uv: 126,
       },
       {
         name: "T17",
@@ -148,33 +148,33 @@ export const chartData = [
     data: [
       {
         name: "D1",
-        fullName: "D1 - Acolhimento, Inclusão Social e Diversidade",
-        uv: 343,
+        fullName: "D1 - Acolhimento, inclusão social e diversidade",
+        uv: 346,
       },
       {
         name: "D2",
-        fullName: "D2 - Gestão Democrática e Participativa",
+        fullName: "D2 - Gestão democrática e participativa",
         uv: 248,
       },
       {
         name: "D3",
-        fullName: "D3 - Gestão Ecológica e Humanizada dos Espaços",
-        uv: 16,
+        fullName: "D3 - Gestão ecológica e humanizada dos espaços",
+        uv: 18,
       },
       {
         name: "D4",
         fullName: "D4 - Integração: arte, cultura, esporte, lazer e ciência",
-        uv: 100,
+        uv: 102,
       },
       {
         name: "D5",
-        fullName: "D5 - Política Institucional com Transparência",
+        fullName: "D5 - Política institucional com transparência",
         uv: 157,
       },
       {
         name: "D6",
-        fullName: "D6 - Retomar a Expansão com Planejamento e Diálogo",
-        uv: 130,
+        fullName: "D6 - Retomar a expansão com planejamento e diálogo",
+        uv: 133,
       },
       {
         name: "D7",
@@ -183,14 +183,14 @@ export const chartData = [
       },
       {
         name: "D8",
-        fullName: "D8 - Trabalho Digno com Saúde e Qualidade de Vida",
+        fullName: "D8 - Trabalho digno com saúde e qualidade de vida",
         uv: 73,
       },
       {
         name: "D9",
         fullName:
-          "D9 - Vivências Formativas e a Indissociabilidade Ensino, Pesquisa e Extensão",
-        uv: 193,
+          "D9 - Vivências formativas e a indissociabilidade ensino, pesquisa e extensão",
+        uv: 198,
       },
     ],
   },

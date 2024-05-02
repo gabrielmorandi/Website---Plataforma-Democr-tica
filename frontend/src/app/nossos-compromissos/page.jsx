@@ -6,7 +6,7 @@ import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
 import ModalCompromisso from "../components/ModalCompromisso";
 import { CompromissosEscutas } from "../../../data/CompromissoEscutas";
-import { InfosPDTC } from "../../../data/InfosPTDC";
+import { InfosPDT } from "../../../data/InfosPTD";
 
 export default function Page() {
   const [principioSelected, setPrincipioSelected] = useState(
@@ -93,14 +93,14 @@ export default function Page() {
         <div className="grid w-full place-items-center">
           <div className="flex flex-col w-11/12 max-w-[1160px] gap-6">
             <h2 className="text-3xl font-bold sm:text-4xl text-purple">
-              Nossos Compromissos
+              Nossos compromissos
             </h2>
             <div className="grid gap-x-6 gap-y-4 sm:grid-cols-2">
               <Select
                 title="Selecionar Princípio"
                 selected={principioSelected}
                 setSelected={setPrincipioSelected}
-                options={InfosPDTC.principio}
+                options={InfosPDT.principio}
                 optionDefault="Todos os Princípios"
                 codSelected={codPrincipio}
                 setCod={setCodPrincipio}
@@ -111,7 +111,7 @@ export default function Page() {
                 title="Selecionar Tema"
                 selected={temaSelected}
                 setSelected={setTemaSelected}
-                options={InfosPDTC.tema}
+                options={InfosPDT.tema}
                 optionDefault="Todos os Temas"
                 codSelected={codTema}
                 setCod={setCodTema}
@@ -122,7 +122,7 @@ export default function Page() {
                 title="Selecionar Diretriz"
                 selected={diretrizSelected}
                 setSelected={setDiretrizSelected}
-                options={InfosPDTC.diretriz}
+                options={InfosPDT.diretriz}
                 codSelected={codDiretriz}
                 setCod={setCodDiretriz}
                 optionDefault={"Todas as Diretrizes"}

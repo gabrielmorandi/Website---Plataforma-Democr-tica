@@ -12,7 +12,7 @@ export default function Footer() {
             alt="Plataforma Democrática"
           /> */}
           <h2 className="font-semibold text-yellow text-balance">
-            © Plataforma Democrática UNIFESSPA, todos direitos reservados 2024.
+            © Plataforma Democrática UNIFESSPA, todos os direitos reservados 2024.
           </h2>
         </div>
       </div>

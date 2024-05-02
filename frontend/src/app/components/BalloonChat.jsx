@@ -1,6 +1,8 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
+import React, { useEffect, useRef } from "react";import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import * as Icons from "lucide-react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function BalloonChat({ iconName, text, delay }) {
   const IconComponent = Icons[iconName];
@@ -9,21 +11,30 @@ export default function BalloonChat({ iconName, text, delay }) {
   useEffect(() => {
     const balloon = balloonRef.current;
 
-    gsap.fromTo(
-      balloon,
-      { opacity: 0, y: -20, scale: 0.5 },
-      {
-        opacity: 1,
-        y: 10,
-        scale: 2,
-        duration: 2, 
-        delay: delay / 1000, 
-        ease: "power2.inOut",
-       
-        y: 0, 
-        scale: 1, 
-      }
-    );
+    ScrollTrigger.create({
+      trigger: balloon,
+      start: "top 80%",
+      once: true, // A animação só ocorrerá uma vez
+      onEnter: () => {
+        gsap.fromTo(
+          balloon,
+          { opacity: 0, y: -20, scale: 0.5 },
+          {
+            opacity: 1,
+            y: 10,
+            scale: 2,
+            duration: 1,
+            delay: delay / 1000,
+            ease: "power2.inOut",
+            onComplete: () => ScrollTrigger.refresh(),
+            y: 0,
+            scale: 1,
+          }
+        );
+      },
+    });
+
+    return () => ScrollTrigger.getAll().forEach((st) => st.kill());
   }, [delay]);
 
   return (
@@ -39,5 +50,5 @@ export default function BalloonChat({ iconName, text, delay }) {
         <p className="text-xl font-bold leading-6 text-purple">{text}</p>
       </div>
     </div>
-  )
+  );
 }

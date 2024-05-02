@@ -1,9 +1,9 @@
-import gsap from "gsap"
-import ScrollTrigger from "gsap/ScrollTrigger"
-import { InfosPDTC } from "../../../data/InfosPTDC"
-import BalloonChat from "../components/BalloonChat"
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { InfosPDT } from "../../../data/InfosPTD";
+import BalloonChat from "../components/BalloonChat";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 export default function SectionTemas() {
   return (
@@ -19,12 +19,17 @@ export default function SectionTemas() {
             nosso futuro!
           </h3>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
-            {InfosPDTC.tema.map((tema, index) => (
-              <BalloonChat key={index} iconName={tema.icon} text={tema.title} delay={1000 * (index + 1)} />
+            {InfosPDT.tema.map((tema, index) => (
+              <BalloonChat
+                key={index}
+                iconName={tema.icon}
+                text={tema.title}
+                delay={700 * (index + 1)}
+              />
             ))}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

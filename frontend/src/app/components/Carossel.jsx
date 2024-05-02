@@ -6,7 +6,7 @@ import SlideButtons from "./SlideButtons"
 
 import { ButtonPrimary } from "./Buttons"
 
-import { InfosPDTC } from "../../../data/InfosPTDC"
+import { InfosPDT } from "../../../data/InfosPTD"
 
 export default function Carossel() {
   return (
@@ -29,7 +29,7 @@ export default function Carossel() {
             },
           }}
         >
-          {InfosPDTC.diretriz.map((d, index) => (
+          {InfosPDT.diretriz.map((d, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col justify-between bg-white w-full gap-4 p-8 rounded shadow-[6px_10px_0_#5A007A] min-h-[380px] max-h-[380px] xs:min-h-[330px] xs:max-h-[330px]">
                 <div className="flex flex-col gap-4">

@@ -1,8 +1,8 @@
-"use client"
 import React, { useState, useRef, useEffect } from "react"
-import { Share2, CheckCircle, Ear } from "lucide-react"
+import { Share2, CheckCircle, Ear, MessageCircle } from "lucide-react"
 import BalloonCard from "./BalloonCard"
 import { useScreenshot, createFileName } from "use-react-screenshot"
+import StoriesPage from "../template-stories/page"
 import Image from "next/image"
 
 const ModalCompromisso = ({
@@ -13,11 +13,19 @@ const ModalCompromisso = ({
   setIsOpen,
   close,
 }) => {
-  const ref = useRef(null)
-  const [image, takeScreenShot] = useScreenshot()
+  const printRef = useRef(null)
+  const modalRef = useRef(null)
+  const [downloadStatus, setDownloadStatus] = useState(null)
+  const [image, takeScreenShot] = useScreenshot({
+    type: "image/jpeg",
+    quality: 1.0,
+    width: 1080,
+    height: 1920,
+  })
 
   const downloadScreenshot = () => {
-    takeScreenShot(ref.current).then((image) => {
+    setDownloadStatus("iniciado")
+    takeScreenShot(printRef.current).then((image) => {
       const a = document.createElement("a")
       a.href = image
       a.download = createFileName("png", "EuApoioEsseCompromisso")
@@ -26,10 +34,19 @@ const ModalCompromisso = ({
   }
 
   useEffect(() => {
-    if (image) {
-      downloadScreenshot()
+    let timeout
+    if (downloadStatus === "iniciado") {
+      timeout = setTimeout(() => {
+        setDownloadStatus(null)
+      }, 2000)
     }
-  }, [image])
+    return () => clearTimeout(timeout)
+  }, [downloadStatus])
+
+  const handleModalClose = () => {
+    setIsOpen(false)
+    modalRef.current.scrollTop = 0
+  }
 
   return (
     <>
@@ -37,8 +54,12 @@ const ModalCompromisso = ({
         className="fixed z-50 grid w-full h-screen place-items-end -bottom-[125vh] bg-zinc-900/80 data-[state=open]:bottom-0 transition-opacity"
         data-state={isOpen ? "open" : "closed"}
       >
-        <button className="w-full h-full cursor-default" onClick={close} />
+        <button
+          className="w-full h-full cursor-default"
+          onClick={handleModalClose}
+        />
         <div
+          ref={modalRef}
           className="fixed -bottom-full transition-all grid w-full h-full bg-white place-items-start rounded-t-3xl max-h-[80%] sm:max-h-[62.5%] overflow-y-scroll bg-scroll data-[state=open]:bottom-0"
           data-state={isOpen ? "open" : "closed"}
         >
@@ -47,7 +68,7 @@ const ModalCompromisso = ({
               <div className="flex flex-col w-11/12 max-w-[1160px]">
                 <button
                   className="w-[175px] bg-purple self-center rounded-full h-3 cursor-pointer"
-                  onClick={close}
+                  onClick={handleModalClose}
                 />
                 <div className="flex items-center gap-2 z-[100]">
                   <CheckCircle
@@ -57,7 +78,7 @@ const ModalCompromisso = ({
                     className="min-w-[30px]"
                   />
                   <h2 className="text-xl font-bold sm:text-3xl text-purple">
-                    É nosso Compromisso
+                    É nosso compromisso
                   </h2>
                 </div>
               </div>
@@ -84,13 +105,13 @@ const ModalCompromisso = ({
                     {escutas.map((e, index) => (
                       <div
                         key={index}
-                        className="relative flex flex-col p-4 border-[2px] bg-white rounded border-purple text-purple text-lg leading-tight font-medium capitalize"
+                        className="relative flex flex-col p-4 border-[2px] bg-white rounded border-purple text-purple text-lg leading-tight font-medium uppercase"
                       >
                         <div className="text-sm font-bold text-purple">
                           <div className="absolute flex gap-3 right-4 -top-5">
                             <BalloonCard content={e.Cod_Principio} type={1} />
-                            <BalloonCard content={e.Cod_Tema} type={2} />
                             <BalloonCard content={e.Cod_Diretriz} type={3} />
+                            <BalloonCard content={e.Cod_Tema} type={2} />
                           </div>
                         </div>
                         {e.Descricao}
@@ -117,37 +138,36 @@ const ModalCompromisso = ({
               )}
             </div>
             <div className="sticky bottom-0 z-50 grid w-full gap-2 py-4 bg-white shadow-[0_0_3px_rgba(0,0,0,.2)] place-items-center">
-              <p className="text-xl text-purple">Gostou desse Compromisso?</p>
+              {downloadStatus === "iniciado" && (
+                <div className="animate-bounce">
+                  <p className="w-full mt-2 text-sm font-bold text-purple">
+                    Download iniciado!
+                  </p>
+                </div>
+              )}
               <div className="flex flex-col w-11/12 max-w-[1160px]">
                 <button
                   onClick={downloadScreenshot}
-                  className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#FFD500] animate-buttonBounce"
+                  className="grid place-items-center py-2 px-6 bg-purple transition-colors hover:bg-[#8817b2] animate-buttonBounce"
                   aria-label="Compartilhe"
                 >
                   <div className="flex items-center gap-2">
                     <p className="font-bold leading-6 transition-colors sm:text-2xl text-yellow">
                       Baixe o Template e Compartilhe!
                     </p>
-                    <Share2 color="#5A007A" className="min-w-6" />
+                    <Share2 color="#FFD500" className="min-w-6" />
                   </div>
                 </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        ref={ref}
-        className="fixed grid place-items-center left-full z-50 w-[1080px] h-[1920px]"
-      >
-        <div className="relative grid place-items-center z-50 w-[1080px] h-[1920px]">
-          <Image src="/TemplateStoriesBG.webp" alt="Imagem de fundo" fill />
-          <div className="w-11/12 left-1/2 -translate-x-1/2 absolute inset-0 top-[300px]">
-            <div className="max-h-[1200px] bg-yellow rounded-xl overflow-hidden">
-              <p className="h-full p-10 text-4xl font-bold leading-snug text-center uppercase text-purple">
-                {compromisso}
-              </p>
-            </div>
+        <div className="relative">
+          <div
+            ref={printRef}
+            className="z-0 absolute b-[500px] max-w-[1080px] max-h-[1920px] w-[1080px] h-[1920px] flex flex-col justify-center items-center"
+          >
+            <StoriesPage compromisso={compromisso} />
           </div>
         </div>
       </div>

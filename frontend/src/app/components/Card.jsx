@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { CheckCircle, ArrowUpRight, MessageCircle } from "lucide-react"
-import { InfosPDTC } from "../../../data/InfosPTDC"
+import { InfosPDT } from "../../../data/InfosPTD"
 import BalloonCard from "./BalloonCard"
 
 const Card = ({
@@ -43,7 +43,7 @@ const Card = ({
         <div className="flex items-center gap-2">
           <CheckCircle color="#5A007A" className="min-w-6" />
           <h2 className="text-[19px] font-bold text-purple">
-            É nosso Compromisso
+            É nosso compromisso
           </h2>
         </div>
         <p className="leading-normal -tracking-[1%] line-clamp-5">
