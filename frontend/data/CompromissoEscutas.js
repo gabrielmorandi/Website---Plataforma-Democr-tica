@@ -10797,7 +10797,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 122,
     Descricao:
-      "Retomar a circulação dos ônibus da Unifesspa entre a unidade I e a III do campus de Marabá.",
+      "Retomar a circulação interunidades dos ônibus da Unifesspa em Marabá.",
     Max_Principio: "P7",
     Max_Tema: "T16",
     Max_Diretriz: "D1",
