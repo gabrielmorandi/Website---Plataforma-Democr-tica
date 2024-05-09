@@ -3569,7 +3569,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 30,
     Descricao:
-      "Definir uma política clara e transparente de oferta de turmas de convênio e contratos, incluindo condições plenas de integração e permanência dos estudantes.",
+      "Garantir que a oferta de turmas pelo Forma Pará e pelo Parfor contemple condições plenas de integração e permanência dos estudantes.",
     Max_Principio: "P1",
     Max_Tema: "T6",
     Max_Diretriz: "D5",
