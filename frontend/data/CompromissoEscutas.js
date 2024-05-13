@@ -10462,7 +10462,7 @@ export const CompromissosEscutas = [
   {
     Cod_Compromisso: 115,
     Descricao:
-      "Implementar planejamento estratégico para as compras de equipamentos e insumos vinculados às TICs.",
+      "Implementar planejamento estratégico para as compras de equipamentos e insumos vinculados às TICs pode resolver diversos problemas.",
     Max_Principio: "P6",
     Max_Tema: "T19",
     Max_Diretriz: "D2",
